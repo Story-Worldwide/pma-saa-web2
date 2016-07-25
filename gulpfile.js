@@ -42,8 +42,8 @@ var paths = {
 		dist: 'dist/css'
 	},
 	scripts: {
-		src: 'components-pages/pma/js/**/*.js',
-		main: 'components-pages/js',
+		src: 'components-pages/pma/js/*.js',
+		main: 'components-pages/pma/js',
 		dist: 'dist/pma/js',
 		compress: 'dist/pma/js/*.js'
 	},
@@ -87,7 +87,6 @@ gulp.task('sass-build', function() {
 gulp.task('JS', function(){
 	pump([
 		gulp.src(paths.scripts.src),
-		gulp.dest(paths.scripts.main),
 		browserSync.stream()
 	]);
 });
@@ -102,7 +101,18 @@ gulp.task('JS-build', function(){
 		uglify(), //*minify
 		gulp.dest(paths.scripts.dist)
 	]);
-})
+});
+
+
+//JS LINT {UNUSED}
+gulp.task('jshint', function(){
+	gulp.src(paths.scripts.src)
+		.pipe(jshint())
+		.pipe(jshint.reporter('jshint-stylish'))
+		.pipe(jshint.reporter('fail'))
+	gulp.watch(paths.scripts.src).on('change', browserSync.reload);
+});
+
 
 
 //BROWSER SYNC - LIVE RE-LOAD
@@ -113,16 +123,6 @@ gulp.task('browser-sync', function() {
             baseDir: paths.base.src
         }
     });
-});
-
-
-//JS LINT {UNUSED}
-gulp.task('jshint', function(){
-	gulp.src(paths.scripts.src)
-		.pipe(jshint())
-		.pipe(jshint.reporter('jshint-stylish'))
-		.pipe(jshint.reporter('fail'));
-	gulp.watch(paths.scripts.src).on('change', browserSync.reload);
 });
 
 
@@ -148,7 +148,7 @@ gulp.task('clean:dist', function() {
 //WATCH
 gulp.task('watch', function() { 
 	gulp.watch(paths.styles.src, ['sass']).on('change', browserSync.reload);//sass
-	gulp.watch(paths.scripts.src, ['JS']).on('change', browserSync.reload);//.js
+	gulp.watch(paths.scripts.src).on('change', browserSync.reload);//.js
 	gulp.watch(paths.base.html).on('change', browserSync.reload);//html
 	//gulp.watch(paths.images.src,['imageMin']);//imageMin
 });
