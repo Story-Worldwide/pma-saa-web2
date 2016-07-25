@@ -1,0 +1,354 @@
+		/*	mediaboxAdvanced Black theme	*/
+
+		/*	Overlay background styling	*/
+        
+        /* Start Apple Styles */
+
+/*
+These styles support Apple products display of CSS.
+
+NOTES (orientation:landscape), (orientation:portrait) can also be used to be more specific
+
+*/
+
+@media (max-width: 979px) {
+#mbPrevLink big, #mbNextLink big, #mbCloseLink big {
+	color: #999;
+	font-weight: bold;
+	line-height: 14px;
+	font-size: 26px !important;
+}
+
+#mbNumber {
+	display: inline;
+	color: #666666;
+	line-height: 14px;
+	font-size: 16px !important;
+	margin: auto;
+}
+
+}
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px)
+{
+    #mbOverlay {
+	  width:12000px !important;
+      height:12000px !important;
+    }
+}
+
+/* iPhone 4 [portrait + landscape] */
+@media only screen and (resolution:326dpi)
+{
+    #mbOverlay {
+	  width:12000px !important;
+      height:12000px !important;
+    }	
+}
+
+/* screen and (resolution: 163dpi) */
+
+/* iPhone 3 [portrait + landscape] */
+@media only screen and (max-device-width:480px)
+{
+    #mbOverlay {
+	  width:12000px !important;
+      height:12000px !important;
+    }
+}
+
+/* iPod Touch and older [portrait + landscape] */
+@media only screen and (resolution:326dpi)
+{
+    #mbOverlay {
+	  width:12000px !important;
+      height:12000px !important;
+    }
+}
+
+/* End Apple Styles */
+
+#mbOverlay {
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+    min-width:100%;
+    width:100%;
+	min-height:100%;
+    height:100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+		/*	Legacy fix for older browsers	*/
+
+#mbOverlay.mbOverlayFF {
+	background: transparent url(/images/interface/mediaboxADV/80.png) repeat;
+}
+
+#mbOverlay.mbOverlayIE {
+	position: absolute;
+}
+
+/* fix for IE11 */
+
+div {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+		/*	Overlay panel styling	*/
+
+#mbCenter {
+	position: absolute;
+	z-index: 9999;
+	left: 50%; 
+    
+	overflow: hidden;
+	background-color: #000;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	-khtml-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#000000');
+}
+
+#mbCenter.mbLoading {
+	background: #000 url(/images/interface/mediaboxADV/loading.gif) no-repeat center;
+		/*	This style is applied only during animation.	*/
+		/*	For example, the next lines turn off shadows	*/
+		/*	improving browser performance on slow systems.	*/
+		/*	To leave shadows on, just remove the following:	*/
+	-webkit-box-shadow: none;
+	-khtml-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#mbImage {
+	position: relative;
+	left: 0;
+	top: 0;
+
+		/*	Inline content styling	*/
+
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: left;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+		/*	Title, Caption and Button styling	*/
+
+#mbBottom {
+	min-height: 20px;
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	/* line-height: 20px; */
+	font-size: 12px;
+	color: #999;
+	text-align: left;
+	padding: 0 10px 10px;
+}
+
+#mbTitle {
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* display: inline; */
+	color: #CCC;
+	font-weight:300;
+	line-height: 14px;
+	font-size: 12px;
+	padding-top:6px;
+	padding-bottom:4px;
+}
+
+#mbCaption {
+	display: block;
+	color: #999;
+	line-height: 14px;
+	font-size: 12px;
+	padding-bottom:10px;
+}
+
+#mbPrevLink, #mbNextLink, #mbCloseLink {
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	display: inline;
+	color: #999;
+	font-weight: bold;
+	line-height: 14px;
+	font-size: 16px;
+}
+
+#mbNumber {
+	display: inline;
+	color: #666666;
+	line-height: 14px;
+	font-size: 12px;
+	margin: auto;
+}
+
+
+
+#mbPrevLink, #mbNextLink, #mbCloseLink {
+	float: right;
+	outline: none;
+	margin: 0 0 0 10px;
+	font-weight: normal;
+}
+
+#mbBottom h2 {
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* display: inline; */
+	color: #CCC;
+	font-weight:300;
+	line-height: 14px;
+	font-size: 13px;
+	padding-top:6px;
+	padding-bottom:4px;
+}
+
+/*	PMA requset object image  */
+
+#mbBottom #mbObjectNum {
+	margin-top:10px;
+}
+#mbBottom #mbRequestRR {
+	
+}
+
+
+
+#mbBottom #mbRequestRR a:active, #mbBottom #mbRequestRR a:link, #mbBottom #mbRequestRR a:visited, #mbBottom #mbRequestRR a:hover {	
+	text-decoration: none;
+	color: #CCC;
+    margin-top:10px;
+	outline: none;
+    font-size: 9px;
+}
+
+#mbBottom #mbObjectNum a:active, #mbBottom #mbObjectNum a:link, #mbBottom #mbObjectNum a:visited {	
+	text-decoration: none;
+	color: #FF9900;
+    margin-top:10px;
+	outline: none;
+   
+}
+
+#mbBottom #mbObjectNum a:hover {
+text-decoration: underline;
+}
+
+
+#mbPrevLink b, #mbNextLink b, #mbCloseLink b {
+	color: #999;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#mbPrevLink big, #mbNextLink big, #mbCloseLink big {
+	color: #999;
+	font-weight: bold;
+	line-height: 14px;
+	font-size: 14px;
+}
+
+#mbBottom a, #mbBottom a:link, #mbBottom a:visited {	/* Thanks to Danny Jung for feedback and corrections */
+	text-decoration: none;
+	color: #ddd;
+}
+
+#mbBottom a:hover, #mbBottom a:active {
+	text-decoration: underline;
+	color: #fff;
+}
+
+
+		/*	Error message styling	*/
+
+#mbError {
+	position: relative;
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border: 10px solid #700;
+	padding: 10px 10px 10px;
+	margin: 20px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#mbError a, #mbError a:link, #mbError a:visited, #mbError a:hover, #mbError a:active {
+	color: #d00;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+/* Media Deck Frame */
+
+
+
+.mediaDeck_sigFrame {
+	margin: 10px 28px 10px 0px;
+	padding:10px 10px 10px 10px;
+	border: 1px solid #dddddd;
+	
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+}
+
+
+
+
+
+
+
+
+
+.mediaDeckSig_Label{
+    padding-bottom:18px;
+    font-size: 12px;
+    font-family: arial;
+    color: rgb(41, 41, 41);
+}
+
+.viewMediaDeck {
+float:left;
+margin-top:3px;
+font-size:12px;
+
+}
+
+.viewMediaDeck img{
+margin-top:3px;
+padding-right:4px;
+
+}
+
+.mediaDeck_txtSlide {
+padding:10px;
+font-family: 'AvenirLTPro55Roman','Arial', 'Helvetica', sans-serif;
+font-size:15px;
+color: #dddddd;
+text-align: left;
+}

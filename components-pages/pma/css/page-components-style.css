@@ -1,0 +1,20 @@
+/* ----++++---- Variables ----++++---- */
+/* ----++++---- mobile ----++++---- */
+div {
+  outline: 1px solid #f00; }
+
+.landing-page-top {
+  height: 900px;
+  margin-top: 48px 0 0 0;
+  padding: 0;
+  width: 100%; }
+
+/* ----++++---- Landing Page Top Image Component ----++++---- */
+.landing-page-img {
+  background: url("/pma/img/temp/cars-6.jpg") no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 100%; }
+
+.pinch {
+  padding: 0px 0px 0px 0px; }
