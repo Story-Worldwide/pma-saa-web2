@@ -44,8 +44,8 @@ var paths = {
 	scripts: {
 		src: 'components-pages/pma/js/**/*.js',
 		main: 'components-pages/js',
-		dist: 'dist/js',
-		compress: 'dist/js/*.js'
+		dist: 'dist/pma/js',
+		compress: 'dist/pma/js/*.js'
 	},
 	images: {
 		src: 'components-pages/pma/img/temp/*.{jpg,png,gif,jpeg}',
@@ -148,7 +148,7 @@ gulp.task('clean:dist', function() {
 //WATCH
 gulp.task('watch', function() { 
 	gulp.watch(paths.styles.src, ['sass']).on('change', browserSync.reload);//sass
-	gulp.watch(paths.scripts.src).on('change', browserSync.reload);//.js
+	gulp.watch(paths.scripts.src, ['JS']).on('change', browserSync.reload);//.js
 	gulp.watch(paths.base.html).on('change', browserSync.reload);//html
 	//gulp.watch(paths.images.src,['imageMin']);//imageMin
 });
