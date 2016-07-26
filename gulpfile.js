@@ -55,6 +55,12 @@ var paths = {
 };
 
 
+//HTML 
+gulp.task('html', function(){
+	gulp.src(paths.html.src)
+	.pipe(browserSync.stream());
+});
+
 //HTML COPY - used if compying to another directory
 gulp.task('copy-html', function(){
 	gulp.src(paths.html.src)
@@ -148,15 +154,15 @@ gulp.task('clean:dist', function() {
 //WATCH
 gulp.task('watch', function() { 
 	gulp.watch(paths.styles.src, ['sass']).on('change', browserSync.reload);//sass
-	gulp.watch(paths.scripts.src).on('change', browserSync.reload);//.js
-	gulp.watch(paths.base.html).on('change', browserSync.reload);//html
+	gulp.watch(paths.scripts.src, ['JS']).on('change', browserSync.reload);//.js
+	gulp.watch(paths.base.html, ['html']).on('change', browserSync.reload);//html
 	//gulp.watch(paths.images.src,['imageMin']);//imageMin
 });
 
 
 //DEFAULT TASKS
 gulp.task('default', function() { 
-	runSequence('watch',['sass', 'browser-sync', 'JS']) 
+	runSequence('watch',['sass', 'browser-sync', 'JS', 'html']) 
 });
 
 
