@@ -21,72 +21,66 @@ $(function(){
     var speed = 5000;
     //var run = setInterval('rotate()', speed);
 
+    // grab width and calculate left value
+    var item_width = $('#slides li').outerWidth();
+    var left_value = item_width * (-1);
 
-    if( $(window).width() <= 400 ){
-        // grab width and calculate left value
-        var item_width = $('#slides li').outerWidth();
-        var left_value = item_width * (-1);
+    // move last item before first item
+    // in case user clicks prev button.
+    $('#slides li:first').before($('#slides li:last'));
 
-        // move last item before first item
-        // in case user clicks prev button.
+    // set default item to correct position
+    $('#slides ul').css({'left': left_value});
+
+    // if user cliked prev button
+    $('#prev').click(function(){
+      // get right position
+      var left_indent = parseInt($('#slides ul').css('left')) + item_width;
+      // slide the item
+      $('#slides ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+        // move last item and place as first item
         $('#slides li:first').before($('#slides li:last'));
-
         // set default item to correct position
         $('#slides ul').css({'left': left_value});
+      });
 
-        // if user cliked prev button
-        $('#prev').click(function(){
-          // get right position
-          var left_indent = parseInt($('#slides ul').css('left')) + item_width;
-          // slide the item
-          $('#slides ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
-            // move last item and place as first item
-            $('#slides li:first').before($('#slides li:last'));
-            // set default item to correct position
-            $('#slides ul').css({'left': left_value});
-          });
+      console.log('SLIDE LEFT ',$('#slides li'));
+      // cancel link behavior
+      return false;
 
-          console.log('SLIDE LEFT ',$('#slides li'));
-          // cancel link behavior
-          return false;
-
-        });
+    });
 
 
-        // if user cliked next button
-        $('#next').click(function(){
-          // get right position
-          var left_indent = parseInt($('#slides ul').css('left')) - item_width;
-          // slide the item
-          $('#slides ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
-            // move first item and place as last item
-            $('#slides li:last').after($('#slides li:first'));
-            // set default item to correct position
-            $('#slides ul').css({'left': left_value});
-          });
+    // if user cliked next button
+    $('#next').click(function(){
+      // get right position
+      var left_indent = parseInt($('#slides ul').css('left')) - item_width;
+      // slide the item
+      $('#slides ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+        // move first item and place as last item
+        $('#slides li:last').after($('#slides li:first'));
+        // set default item to correct position
+        $('#slides ul').css({'left': left_value});
+      });
 
-          console.log('SLIDE RIGHT ',$('#slides li'));
-          // cancel link behavior
-          return false;
+      console.log('SLIDE RIGHT ',$('#slides li'));
+      // cancel link behavior
+      return false;
 
-        });
+    });
 
-        /*///
-        // if mouse over pause auto rotation
-        $('#slides').hover(
-          function(){
-            clearInterval(run);
-          },
-          function(){
-            run = setInterval('rotate()',speed);
-          }
-        );*/
-    };
-
+    /*///
+    // if mouse over pause auto rotation
+    $('#slides').hover(
+      function(){
+        clearInterval(run);
+      },
+      function(){
+        run = setInterval('rotate()',speed);
+      }
+    );*/
     
   };
-  // run carousel
-  carousel();
   
 
   ///// LOAD MORE FOR CURATED-VIEWS *** (if desktop size)
@@ -107,8 +101,11 @@ $(function(){
 
   ///// RESIZE FUNCTION
   $(window).resize(function(){
-      // run carousel
-      carousel();
+    if( $(window).width() <= 400 ){
+       // run carousel
+       carousel();
+    };
+      
   });
   
 

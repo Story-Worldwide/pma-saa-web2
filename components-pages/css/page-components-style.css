@@ -292,6 +292,8 @@ div {
       float: left;
       max-width: 860px;
       width: 100%; }
+    .carousel-component-block {
+      margin: 0 0 10px 0; }
     .carousel-component-text {
       margin: 0 0 -21px 0;
       padding: 0; }
