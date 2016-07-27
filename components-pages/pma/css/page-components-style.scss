@@ -493,10 +493,6 @@ div {
 
 	overflow: hidden;
 
-	li {
-		outline: 10px solid #f00;
-	};
-
 	&-header {
 		color: $black;
 		display: block;
@@ -580,7 +576,15 @@ div {
 	};
 
 	@media (min-width: $tablet) {
+		&-box {
+			display: block;
+  			float: left;
+			width: 43%;
+		};
 
+		&-left-30 {
+			margin-left: 30px;
+		};
 	};
 
   	@media (min-width: $desktop) {
@@ -604,7 +608,7 @@ div {
 			width: 43%;
 		};
 
-		&-left-30{
+		&-left-30 {
 			margin-left: 30px;
 		};
 

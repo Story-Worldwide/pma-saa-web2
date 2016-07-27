@@ -335,8 +335,6 @@ div {
 /* ----++++---- Tomobstone Footer Component ----++++---- */
 .tombstone-footer-component {
   overflow: hidden; }
-  .tombstone-footer-component li {
-    outline: 10px solid #f00; }
   .tombstone-footer-component-header {
     color: #000;
     display: block;
@@ -399,6 +397,13 @@ div {
     width: 65px; }
   .tombstone-footer-component-left-30 {
     margin-left: 0; }
+  @media (min-width: 670px) {
+    .tombstone-footer-component-box {
+      display: block;
+      float: left;
+      width: 43%; }
+    .tombstone-footer-component-left-30 {
+      margin-left: 30px; } }
   @media (min-width: 860px) {
     .tombstone-footer-component-header {
       font-size: 36px;
