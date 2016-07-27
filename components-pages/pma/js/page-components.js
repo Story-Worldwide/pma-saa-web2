@@ -81,7 +81,8 @@ $(function(){
     );*/
     
   };
-  
+  // run carousel
+  carousel();
 
   ///// LOAD MORE FOR CURATED-VIEWS *** (if desktop size)
   $('#load-curated').click(function(e){
