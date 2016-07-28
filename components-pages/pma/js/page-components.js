@@ -1,7 +1,11 @@
 $(function(){
 
   //GLOBALS
-  var slideSpeed = 260;
+  var slideSpeed = 260,
+    speed = 500,
+    id,
+    prevButton, 
+    nextButton;
 
   ////////INCLUDES for component html files
   function include(html){
@@ -16,73 +20,66 @@ $(function(){
 
 
   ///////CAROUSEL SCRIPT
-  function carousel(){
-    // auto loop
-    var speed = 5000;
-    //var run = setInterval('rotate()', speed);
+  function carousel(id, prevButton, nextButton, thumbnailClickOn, idLarge){
 
+    console.log('slide div = ',id);
     // grab width and calculate left value
-    var item_width = $('#slides li').outerWidth();
-    var left_value = item_width * (-1);
+    var item_width = $(id + ' li').outerWidth(),
+      left_value = item_width * (-1),
+      thumbnailClickOn = false;
+
+    //If carousel is used as thumbnail loader
+    if( thumbnailClickOn == true ){
+
+    };
 
     // move last item before first item
     // in case user clicks prev button.
-    $('#slides li:first').before($('#slides li:last'));
+    $(id + ' li:first').before($(id + ' li:last'));
 
     // set default item to correct position
-    $('#slides ul').css({'left': left_value});
+    $(id + ' ul').css({'left': left_value});
 
     // if user cliked prev button
-    $('#prev').click(function(){
+    $(prevButton).click(function(){
       // get right position
-      var left_indent = parseInt($('#slides ul').css('left')) + item_width;
+      var left_indent = parseInt($(id + ' ul').css('left')) + item_width;
       // slide the item
-      $('#slides ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+      $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
         // move last item and place as first item
-        $('#slides li:first').before($('#slides li:last'));
+        $(id + ' li:first').before($(id + ' li:last'));
         // set default item to correct position
-        $('#slides ul').css({'left': left_value});
+        $(id + ' ul').css({'left': left_value});
       });
 
-      console.log('SLIDE LEFT ',$('#slides li'));
+      console.log('SLIDE LEFT ',$(id + ' li') );
       // cancel link behavior
       return false;
 
     });
 
 
-    // if user cliked next button
-    $('#next').click(function(){
+    // Next Button
+    $(nextButton).click(function(){
       // get right position
-      var left_indent = parseInt($('#slides ul').css('left')) - item_width;
+      var left_indent = parseInt($(id + ' ul').css('left')) - item_width;
       // slide the item
-      $('#slides ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+      $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
         // move first item and place as last item
-        $('#slides li:last').after($('#slides li:first'));
+        $(id + ' li:last').after($(id + ' li:first'));
         // set default item to correct position
-        $('#slides ul').css({'left': left_value});
+        $(id + ' ul').css({'left': left_value});
       });
 
-      console.log('SLIDE RIGHT ',$('#slides li'));
+      console.log('SLIDE RIGHT ',$(id + ' li'));
       // cancel link behavior
       return false;
 
     });
-
-    /*///
-    // if mouse over pause auto rotation
-    $('#slides').hover(
-      function(){
-        clearInterval(run);
-      },
-      function(){
-        run = setInterval('rotate()',speed);
-      }
-    );*/
     
   };
-  // run carousel
-  carousel();
+  // run carousel for carousel-component
+  carousel('#slides', '#prev', '#next');
 
   ///// LOAD MORE FOR CURATED-VIEWS *** (if desktop size)
   $('#load-curated').click(function(e){
@@ -104,7 +101,7 @@ $(function(){
   $(window).resize(function(){
     if( $(window).width() <= 400 ){
        // run carousel
-       carousel();
+       //carousel();
     };
       
   });

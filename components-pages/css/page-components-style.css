@@ -174,8 +174,6 @@ div {
 /* ----++++---- Curated Veiw / Carousel Component ----++++---- */
 .carousel-component {
   overflow: hidden; }
-  .carousel-component li {
-    outline: 10px solid #f00; }
   .carousel-component-header {
     color: #f74b35;
     display: block;
@@ -232,7 +230,6 @@ div {
     top: 0;
     width: 9999px; }
   .carousel-component-list li {
-    cursor: pointer;
     display: block;
     float: left;
     height: 250px;
@@ -282,6 +279,8 @@ div {
     background-size: cover; }
   .carousel-component-hide {
     display: none; }
+  .carousel-component-object-image {
+    cursor: pointer; }
   @media (min-width: 670px) {
     .carousel-component-arrow-container {
       display: none; }
