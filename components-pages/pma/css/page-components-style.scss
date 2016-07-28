@@ -8,7 +8,7 @@ $desktop: 860px;
 
 $black: #000;
 $white: #fff;
-$red-orange: #f74b35;
+$redOrange: #f74b35;
 $grey: #373a3c;
 $greyTwo: #e9e9e9;
 $lightGrey: #f1f1f1;
@@ -133,7 +133,7 @@ div {
 	overflow: hidden;
 
 	&-header {
-		color: $red-orange;
+		color: $redOrange;
 		display: block;
 	    float: left;
 		font-size: 11px;
@@ -268,7 +268,7 @@ div {
 	overflow: hidden;
 
 	&-header {
-		color: $red-orange;
+		color: $redOrange;
 		display: block;
 	    float: left;
 		font-size: 11px;
@@ -487,7 +487,7 @@ div {
 
 
 
-/* ----++++---- Tomobstone Footer Component ----++++---- */
+/* ----++++---- Tombstone Footer Component ----++++---- */
 .tombstone-footer-component{
 
 	overflow: hidden;
@@ -621,12 +621,14 @@ div {
 .object-tombstone-top {
 
 	overflow: hidden;
+	width: 100%;
+	padding: 0 0 20px 0;
 
 	&-header {
 		color: $black;
 		display: block;
 	    float: left;
-		font-size: 30px;
+		font-size: 16px;
 		height: auto;
 		line-height: 35px;
 		margin: 0;
@@ -635,7 +637,7 @@ div {
 	};
 
 	&-sub-title {
-		color: $grey;
+		color: $redOrange;
 		display: inline-block;
 		font-size: 16px;
 		line-height: 16px;
@@ -644,86 +646,16 @@ div {
 		width: auto;
 	};
 
-	&-text-box {
-		color: $grey;
-		display: inline-block;
-		font-size: 13px;
-		height: auto;
-		line-height: 17px;
-		margin: 20px 0 0 20px;
-	    position: absolute;
-	    width: 66%;		
-	};
-
-	&-text {
-		margin: 0;		
-	};
-
-
 	&-block {
+		background-color: $greyTwo;
 		display: inline-block;
 		height: auto;
 		margin: 0 0 15px 0;
-		padding: 0;
+		padding: 0 0 0 10px;
 		width: 100%;
 	};
-
-	&-box {
-		border: 1px solid $greyTwo;
-		margin: 0 0 30px 0;
-		padding: 10px;
-	};
-
-	&-container {
-		background-color: $white;
-		display: block;
-		float: left;
-		height: 60px;
-		padding-bottom: 20px;
-		width: 100%;
-	};
-
-	@media (min-width: $tablet) {
-		&-box {
-			display: block;
-  			float: left;
-			width: 43%;
-		};
-
-		&-left-30 {
-			margin-left: 30px;
-		};
-	};
-
-  	@media (min-width: $desktop) {
-
-  		&-header {
-			font-size: 36px;
-			line-height: 40px;
-		    width: auto;
-		};
-
-  		&-top {
-  			display: block;
-  			float: left;
-			max-width: $desktop;
-			width: 100%
-		};
-
-		&-box {
-			display: block;
-  			float: left;
-			width: 43%;
-		};
-
-		&-left-30 {
-			margin-left: 30px;
-		};
-
-  	};
 
 };
-
 
 
 /*IMAGE CAPTION STYLE*/

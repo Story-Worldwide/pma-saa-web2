@@ -6,7 +6,7 @@ body {
   font-family: 'AvenirLTPro35Light'; }
 
 div {
-  /*outline: 1px solid #f00;*/ }
+  outline: 1px solid #f00; }
 
 .clear {
   clear: both; }
@@ -331,7 +331,7 @@ div {
     .carousel-component-hide {
       display: block; } }
 
-/* ----++++---- Tomobstone Footer Component ----++++---- */
+/* ----++++---- Tombstone Footer Component ----++++---- */
 .tombstone-footer-component {
   overflow: hidden; }
   .tombstone-footer-component-header {
@@ -419,6 +419,37 @@ div {
       width: 43%; }
     .tombstone-footer-component-left-30 {
       margin-left: 30px; } }
+
+/* ----++++---- Object tombstone top ----++++---- */
+.object-tombstone-top {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 20px 0; }
+  .object-tombstone-top-header {
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 16px;
+    height: auto;
+    line-height: 35px;
+    margin: 0;
+    text-align: left;
+    width: auto; }
+  .object-tombstone-top-sub-title {
+    color: #f74b35;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    position: relative;
+    width: auto; }
+  .object-tombstone-top-block {
+    background-color: #e9e9e9;
+    display: inline-block;
+    height: auto;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 10px;
+    width: 100%; }
 
 /*IMAGE CAPTION STYLE*/
 .absolute {
