@@ -5,7 +5,9 @@ $(function(){
     speed = 500,
     id,
     prevButton, 
-    nextButton;
+    nextButton,
+    thumbnailClickOn =  Boolean,
+    imgArr = [];
 
   ////////INCLUDES for component html files
   function include(html){
@@ -20,18 +22,34 @@ $(function(){
 
 
   ///////CAROUSEL SCRIPT
-  function carousel(id, prevButton, nextButton, thumbnailClickOn, idLarge){
+  function carousel(id, prevButton, nextButton, thumbnailClickOn, idLarge, numSlides){
 
-    console.log('slide div = ',id);
     // grab width and calculate left value
     var item_width = $(id + ' li').outerWidth(),
       left_value = item_width * (-1),
-      thumbnailClickOn = false;
+      firstImage = $(id + ' li:first').css('background-image');
 
+    console.log('slide div = ',id);
+    console.log('idLarge = ',$(idLarge).css('background-image'));
+    console.log('firstImage = ',firstImage);
+    
     //If carousel is used as thumbnail loader
     if( thumbnailClickOn == true ){
+        // set main image as first image
+        $(idLarge).css('background-image',firstImage);
 
+        // thumbnail click switch to that image
+        $('li').each(function(){
+          $(this).click(function(){
+            $(idLarge).css('background-image',$(this).css('background-image'));
+             console.log('idLarge = ',$(idLarge).css('background-image'));
+             //console.log("li pressed = ",$(this));
+          });
+        });
+    }else{
+      console.log('thumbnailClickOn = ',thumbnailClickOn);
     };
+    console.log('thumbnailClickOn = ',thumbnailClickOn);
 
     // move last item before first item
     // in case user clicks prev button.
@@ -43,7 +61,7 @@ $(function(){
     // if user cliked prev button
     $(prevButton).click(function(){
       // get right position
-      var left_indent = parseInt($(id + ' ul').css('left')) + item_width;
+      var left_indent = parseInt($(id + ' ul').css('left')) + (item_width * numSlides);
       // slide the item
       $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
         // move last item and place as first item
@@ -62,7 +80,7 @@ $(function(){
     // Next Button
     $(nextButton).click(function(){
       // get right position
-      var left_indent = parseInt($(id + ' ul').css('left')) - item_width;
+      var left_indent = parseInt($(id + ' ul').css('left')) - (item_width * numSlides);
       // slide the item
       $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
         // move first item and place as last item
@@ -78,10 +96,15 @@ $(function(){
     });
     
   };
-  // run carousel for carousel-component
-  carousel('#slides', '#prev', '#next');
+  ///// RUN CAROUSELS
+  // run carousel for carousel-component landing page
+  //carousel('#slides', '#prev', '#next');
+  // run carousel for carousel-component object page
+  carousel('#slides-obj', '#prevObj', '#nextObj', true, '#large-image', 5);
 
-  ///// LOAD MORE FOR CURATED-VIEWS *** (if desktop size)
+
+
+  ///// LOAD MORE BUTTON FOR CURATED-VIEWS *** (if desktop size)
   $('#load-curated').click(function(e){
       e.preventDefault();
       var liHeight = 0;
