@@ -22,7 +22,7 @@ $(function(){
 
 
   ///////CAROUSEL SCRIPT
-  function carousel(id, prevButton, nextButton, thumbnailClickOn, idLarge, numSlides){
+  function carousel(id, prevButton, nextButton, thumbnailClickOn, numSlides, idLarge){
 
     // grab width and calculate left value
     var item_width = $(id + ' li').outerWidth(),
@@ -30,13 +30,13 @@ $(function(){
       firstImage = $(id + ' li:first').css('background-image');
 
     console.log('slide div = ',id);
-    console.log('idLarge = ',$(idLarge).css('background-image'));
     console.log('firstImage = ',firstImage);
     
     //If carousel is used as thumbnail loader
     if( thumbnailClickOn == true ){
         // set main image as first image
         $(idLarge).css('background-image',firstImage);
+        console.log('idLarge = ',$(idLarge).css('background-image'));
 
         // thumbnail click switch to that image
         $('li').each(function(){
@@ -98,9 +98,9 @@ $(function(){
   };
   ///// RUN CAROUSELS
   // run carousel for carousel-component landing page
-  //carousel('#slides', '#prev', '#next');
+  carousel('#slides', '#prev', '#next', false, 1);
   // run carousel for carousel-component object page
-  carousel('#slides-obj', '#prevObj', '#nextObj', true, '#large-image', 5);
+  carousel('#slides-obj', '#prevObj', '#nextObj', true, 5, '#large-image');
 
 
 
