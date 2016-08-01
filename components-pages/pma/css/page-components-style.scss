@@ -1045,6 +1045,95 @@ div {
 };
 
 
+/* ----++++---- Object Cultural Context ----++++---- */
+.object-cultural-context {
+
+	overflow: hidden;
+	width: 100%;
+	padding: 0 0 20px 0;
+
+	&-header {
+		color: $black;
+		display: block;
+	    float: left;
+		font-size: 30px;
+		/*font-weight: 600;*/
+		height: auto;
+		margin: 0 0 0 0;
+		text-align: left;
+	    width: 100%;
+	};
+
+	&-text {
+		color: $black;
+		display: inline-block;
+		font-size: 16px;
+		line-height: 16px;
+		margin: 0;
+		padding-right: 5px;
+		position: relative;
+		width: 100%;
+	};
+
+	&-block {
+		background-color: $white;
+		display: inline-block;
+		height: auto;
+		width: 100%;
+	};
+
+	@media (min-width: $desktop) {
+		max-width: $desktop;
+	};
+
+};
+
+
+/* ----++++---- Object Video Component ----++++---- */
+.object-video-component {
+
+	overflow: hidden;
+	width: 100%;
+	padding: 0 0 20px 0;
+
+	&-header {
+		color: $black;
+		display: block;
+	    float: left;
+		font-size: 30px;
+		/*font-weight: 600;*/
+		height: auto;
+		margin: 0 0 0 0;
+		text-align: left;
+	    width: 100%;
+	};
+
+	&-text {
+		color: $black;
+		display: inline-block;
+		font-size: 16px;
+		line-height: 16px;
+		margin: 0;
+		padding-right: 5px;
+		position: relative;
+		width: 100%;
+	};
+
+	&-block {
+		background-color: $white;
+		display: inline-block;
+		height: auto;
+		width: 100%;
+	};
+
+	@media (min-width: $desktop) {
+		max-width: $desktop;
+	};
+
+};
+
+
+
 /*IMAGE CAPTION STYLE*/
 .absolute {
 	bottom: -50px !important;
