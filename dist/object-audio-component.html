@@ -1,0 +1,64 @@
+<link rel="stylesheet" type="text/css" href="css/page-components-style.css">
+
+<div class="object-audio-component">
+
+	<div class="object-audio-component-block">
+	
+	<!--TEXT-->
+		<div class="object-audio-component-top">
+			<div class="object-audio-component-header">
+				<div class="object-audio-component-header-text" data-index="">Audio interview Title</div>
+			</div>
+ 
+			<div class="object-audio-component-text">
+				<p data-index="">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			</div>
+		</div>
+
+		<!--AUDIO-->
+		<div class="object-audio-component-bottom">
+
+			<!--audio file-->
+			<audio preload="auto">
+			  <source src="../pma/audio/Classical Indian Music.mp3" type="audio/mpeg" />
+			Your browser does not support the audio element.
+			</audio>
+
+			<!--play button-->
+			<div class="object-audio-component-play-button" id="playButton">
+				<div class="object-audio-component-arrow-right"></div>
+			</div>
+
+			<div class="object-audio-component-play-right">
+				<!--text-->
+				<div class="object-audio-component-text-box">
+					<div class="object-audio-component-inner-header" data-index="">
+						Vasaudhara Mandala
+					</div>
+					<div class="object-audio-component-inner-text object-audio-component-small" data-index="">
+						Nepalise
+					</div>
+				</div>
+
+				<!--dragger-->
+				<div class="object-audio-component-side">
+					<div class="object-audio-component-timer">
+						<div class="object-audio-component-pbar" id="progressBar"></div>
+					</div>
+					<!--time-->
+					<div class="object-audio-component-time-text">
+						<span id="currTime_box">00:00</span>
+						<span class="playButtonOrange" id="currTime_box">/</span>
+						<span id="progress_box">00:00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<!--javascript-->
+<script src="pma/js/jquery-1.9.0.js"></script>
+<script src="pma/js/page-components.js"></script>

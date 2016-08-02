@@ -1,5 +1,6 @@
 /*@import "../pma/css/avenir";*/
 /* ----++++---- Variables ----++++---- */
+/*rule grey*/
 /*MAIN STYLES */
 body {
   box-sizing: border-box;
@@ -10,6 +11,9 @@ div {
 
 .clear {
   clear: both; }
+
+.playButtonOrange {
+  color: #EB3800; }
 
 /*MAIN STYLES END*/
 /* ----++++---- Landing Page Top Image Component ----++++---- */
@@ -832,6 +836,145 @@ div {
         display: block;
         float: left;
         width: 50%; } }
+
+/* ----++++---- Object Audio Component ----++++---- */
+/*Hides native controls in Regular and fullScreen mode - 
+https://css-tricks.com/custom-controls-in-html5-video-full-screen/ */
+audio::-webkit-media-controls-enclosure {
+  display: none !important; }
+
+.object-audio-component {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 20px 0; }
+  .object-audio-component-header {
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 30px;
+    height: auto;
+    margin: 0 0 0 0;
+    text-align: left;
+    width: 100%; }
+  .object-audio-component-header-text {
+    width: 72%; }
+  .object-audio-component-text {
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 10px 0;
+    padding-right: 5px;
+    position: relative;
+    width: 100%; }
+  .object-audio-component-block {
+    background-color: #fff;
+    display: inline-block;
+    height: auto;
+    width: 100%; }
+  .object-audio-component-bottom {
+    border: 1px solid #e9e9e9;
+    display: block;
+    float: left;
+    padding: 0;
+    width: 99%; }
+  .object-audio-component-play-button {
+    background-color: #EB3800;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 60px; }
+  .object-audio-component-arrow-right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid #fff;
+    height: 0;
+    margin: 20px 0 0 22px;
+    width: 0; }
+  .object-audio-component-text-box {
+    color: #000;
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    text-align: left;
+    width: 80px; }
+  .object-audio-component-inner-header {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 0 0 0; }
+  .object-audio-component-inner-text {
+    font-size: 12px;
+    padding: 2px 0 0 0; }
+  .object-audio-component-play-right {
+    background-color: #fff;
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 84%; }
+  .object-audio-component-side {
+    display: block;
+    float: left;
+    height: 60px;
+    width: 70%; }
+  .object-audio-component-pbar {
+    background-color: #EB3800;
+    display: block;
+    float: left;
+    height: 5px;
+    width: 0;
+    outline: 1px solid #f00; }
+  .object-audio-component-timer {
+    background-color: #e9e9e9;
+    border-radius: 2px;
+    display: block;
+    float: left;
+    height: 5px;
+    margin: 20px 0 0 30px;
+    overflow: hidden;
+    position: relative;
+    top: 8px;
+    width: 80%; }
+  .object-audio-component-time-text {
+    display: block;
+    float: right;
+    font-size: 10px;
+    height: auto;
+    right: 18px;
+    top: 18px;
+    position: relative; }
+  @media (min-width: 670px) {
+    .object-audio-component-header-text {
+      width: 82%; }
+    .object-audio-component-timer {
+      width: 100%; }
+    .object-audio-component-side {
+      width: 75%; }
+    .object-audio-component-play-right {
+      width: 90%; }
+    .object-audio-component-time-text {
+      right: -30px; } }
+  @media (min-width: 860px) {
+    .object-audio-component {
+      max-width: 860px; }
+      .object-audio-component-header-text {
+        width: 72%; }
+      .object-audio-component-timer {
+        width: 100%; }
+      .object-audio-component-side {
+        width: 80%; }
+      .object-audio-component-play-right {
+        width: 92%; }
+      .object-audio-component-time-text {
+        right: -30px; } }
 
 /*IMAGE CAPTION STYLE*/
 .absolute {
