@@ -181,9 +181,11 @@ $(function(){
           console.log( trackVar, ' ',trackVar.duration );
       });
 
-      //PROGRESS BAR GET idEO PROGRESSION CODE - http://www.developphp.com/ideo/JavaScript/ideo-Duration-and-Current-Play-Time-Programming-Tutorial
+      //Track Audio currentime/length - Move Progess Bar
       function trackAudio(){
-          trackVar.addEventListener('timeupdate', seekTimerUpdate(currTimeText, proGressTime, pBar), false);
+          trackVar.ontimeupdate = function(){
+            seekTimerUpdate(currTimeText, proGressTime, pBar);
+          };
       };
       
       function seekTimerUpdate(currTimeText, proGressTime, pBar){
@@ -203,10 +205,8 @@ $(function(){
 
 
         $(pBar).width(time + '%');
-        /*curtime = parseInt(trackVar.currentTime, 10);
-        $(pBar).attr("value", curtime);*/
 
-        console.log('Progress Bar width ',$(pBar).width(), ' ', $(pBar));
+        console.log('Progress Bar width ',$(pBar).width());
         console.log('currTimeText ',(curmins+":"+cursecs), ' proGressTime ', (durmins+":"+dursecs));
 
       }
