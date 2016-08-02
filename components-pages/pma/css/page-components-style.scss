@@ -1420,6 +1420,115 @@ audio::-webkit-media-controls-enclosure{
 
 
 
+/* ----++++---- Object Details Header ----++++---- */
+.object-details {
+
+	border-bottom: 1px solid $grey;
+	overflow: hidden;
+	padding: 0 0 20px 0;
+	width: 100%;
+
+	p {
+		line-height: 20px;
+	};
+
+	&-title {
+		color: $black;
+		display: block;
+	    float: left;
+		font-size: 30px;
+		height: auto;
+		margin: 0;
+		padding: 0 0 10px 0;
+		text-align: left;
+		font-weight: 900;
+	    width: 78%;
+	};
+
+	&-sub-header {
+		color: $black;
+		display: block;
+	    float: left;
+		font-size: 16px;
+		font-weight: 600;
+		height: auto;
+		margin: 0;
+		text-align: left;
+	    width: 100%;
+	};
+
+	&-font-weight-normal {
+		font-weight: normal;
+	};
+
+	&-sub-title {
+		color: $redOrange;
+		display: inline-block;
+		font-size: 16px;
+		margin: 0;
+		position: relative;
+		width: auto;
+	};
+
+	&-block {
+		background-color: $white;
+		display: inline-block;
+		height: auto;
+		margin: 0 0 15px 0;
+		padding: 0 0 0 10px;
+		width: 100%;
+	};
+
+	&-tag {
+		background-color: $black;
+		border-radius: 5px;
+		color: $white;
+		display: inline-block;
+		font-size: 12px;
+	    font-weight: 200;
+	    height: 16px;
+	    margin: 0 0 0 24px; 
+	    padding: 2px 10px 0 10px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    width: 42px;
+	};
+
+	&-grey {
+		color: $grey;
+	};
+
+	&-map {
+		background: url('../pma/img/temp/map.jpg') no-repeat;
+		background-size: cover;
+		border: 1px solid $greyTwo;
+		display: block;
+	    height: 72px;
+	    margin: 0 0 20px 0;
+	    width: 200px;
+	};
+
+	@media (min-width: $tablet) {
+		&-title {
+			width: 100%;
+		};
+
+	};
+
+  	@media (min-width: $desktop) {
+
+  		max-width: $desktop;
+
+  		&-title {
+			width: 100%;
+		};	
+
+  	};
+
+};
+
+
+
 /*IMAGE CAPTION STYLE*/
 .absolute {
 	bottom: -50px !important;
