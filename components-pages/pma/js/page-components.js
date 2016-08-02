@@ -7,7 +7,10 @@ $(function(){
     prevButton, 
     nextButton,
     thumbnailClickOn =  Boolean,
+    imageNum =  Boolean,
     audioOn = Boolean,
+    totalSlides,
+    currentSlide,
     imgArr = [];
 
   ////////INCLUDES for component html files
@@ -23,7 +26,7 @@ $(function(){
 
 
   ///////CAROUSEL SCRIPT
-  function carousel(id, prevButton, nextButton, thumbnailClickOn, numSlides, idLarge){
+  function carousel(id, prevButton, nextButton, thumbnailClickOn, numSlides, imageNum, idLarge){
 
     // grab width and calculate left value
     var item_width = $(id + ' li').outerWidth(),
@@ -33,7 +36,7 @@ $(function(){
     console.log('slide div = ',id);
     console.log('firstImage = ',firstImage);
     
-    //If carousel is used as thumbnail loader
+    //THUMBNAIL LOADER: If carousel is used as thumbnail loader
     if( thumbnailClickOn == true ){
         // set main image as first image
         $(idLarge).css('background-image',firstImage);
@@ -50,7 +53,16 @@ $(function(){
     }else{
       console.log('thumbnailClickOn = ',thumbnailClickOn);
     };
-    console.log('thumbnailClickOn = ',thumbnailClickOn);
+
+
+    // IMAGE NUMBER: If imageNum = true show image numbers and count
+    if( imageNum == true ){
+        var totalSlides = $('li').length,
+            currentSlide = 1;
+        $('#image-num').text(currentSlide + '/' + totalSlides);
+        console.log('id = ',id,' Number of Images = ',$('li').length);
+    };
+
 
     // move last item before first item
     // in case user clicks prev button.
@@ -61,38 +73,57 @@ $(function(){
 
     // if user cliked prev button
     $(prevButton).click(function(){
-      // get right position
-      var left_indent = parseInt($(id + ' ul').css('left')) + (item_width * numSlides);
-      // slide the item
-      $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
-        // move last item and place as first item
-        $(id + ' li:first').before($(id + ' li:last'));
-        // set default item to correct position
-        $(id + ' ul').css({'left': left_value});
-      });
+        // get right position
+        var left_indent = parseInt($(id + ' ul').css('left')) + (item_width * numSlides);
+        // slide the item
+        $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+          // move last item and place as first item
+          $(id + ' li:first').before($(id + ' li:last'));
+          // set default item to correct position
+          $(id + ' ul').css({'left': left_value});
+        });
 
-      console.log('SLIDE LEFT ',$(id + ' li') );
-      // cancel link behavior
-      return false;
+        // If imageNum = true 
+        if( imageNum == true ){
+            currentSlide--;
+            $('#image-num').text(currentSlide + '/' + totalSlides);
+            if( currentSlide == 0 ){
+                currentSlide = totalSlides;
+                $('#image-num').text(currentSlide + '/' + totalSlides);
+            };
+        };
+
+        console.log('SLIDE LEFT ',$(id + ' li') );
+        // cancel link behavior
+        return false;
 
     });
 
 
     // Next Button
     $(nextButton).click(function(){
-      // get right position
-      var left_indent = parseInt($(id + ' ul').css('left')) - (item_width * numSlides);
-      // slide the item
-      $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
-        // move first item and place as last item
-        $(id + ' li:last').after($(id + ' li:first'));
-        // set default item to correct position
-        $(id + ' ul').css({'left': left_value});
-      });
+        // get right position
+        var left_indent = parseInt($(id + ' ul').css('left')) - (item_width * numSlides);
+        // slide the item
+        $(id + ' ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+          // move first item and place as last item
+          $(id + ' li:last').after($(id + ' li:first'));
+          // set default item to correct position
+          $(id + ' ul').css({'left': left_value});
+        });
 
-      console.log('SLIDE RIGHT ',$(id + ' li'));
-      // cancel link behavior
-      return false;
+        // If imageNum = true 
+        if( imageNum == true ){
+            currentSlide++;
+            $('#image-num').text(currentSlide + '/' + totalSlides);
+            if( currentSlide >= totalSlides ){
+                currentSlide = 0;
+            };
+        };
+
+        console.log('SLIDE RIGHT ',$(id + ' li'));
+        // cancel link behavior
+        return false;
 
     });
     
@@ -101,8 +132,9 @@ $(function(){
   // run carousel for carousel-component landing page
   carousel('#slides', '#prev', '#next', false, 1);
   // run carousel for carousel-component object page
-  carousel('#slides-obj', '#prevObj', '#nextObj', true, 5, '#large-image');
-
+  carousel('#slides-obj', '#prevObj', '#nextObj', true, 5, false, '#large-image');
+  // run carousel for object-overview-carousel
+  carousel('#object-slides', '#prev', '#next', false, 1, true);
 
 
   ///// LOAD MORE BUTTON FOR CURATED-VIEWS *** (if desktop size)
@@ -177,7 +209,7 @@ $(function(){
 
       }
   };
-  // rRun audio
+  // Run Audio
   audioPlayer(audio1, '#playButton', '#currTime_box','#progress_box','#progressBar');
 
   /*audio1.play(); - This will play the music.
