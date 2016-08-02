@@ -362,7 +362,7 @@ div {
 
 	&-arrow-container {
 		background-color: $white;
-		border-bottom: 1px solid $grey;
+		border-bottom: 1px solid $greyTwo;
 		display: block;
 		float: left;
 		height: 60px;
@@ -931,7 +931,7 @@ div {
 	};
 
 	&-bttns-block {
-		border-bottom: 1px solid $grey;
+		border-bottom: 1px solid $greyTwo;
 		display: inline-block;
 		height: 50px;
 		margin: 0 0 30px 0;
@@ -1423,7 +1423,7 @@ audio::-webkit-media-controls-enclosure{
 /* ----++++---- Object Details Header ----++++---- */
 .object-details {
 
-	border-bottom: 1px solid $grey;
+	border-bottom: 1px solid $greyTwo;
 	overflow: hidden;
 	padding: 0 0 20px 0;
 	width: 100%;
@@ -1576,7 +1576,7 @@ figure:hover figcaption {
 /*LOAD MORE BUTTON*/
 .load-more-container {
 	background-color: $white;
-	border-bottom: 1px solid $grey;
+	border-bottom: 1px solid $greyTwo;
 	cursor: pointer;
 	display: block;
 	float: left;
