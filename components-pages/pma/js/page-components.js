@@ -135,6 +135,8 @@ $(function(){
   carousel('#slides-obj', '#prevObj', '#nextObj', true, 5, false, '#large-image');
   // run carousel for object-overview-carousel
   carousel('#object-slides', '#prev', '#next', false, 1, true);
+  // run carousel for object-related-content-carousel
+  carousel('#object-related-content-slides', '#prev', '#next', false, 1, true);
 
 
   ///// LOAD MORE BUTTON FOR CURATED-VIEWS *** (if desktop size)
