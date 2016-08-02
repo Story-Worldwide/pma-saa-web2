@@ -172,10 +172,14 @@ $(function(){
       $(id).click(function(){
           if(trackVar.paused){
               trackVar.play();
+              $('#playOn').addClass('object-audio-component-hide');
+              $('#pauseOn, #pauseOnRight').removeClass('object-audio-component-hide');
               trackAudio();
               console.log('Track ',trackVar, ' on ', '  audioOn = ', audioOn);
             }else{
               trackVar.pause();
+              $('#playOn').removeClass('object-audio-component-hide');
+              $('#pauseOn, #pauseOnRight').addClass('object-audio-component-hide');
               console.log('Track ',trackVar, ' mute', '  audioOn = ', audioOn);
           };
           console.log( trackVar, ' ',trackVar.duration );

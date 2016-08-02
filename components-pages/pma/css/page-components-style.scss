@@ -1234,6 +1234,10 @@ audio::-webkit-media-controls-enclosure{
 	width: 100%;
 	padding: 0 0 20px 0;
 
+	&-hide {
+		display: none !important;
+	};
+
 	&-header {
 		color: $black;
 		display: block;
@@ -1287,13 +1291,34 @@ audio::-webkit-media-controls-enclosure{
 		width: 60px;	
 	};
 
-	&-arrow-right {
+	&-play {
 		border-top: 10px solid transparent;
 		border-bottom: 10px solid transparent;
 		border-left: 16px solid $white;
+		display: block;
+    	float: left;
 		height: 0;
 		margin: 20px 0 0 22px;
-		width: 0; 
+		width: 0;
+		//display: none; 
+	};
+
+	&-pause-left {
+		background: $white;
+		display: block;
+		float: left;
+		height: 20px;
+		margin: 20px 0 0 22px;
+		width: 5px; 
+	};
+
+	&-pause-right {
+		background: $white;
+		display: block;
+		float: left;
+		height: 20px;
+		margin: 20px 0 0 4px;
+		width: 5px; 
 	};
 
 	&-text-box {

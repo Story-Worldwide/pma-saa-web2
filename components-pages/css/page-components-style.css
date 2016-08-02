@@ -853,6 +853,8 @@ audio::-webkit-media-controls-enclosure {
   overflow: hidden;
   width: 100%;
   padding: 0 0 20px 0; }
+  .object-audio-component-hide {
+    display: none !important; }
   .object-audio-component-header {
     color: #000;
     display: block;
@@ -894,13 +896,29 @@ audio::-webkit-media-controls-enclosure {
     padding: 0px;
     position: relative;
     width: 60px; }
-  .object-audio-component-arrow-right {
+  .object-audio-component-play {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 16px solid #fff;
+    display: block;
+    float: left;
     height: 0;
     margin: 20px 0 0 22px;
     width: 0; }
+  .object-audio-component-pause-left {
+    background: #fff;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 20px 0 0 22px;
+    width: 5px; }
+  .object-audio-component-pause-right {
+    background: #fff;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 20px 0 0 4px;
+    width: 5px; }
   .object-audio-component-text-box {
     color: #000;
     display: block;
