@@ -756,7 +756,13 @@ div {
 .object-video-component {
   overflow: hidden;
   width: 100%;
-  padding: 0 0 20px 0; }
+  padding: 0 0 20px 0;
+  /* Resize videos proportionally */
+  /* Resize videos proportionally End*/
+  /*iframe {
+		height: 272;
+		width: 100%;
+	};*/ }
   .object-video-component-header {
     color: #000;
     display: block;
@@ -767,12 +773,14 @@ div {
     margin: 0 0 0 0;
     text-align: left;
     width: 100%; }
+  .object-video-component-header-text {
+    width: 72%; }
   .object-video-component-text {
     color: #000;
     display: inline-block;
     font-size: 16px;
     line-height: 16px;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding-right: 5px;
     position: relative;
     width: 100%; }
@@ -781,9 +789,49 @@ div {
     display: inline-block;
     height: auto;
     width: 100%; }
+  .object-video-component-vid {
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden; }
+  .object-video-componentvid.widescreen {
+    padding-bottom: 56.34%; }
+  .object-video-component-vid.vimeo {
+    padding-top: 0; }
+  .object-video-component-vid embed, .object-video-component-vid iframe, .object-video-component-vid object, .object-video-component-vid video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  @media (min-width: 670px) {
+    .object-video-component-header-text {
+      width: 82%; }
+    .object-video-component-right {
+      display: block;
+      float: right;
+      padding: 0 0 0 5px;
+      width: 46%; }
+    .object-video-component-left {
+      display: block;
+      float: left;
+      width: 50%; } }
   @media (min-width: 860px) {
     .object-video-component {
-      max-width: 860px; } }
+      max-width: 860px; }
+      .object-video-component-header-text {
+        width: 72%; }
+      .object-video-component-right {
+        display: block;
+        float: right;
+        padding: 0 0 0 5px;
+        width: 46%; }
+      .object-video-component-left {
+        display: block;
+        float: left;
+        width: 50%; } }
 
 /*IMAGE CAPTION STYLE*/
 .absolute {

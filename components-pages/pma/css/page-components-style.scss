@@ -1108,12 +1108,16 @@ div {
 	    width: 100%;
 	};
 
+	&-header-text {
+		width: 72%;
+	};
+
 	&-text {
 		color: $black;
 		display: inline-block;
 		font-size: 16px;
 		line-height: 16px;
-		margin: 0;
+		margin: 0 0 10px 0;
 		padding-right: 5px;
 		position: relative;
 		width: 100%;
@@ -1126,8 +1130,80 @@ div {
 		width: 100%;
 	};
 
+	/* Resize videos proportionally */
+	&-vid {
+	  height: 0;
+	  padding-top: 25px;
+	  padding-bottom: 67.5%;
+	  margin-bottom: 10px;
+	  position: relative;
+	  overflow: hidden;
+	};
+
+	&vid.widescreen {
+	  padding-bottom: 56.34%;
+	};
+
+	&-vid.vimeo {
+	  padding-top: 0;
+	};
+
+	&-vid embed, &-vid iframe, &-vid object, &-vid video {
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	};
+
+	/* Resize videos proportionally End*/
+
+	/*iframe {
+		height: 272;
+		width: 100%;
+	};*/
+
+	@media (min-width: $tablet) {
+
+		&-header-text {
+			width: 82%;
+		};
+
+		&-right {
+			display: block;
+			float: right;
+			padding: 0 0 0 5px;
+			width: 46%;
+		};
+
+		&-left {
+			display: block;
+			float: left;
+			width: 50%;
+		};
+	};
+
 	@media (min-width: $desktop) {
+
 		max-width: $desktop;
+
+		&-header-text {
+			width: 72%;
+		};
+
+		&-right {
+			display: block;
+			float: right;
+			padding: 0 0 0 5px;
+			width: 46%;
+		};
+
+		&-left {
+			display: block;
+			float: left;
+			width: 50%;
+		};
+
 	};
 
 };
