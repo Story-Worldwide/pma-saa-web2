@@ -4,7 +4,7 @@
    ========================================================================== */
 
 body{
-font-family: 'Avenir LT W01_55 Roman1475520','AvenirLTPro55Roman','Arial', 'Helvetica', sans-serif;
+font-family: 'AvenirLTPro55Roman','Arial', 'Helvetica', sans-serif;
 background: #FFF /* url("../img/body-bg.png") repeat */ scroll 0px 0px;
 font-size:15px;
  color:#292929;
@@ -13,7 +13,7 @@ font-size:15px;
 .homeHeader {
 	border-top:solid 2px #000000;
 	color:#000000;
-     font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
+     font-family: 'AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: normal;
@@ -90,14 +90,14 @@ vbar .btn-navbar {
 
 
 body a {
-font-family: 'Avenir LT W01_65 Medium1475532','AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif;
+font-family: 'AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif;
  color: #e83a17;
   text-decoration: none;
 cursor: pointer;
 }
 
 body a:link {
- font-family: 'Avenir LT W01_65 Medium1475532','AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif;
+ font-family: 'AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif;
  color: #e83a17;
   text-decoration: none;
 cursor: pointer;
@@ -532,7 +532,7 @@ height: 100px;
 }
 
 h2 {
-font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
+font-family: 'AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
     font-size: 18px;
     line-height:20px;
 
@@ -543,7 +543,7 @@ font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Hel
 }
 
 h1 {
-  font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
     font-size: 20px;
     line-height:22px;
     font-weight: normal;
@@ -797,7 +797,7 @@ margin-bottom:-4px;
 
 
 .descript_Title {
-    font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif !important;
+    font-family: 'AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif !important;
 
 padding-bottom:8px;
 line-height:26px;
@@ -994,7 +994,7 @@ color: #dbdbdb;
 }
 
 .section-title {
-font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif !important;
+font-family: 'AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif !important;
 	background: #eeeeee;
 	border: 1px solid #dddddd;
 	padding: 8px 15px;
@@ -1268,7 +1268,7 @@ line-height: 24px;
 /* ************ Events Pulled *************** */
 
 #calendarEvents .eventType{
- font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
+ font-family: 'AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
  font-size: 22px;
  color:#292929;
  padding-bottom:6px;
@@ -1767,7 +1767,7 @@ position:absolute;
 .vidLabel{
 padding-bottom:20px;
 text-align:left;
- font-family: 'Avenir LT W01_55 Roman1475520','AvenirLTPro55Roman', 'Arial', 'Helvetica', sans-serif !important;
+ font-family: 'AvenirLTPro55Roman', 'Arial', 'Helvetica', sans-serif !important;
 
 line-height:14px;
 	font-size: 12px;
@@ -1950,7 +1950,7 @@ bottom:12%;
 
 
 .off_Title {
-font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
+font-family: 'AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
     font-size: 18px;
     line-height:20px;
 

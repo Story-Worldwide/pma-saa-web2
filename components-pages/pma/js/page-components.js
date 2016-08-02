@@ -122,20 +122,23 @@ $(function(){
 
 
   ///// AUDIO
-  var audio1 = new Audio('../pma/audio/Classical Indian Music.mp3');
+  var audio1 = new Audio('../pma/audio/Classical Indian Music.mp3'),
+      trackVar,
+      id,
+      currTimeText,
+      proGressTime,
+      pBar;
+
     
   function audioPlayer(trackVar, id, currTimeText, proGressTime, pBar) {
-      var id,
-        trackVar,
-        currTimeText,
-        proGressTime,
-        pBar,
-        duration = trackVar.duration;
+
+      var duration = trackVar.duration;
 
       //toggle play button
       $(id).click(function(){
           if(trackVar.paused){
               trackVar.play();
+              trackAudio();
               console.log('Track ',trackVar, ' on ', '  audioOn = ', audioOn);
             }else{
               trackVar.pause();
@@ -145,7 +148,10 @@ $(function(){
       });
 
       //PROGRESS BAR GET idEO PROGRESSION CODE - http://www.developphp.com/ideo/JavaScript/ideo-Duration-and-Current-Play-Time-Programming-Tutorial
-      trackVar.addEventListener('timeupdate', seekTimerUpdate(currTimeText, proGressTime, pBar), false);
+      function trackAudio(){
+          trackVar.addEventListener('timeupdate', seekTimerUpdate(currTimeText, proGressTime, pBar), false);
+      };
+      
       function seekTimerUpdate(currTimeText, proGressTime, pBar){
         var time = trackVar.currentTime * (100/trackVar.duration),
         curmins = Math.floor(trackVar.currentTime /60),
@@ -162,9 +168,9 @@ $(function(){
         $(proGressTime).text(durmins+":"+dursecs);
 
 
-        //$(pBar).width(time + '%');
-        curtime = parseInt(trackVar.currentTime, 10);
-        $(pBar).attr("value", curtime);
+        $(pBar).width(time + '%');
+        /*curtime = parseInt(trackVar.currentTime, 10);
+        $(pBar).attr("value", curtime);*/
 
         console.log('Progress Bar width ',$(pBar).width(), ' ', $(pBar));
         console.log('currTimeText ',(curmins+":"+cursecs), ' proGressTime ', (durmins+":"+dursecs));
