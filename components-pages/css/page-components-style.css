@@ -314,10 +314,11 @@ div {
       position: relative;
       width: 100%; }
     .carousel-component-list ul {
-      left: 0;
-      list-style: none;
       font-size: 0px;
       height: 292px;
+      left: 0 !important;
+      /*fixes issue with carousel code moving uls to the left*/
+      list-style: none;
       margin: 40px 0 0 0;
       overflow: hidden;
       padding: 0;
@@ -339,7 +340,9 @@ div {
     .carousel-component-arrow-container {
       display: none; }
     .carousel-component-hide {
-      display: block; } }
+      display: block; }
+    .carousel-component-load-more-class {
+      left: 0; } }
 
 /* ----++++---- Tombstone Footer Component ----++++---- */
 .tombstone-footer-component {

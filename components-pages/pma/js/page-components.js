@@ -33,8 +33,8 @@ $(function(){
       left_value = item_width * (-1),
       firstImage = $(id + ' li:first').css('background-image');
 
-    console.log('slide div = ',id);
-    console.log('firstImage = ',firstImage);
+    //console.log('slide div = ',id);
+    //console.log('firstImage = ',firstImage);
     
     //THUMBNAIL LOADER: If carousel is used as thumbnail loader
     if( thumbnailClickOn == true ){
@@ -93,7 +93,7 @@ $(function(){
             };
         };
 
-        console.log('SLIDE LEFT ',$(id + ' li') );
+        console.log('SLIDE LEFT ');
         // cancel link behavior
         return false;
 
@@ -121,7 +121,7 @@ $(function(){
             };
         };
 
-        console.log('SLIDE RIGHT ',$(id + ' li'));
+        console.log('SLIDE RIGHT ');
         // cancel link behavior
         return false;
 
@@ -144,13 +144,13 @@ $(function(){
       e.preventDefault();
       var liHeight = 0;
       var listHeight = $('.carousel-component-list ul').height();
-      $('.carousel-component-list li').each(function(){
-            liHeight += $(this).height();
+      $('.carousel-component-list li').each(function(index){
+            liHeight += $(this).height()/2.746;
             console.log('<li> ',listHeight,' liHeight ',liHeight);
             return liHeight;
       });
       //animate height of ul to reveal all images
-      $('.carousel-component-list ul').animate({'height': liHeight/2}, 200, 'swing');
+      $('.carousel-component-list ul').animate({'height': liHeight}, 250, 'swing');//magic number = height: 1167px;
 
   }); 
 
