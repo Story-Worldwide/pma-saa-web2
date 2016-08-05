@@ -15,12 +15,12 @@ $greyThree: #ccc;/*history*/
 $lightGrey: #f1f1f1;
 $playButtonOrange: #EB3800;
 
-
 /*FONTS*/
-/*font-family: 'Avenir LT W01_35 Light1475496','AvenirLTPro35Light';
-font-family: 'Avenir LT W01_55 Roman1475520','AvenirLTPro55Roman', 'Arial', 'Helvetica', sans-serif;
-font-family: 'Avenir LT W01_65 Medium1475532','AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif;
-font-family: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;*/
+$lightFont: 'Avenir LT W01_35 Light1475496','AvenirLTPro35Light';
+$romanFont: 'Avenir LT W01_55 Roman1475520','AvenirLTPro55Roman', 'Arial', 'Helvetica', sans-serif;
+$mediumFont: 'Avenir LT W01_65 Medium1475532','AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif;
+$heavyFont: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
+
 
 /*MAIN STYLES */
 body {
@@ -509,7 +509,7 @@ div {
 	&-header {
 		color: $black;
 		display: block;
-	    float: left;
+		font-family: $heavyFont;
 		font-size: 30px;
 		height: auto;
 		line-height: 35px;
@@ -544,9 +544,10 @@ div {
 	};
 
 	&-top {
+		/*border-bottom: 1px solid #000;*/
 		display: inline-block;
 		height: auto;
-		margin: 0;
+		margin: 0 0 30px 0;
 		padding: 0;
 		width: 100%;
 	};
@@ -569,7 +570,7 @@ div {
 		background-color: $white;
 		display: block;
 		float: left;
-		height: 60px;
+		height: auto;
 		padding-bottom: 20px;
 		width: 100%;
 	};
