@@ -148,11 +148,11 @@ div {
 		color: $redOrange;
 		display: block;
 	    float: left;
+	    font-family: $avenirMedium;
 	    font-size: 11px;
-	    font-style: $avenirMedium;
 		height: 20px;
 		line-height: 17px;
-		margin: 5px 0 0 10px;
+		margin: 10px 0 0 15px;
 		text-align: left;
 		text-transform: uppercase;
 	    width: 170px;
@@ -160,20 +160,22 @@ div {
 
 	&-sub-title {
 		color: $grey;
+		font-family: $avenirRoman;
 		font-size: 20px;
 		line-height: 23px;
-		margin: 0 0 0 10px;
+		margin: 0 0 0 15px;
 		width: 180px;
 	};
 
 	&-text {
 		color: #373a3c;
-		font-size: 15px;
+		font-family: $avenirRoman;
+		font-size: 14px;
 		left: 11px;
 		line-height: 17px;
 		position: absolute;
 		top: 4px;
-		width: auto;
+		width: 260px;
 		
 	};
 

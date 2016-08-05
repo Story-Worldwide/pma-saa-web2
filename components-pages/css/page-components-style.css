@@ -91,28 +91,30 @@ div {
     color: #f74b35;
     display: block;
     float: left;
+    font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
     font-size: 11px;
-    font-style: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
     height: 20px;
     line-height: 17px;
-    margin: 5px 0 0 10px;
+    margin: 10px 0 0 15px;
     text-align: left;
     text-transform: uppercase;
     width: 170px; }
   .wall-component-sub-title {
     color: #373a3c;
+    font-family: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif !important;
     font-size: 20px;
     line-height: 23px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
     width: 180px; }
   .wall-component-text {
     color: #373a3c;
-    font-size: 15px;
+    font-family: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif !important;
+    font-size: 14px;
     left: 11px;
     line-height: 17px;
     position: absolute;
     top: 4px;
-    width: auto; }
+    width: 260px; }
   .wall-component-info-box {
     background: url("../pma/img/transparent/transparent-70.png") no-repeat;
     display: inline-block;
