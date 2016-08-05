@@ -6,8 +6,9 @@
 /*MAIN STYLES */
 body {
   box-sizing: border-box;
-  /*font-family: $avenirMedium;*/
-  font-size: 18px; }
+  font-family: "Avenir LT W01_35 Light1475496", "AvenirLTPro35Light" !important;
+  font-size: 15px;
+  line-height: 19px; }
 
 div {
   /*outline: 1px solid #f00;*/ }
@@ -185,21 +186,24 @@ div {
 
 /* ----++++---- Curated Veiw / Carousel Component ----++++---- */
 .carousel-component {
-  overflow: hidden; }
-  .carousel-component-header {
-    color: #f74b35;
-    display: block;
-    float: left;
-    font-size: 11px;
-    height: 20px;
-    line-height: 17px;
-    margin: 5px 0 0 10px;
-    text-align: left;
-    text-transform: uppercase;
-    width: 170px; }
+  overflow: hidden;
+  /*&-header {
+		color: $redOrange;
+		display: block;
+	    float: left;
+
+		font-size: 11px;
+		height: 20px;
+		line-height: 17px;
+		margin: 5px 0 0 10px;
+		text-align: left;
+		text-transform: uppercase;
+	    width: 170px;
+	};*/ }
   .carousel-component-sub-title {
     color: #373a3c;
     display: inline-block;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 30px;
     line-height: 23px;
     padding: 0 0 20px 0;
@@ -208,9 +212,9 @@ div {
   .carousel-component-text {
     color: #373a3c;
     display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
     height: auto;
-    line-height: 17px;
+    line-height: 19px;
     position: relative;
     width: 100%; }
   .carousel-component-top {

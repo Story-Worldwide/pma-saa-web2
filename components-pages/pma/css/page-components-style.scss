@@ -25,8 +25,9 @@ $avenirHeavy: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'He
 /*MAIN STYLES */
 body {
 	box-sizing: border-box;
-	/*font-family: $avenirMedium;*/
-	font-size: 18px;
+	font-family: $avenirLight;
+	font-size: 15px;
+	line-height: 19px;
 };
 
 div {
@@ -282,10 +283,11 @@ div {
 
 	overflow: hidden;
 
-	&-header {
+	/*&-header {
 		color: $redOrange;
 		display: block;
 	    float: left;
+
 		font-size: 11px;
 		height: 20px;
 		line-height: 17px;
@@ -293,11 +295,12 @@ div {
 		text-align: left;
 		text-transform: uppercase;
 	    width: 170px;
-	};
+	};*/
 
 	&-sub-title {
 		color: $grey;
 		display: inline-block;
+		font-family: $avenirHeavy;
 		font-size: 30px;
 		line-height: 23px;
 		padding: 0 0 20px 0;
@@ -308,9 +311,9 @@ div {
 	&-text {
 		color: #373a3c;
 		display: inline-block;
-		font-size: 13px;
+		font-size: 15px;
 		height: auto;
-		line-height: 17px;
+		line-height: 19px;
 		position: relative;
 		width: 100%;		
 	};
