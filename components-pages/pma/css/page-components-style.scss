@@ -16,16 +16,16 @@ $lightGrey: #f1f1f1;
 $playButtonOrange: #EB3800;
 
 /*FONTS*/
-$lightFont: 'Avenir LT W01_35 Light1475496','AvenirLTPro35Light';
-$romanFont: 'Avenir LT W01_55 Roman1475520','AvenirLTPro55Roman', 'Arial', 'Helvetica', sans-serif;
-$mediumFont: 'Avenir LT W01_65 Medium1475532','AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif;
-$heavyFont: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif;
+$avenirLight: 'Avenir LT W01_35 Light1475496','AvenirLTPro35Light' !important;
+$avenirRoman: 'Avenir LT W01_55 Roman1475520','AvenirLTPro55Roman', 'Arial', 'Helvetica', sans-serif !important;
+$avenirMedium: 'Avenir LT W01_65 Medium1475532','AvenirLTPro65Medium','Arial', 'Helvetica', sans-serif !important;
+$avenirHeavy: 'Avenir LT W01_85 Heavy1475544','AvenirLTPro85Heavy', 'Arial', 'Helvetica', sans-serif !important;
 
 
 /*MAIN STYLES */
 body {
 	box-sizing: border-box;
-	font-family: $lightFont;
+	/*font-family: $avenirMedium;*/
 	font-size: 18px;
 };
 
@@ -47,6 +47,7 @@ div {
 .landing-page{
 
 	overflow: hidden;
+	font-family: $avenirMedium;
 
 	&-top {
 		height: auto;
@@ -78,30 +79,28 @@ div {
 
 	&-block {
 		display: block;
+		width: 100%;
 	};
 
 	&-header {
 		color: $black;
 		display: block;
 		font-size: 35px;
-		font-style: $romanFont;
+		font-family: $avenirLight;
 		line-height: 35px;
 		position: relative;
 		margin: 85px 30px 10px 30px;
-		width: 300px;
-	};
-
-	&-tablet {
-		display: none;
+		width: 150px;
 	};
 
 	&-small-captions {
 		color: $grey;
+		display: none;
 		font-size: 12px;
+		font-family: $avenirRoman;
 		margin: 0 30px 0 30px;
 		position: relative;
     	width: 230px;
-
 	};
 
 	@media (min-width: $tablet) {
@@ -109,11 +108,11 @@ div {
 			background-position: 0 -450px;
 		};
 
-		&-block {
-			display: none;
+		&-header {
+			width: 100%;
 		};
 
-		&-tablet {
+		&-small-captions {
 			display: block;
 		};
   	};
@@ -149,7 +148,8 @@ div {
 		color: $redOrange;
 		display: block;
 	    float: left;
-		font-size: 11px;
+	    font-size: 11px;
+	    font-style: $avenirMedium;
 		height: 20px;
 		line-height: 17px;
 		margin: 5px 0 0 10px;
@@ -510,7 +510,7 @@ div {
 	&-header {
 		color: $black;
 		display: block;
-		font-family: $heavyFont;
+		font-family: $avenirHeavy;
 		font-size: 30px;
 		height: auto;
 		line-height: 35px;
@@ -522,6 +522,7 @@ div {
 	&-sub-title {
 		color: $grey;
 		display: inline-block;
+		font-family: $avenirMedium;
 		font-size: 16px;
 		line-height: 16px;
 		margin: 0;
@@ -532,6 +533,7 @@ div {
 	&-text-box {
 		color: $grey;
 		display: inline-block;
+		font-family: $avenirRoman;
 		font-size: 13px;
 		height: auto;
 		line-height: 17px;
@@ -2024,7 +2026,7 @@ audio::-webkit-media-controls-enclosure{
 
 figure {
 	margin: 0 0 0 -17px;
-    width: 300px;
+    width: 500px;
     height: 200px;
     overflow: hidden;
     position: relative;

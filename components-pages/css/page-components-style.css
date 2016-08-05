@@ -6,7 +6,7 @@
 /*MAIN STYLES */
 body {
   box-sizing: border-box;
-  font-family: "Avenir LT W01_35 Light1475496", "AvenirLTPro35Light";
+  /*font-family: $avenirMedium;*/
   font-size: 18px; }
 
 div {
@@ -21,7 +21,8 @@ div {
 /*MAIN STYLES END*/
 /* ----++++---- Landing Page Top Image Component ----++++---- */
 .landing-page {
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important; }
   .landing-page-top {
     height: auto;
     margin-top: 48px 0 0 0;
@@ -44,30 +45,31 @@ div {
     top: 8px;
     width: 50%; }
   .landing-page-block {
-    display: block; }
+    display: block;
+    width: 100%; }
   .landing-page-header {
     color: #000;
     display: block;
     font-size: 35px;
-    font-style: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif;
+    font-family: "Avenir LT W01_35 Light1475496", "AvenirLTPro35Light" !important;
     line-height: 35px;
     position: relative;
     margin: 85px 30px 10px 30px;
-    width: 300px; }
-  .landing-page-tablet {
-    display: none; }
+    width: 150px; }
   .landing-page-small-captions {
     color: #373a3c;
+    display: none;
     font-size: 12px;
+    font-family: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif !important;
     margin: 0 30px 0 30px;
     position: relative;
     width: 230px; }
   @media (min-width: 670px) {
     .landing-page-img {
       background-position: 0 -450px; }
-    .landing-page-block {
-      display: none; }
-    .landing-page-tablet {
+    .landing-page-header {
+      width: 100%; }
+    .landing-page-small-captions {
       display: block; } }
   @media (min-width: 860px) {
     .landing-page-top {
@@ -90,6 +92,7 @@ div {
     display: block;
     float: left;
     font-size: 11px;
+    font-style: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
     height: 20px;
     line-height: 17px;
     margin: 5px 0 0 10px;
@@ -347,7 +350,7 @@ div {
   .tombstone-footer-component-header {
     color: #000;
     display: block;
-    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 30px;
     height: auto;
     line-height: 35px;
@@ -357,6 +360,7 @@ div {
   .tombstone-footer-component-sub-title {
     color: #373a3c;
     display: inline-block;
+    font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
     font-size: 16px;
     line-height: 16px;
     margin: 0;
@@ -365,6 +369,7 @@ div {
   .tombstone-footer-component-text-box {
     color: #373a3c;
     display: inline-block;
+    font-family: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif !important;
     font-size: 13px;
     height: auto;
     line-height: 17px;
@@ -1399,7 +1404,7 @@ audio::-webkit-media-controls-enclosure {
 
 figure {
   margin: 0 0 0 -17px;
-  width: 300px;
+  width: 500px;
   height: 200px;
   overflow: hidden;
   position: relative; }

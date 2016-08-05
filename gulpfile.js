@@ -58,7 +58,8 @@ var paths = {
 //HTML 
 gulp.task('html', function(){
 	gulp.src(paths.html.src)
-	.pipe(browserSync.stream());
+	//.pipe(browserSync.stream());
+	runSequence('html', browserSync.reload);
 });
 
 //HTML COPY - used if compying to another directory
