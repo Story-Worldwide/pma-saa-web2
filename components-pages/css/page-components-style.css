@@ -156,13 +156,13 @@ div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; }
   .wall-component-list-object {
-    background: url("../pma/img/temp/related-1.jpg") no-repeat;
+    background: url("../pma/img/temp/Ob_1.jpg") no-repeat;
     background-size: cover; }
   .wall-component-list-deity {
     background: url("../pma/img/temp/cars-1.jpg") no-repeat;
     background-size: cover; }
   .wall-component-list-article {
-    background: url("../pma/img/temp/related-3.jpg") no-repeat;
+    background: url("../pma/img/temp/History_Stella-Kramrisch.jpg") no-repeat;
     background-size: cover; }
   @media (min-width: 670px) {
     .wall-component-list ul li {
