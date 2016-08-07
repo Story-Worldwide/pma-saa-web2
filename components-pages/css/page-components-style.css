@@ -186,20 +186,7 @@ div {
 
 /* ----++++---- Curated Veiw / Carousel Component ----++++---- */
 .carousel-component {
-  overflow: hidden;
-  /*&-header {
-		color: $redOrange;
-		display: block;
-	    float: left;
-
-		font-size: 11px;
-		height: 20px;
-		line-height: 17px;
-		margin: 5px 0 0 10px;
-		text-align: left;
-		text-transform: uppercase;
-	    width: 170px;
-	};*/ }
+  overflow: hidden; }
   .carousel-component-sub-title {
     color: #373a3c;
     display: inline-block;
@@ -298,6 +285,41 @@ div {
   .carousel-component-object-image {
     cursor: pointer; }
   @media (min-width: 670px) {
+    .carousel-component-block {
+      margin: 0 0 10px 0; }
+    .carousel-component-text {
+      margin: 0 0 -21px 0;
+      padding: 0; }
+    .carousel-component-list {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 100%; }
+    .carousel-component-list ul {
+      font-size: 0px;
+      height: 292px;
+      left: 0 !important;
+      /*fixes issue with carousel code moving uls to the left*/
+      list-style: none;
+      margin: 40px 0 0 0;
+      overflow: hidden;
+      padding: 0;
+      width: 100%; }
+    .carousel-component-list ul li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid #fff;
+      height: 290px;
+      overflow: hidden;
+      margin: 0;
+      vertical-align: top;
+      width: 33.333%;
+      /**/
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; }
     .carousel-component-arrow-container {
       display: none; }
     .carousel-component-hide {
@@ -346,9 +368,7 @@ div {
     .carousel-component-arrow-container {
       display: none; }
     .carousel-component-hide {
-      display: block; }
-    .carousel-component-load-more-class {
-      left: 0; } }
+      display: block; } }
 
 /* ----++++---- Tombstone Footer Component ----++++---- */
 .tombstone-footer-component {

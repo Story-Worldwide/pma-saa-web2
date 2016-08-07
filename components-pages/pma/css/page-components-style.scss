@@ -283,20 +283,6 @@ div {
 
 	overflow: hidden;
 
-	/*&-header {
-		color: $redOrange;
-		display: block;
-	    float: left;
-
-		font-size: 11px;
-		height: 20px;
-		line-height: 17px;
-		margin: 5px 0 0 10px;
-		text-align: left;
-		text-transform: uppercase;
-	    width: 170px;
-	};*/
-
 	&-sub-title {
 		color: $grey;
 		display: inline-block;
@@ -429,6 +415,50 @@ div {
 
 	@media (min-width: $tablet) {
 
+		&-block {
+			margin: 0 0 10px 0 ;
+		};
+
+		&-text {
+			margin: 0 0 -21px 0;
+			padding: 0;
+		};
+
+		&-list {
+			display: block;
+			float: right;
+  			margin: 0 auto;
+			position: relative;
+			width: 100%;
+		};
+
+		&-list ul {
+			font-size: 0px;
+			height: 292px;
+			left: 0 !important;/*fixes issue with carousel code moving uls to the left*/
+			list-style: none;
+			margin: 40px 0 0 0;
+			overflow: hidden;
+			padding: 0;
+			width: 100%;
+		};
+
+  		&-list ul li {
+			cursor: pointer;
+			display: inline-block;
+			padding: 10px;
+			border: 2px solid $white;
+			height: 290px;
+			overflow: hidden;
+			margin: 0;
+			vertical-align: top;
+			width: 33.333%;
+			/**/
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+	  	};
+
 	  	&-arrow-container {
 	  		display: none;
 	  	};
@@ -499,9 +529,6 @@ div {
 			display: block;
 		};
 
-		&-load-more-class {
-			left: 0;
-		};
   	};
 
 };
