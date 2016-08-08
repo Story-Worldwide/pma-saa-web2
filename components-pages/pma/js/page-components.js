@@ -1,5 +1,7 @@
 $(function(){
 
+  'use strict'
+
   //GLOBALS
   var slideSpeed = 260,
     speed = 500,

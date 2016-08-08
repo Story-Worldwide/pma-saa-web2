@@ -712,9 +712,11 @@ div {
 /* ----++++---- Object tombstone Header ----++++---- */
 .object-tombstone-header {
 
+	font-size: 15px;
+	line-height: 19px;
 	overflow: hidden;
-	width: 100%;
 	padding: 0 0 20px 0;
+	width: 100%;
 
 	p {
 		line-height: 8px;
@@ -724,10 +726,12 @@ div {
 		color: $black;
 		display: block;
 	    float: left;
-		font-size: 37px;
+	    font-family: $avenirHeavy;
+		font-size: 30px;
 		height: auto;
+		line-height: 35px;
 		margin: 0;
-		padding: 0 0 30px 0;
+		padding: 3px 0 30px 0;
 		text-align: left;
 		font-weight: 900;
 	    width: 78%;
@@ -737,7 +741,6 @@ div {
 		color: $black;
 		display: block;
 	    float: left;
-		font-size: 16px;
 		height: auto;
 		margin: 0;
 		text-align: left;
@@ -747,7 +750,6 @@ div {
 	&-sub-title {
 		color: $redOrange;
 		display: inline-block;
-		font-size: 16px;
 		margin: 0;
 		position: relative;
 		width: auto;
@@ -763,7 +765,7 @@ div {
 	};
 
 	&-tag {
-		background-color: $black;
+		background-color: $redOrange;
 		border-radius: 5px;
 		color: $white;
 		display: inline-block;
@@ -771,7 +773,7 @@ div {
 	    font-weight: 200;
 	    height: 16px;
 	    margin: 0 0 0 24px; 
-	    padding: 2px 10px 0 10px;
+	    padding: 0 10px 0 10px;
 	    text-align: center;
 	    text-transform: uppercase;
 	    width: 42px;
@@ -829,7 +831,7 @@ div {
 		margin: 0;
 		padding: 0;
 		width: 100%;
-	};
+	};object-tombstone-header
 
 	&-block {
 		background-size: cover;
