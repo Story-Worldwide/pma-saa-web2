@@ -1152,23 +1152,25 @@ div {
 		color: $black;
 		display: block;
 	    float: left;
+	    font-family: $avenirHeavy;
 		font-size: 30px;
-		/*font-weight: 600;*/
 		height: auto;
-		margin: 0 0 0 0;
+		line-height: 32px;
+		margin: 0;
+		padding-top: 3px;
 		text-align: left;
 	    width: 100%;
 	};
 
 	&-header-text {
-		width: 72%;
+		width: 80%;
 	};
 
 	&-text {
 		color: $black;
 		display: inline-block;
-		font-size: 16px;
-		line-height: 16px;
+		font-size: 15px;
+		line-height: 19px;
 		margin: 0 0 10px 0;
 		padding-right: 5px;
 		position: relative;

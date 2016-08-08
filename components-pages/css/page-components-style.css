@@ -809,19 +809,21 @@ div {
     color: #000;
     display: block;
     float: left;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 30px;
-    /*font-weight: 600;*/
     height: auto;
-    margin: 0 0 0 0;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 3px;
     text-align: left;
     width: 100%; }
   .object-video-component-header-text {
-    width: 72%; }
+    width: 80%; }
   .object-video-component-text {
     color: #000;
     display: inline-block;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 19px;
     margin: 0 0 10px 0;
     padding-right: 5px;
     position: relative;
