@@ -594,8 +594,7 @@ a:hover {
     margin: 0;
     padding: 0;
     width: 100%; }
-  object-tombstone-header
-.object-carousel-component-block {
+  .object-carousel-component-block {
     background-size: cover;
     display: inline-block;
     height: 350px;
