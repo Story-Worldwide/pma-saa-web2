@@ -10,7 +10,7 @@ $black: #000;
 $white: #fff;
 $redOrange: #f74b35;
 $grey: #373a3c;
-$greyTwo: #e9e9e9;/*rule grey*/
+$greyTwo: #ccc;/*rule grey*/
 $greyThree: #ccc;/*history*/
 $lightGrey: #f0f0f0;
 $playButtonOrange: #EB3800;
@@ -823,39 +823,6 @@ div {
 
 	overflow: hidden;
 
-	&-header {
-		color: $redOrange;
-		display: block;
-	    float: left;
-		font-size: 11px;
-		height: 20px;
-		line-height: 17px;
-		margin: 5px 0 0 10px;
-		text-align: left;
-		text-transform: uppercase;
-	    width: 170px;
-	};
-
-	&-sub-title {
-		color: $grey;
-		display: inline-block;
-		font-size: 30px;
-		line-height: 23px;
-		padding: 0 0 20px 0;
-		position: relative;
-		width: 220px;
-	};
-
-	&-text {
-		color: $grey;
-		display: inline-block;
-		font-size: 13px;
-		height: auto;
-		line-height: 17px;
-		position: relative;
-		width: 100%;		
-	};
-
 	&-top {
 		display: inline-block;
 		height: auto;
@@ -949,17 +916,17 @@ div {
 	};
 
 	&-list-object {
-		background: url('../pma/img/temp/related-1.jpg') no-repeat;
+		background: url('../pma/img/temp/Ob_2.jpg') no-repeat;
 		background-size: cover;
 	};
 
 	&-list-deity {
-		background: url('../pma/img/temp/cars-1.jpg') no-repeat;
+		background: url('../pma/img/temp/Its-Personal-Indra.jpg') no-repeat;
 		background-size: cover;
 	};
 
 	&-list-article {
-		background: url('../pma/img/temp/related-3.jpg') no-repeat;
+		background: url('../pma/img/temp/Krishna.jpg') no-repeat;
 		background-size: cover;
 	};
 
@@ -1107,10 +1074,10 @@ div {
 	&-header {
 		color: $black;
 		display: block;
-	    float: left;
+	    font-family: $avenirHeavy;
 		font-size: 30px;
-		/*font-weight: 600;*/
 		height: auto;
+		line-height: 32px;
 		margin: 0 0 0 0;
 		text-align: left;
 	    width: 100%;
@@ -1119,8 +1086,8 @@ div {
 	&-text {
 		color: $black;
 		display: inline-block;
-		font-size: 16px;
-		line-height: 16px;
+		font-size: 15px;
+		line-height: 19px;
 		margin: 0;
 		padding-right: 5px;
 		position: relative;
