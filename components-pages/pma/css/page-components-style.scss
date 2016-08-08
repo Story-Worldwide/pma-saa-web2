@@ -1428,10 +1428,11 @@ audio::-webkit-media-controls-enclosure{
 	&-time-text {
 		display: block;
 		float: right;
+		font-family: $avenirHeavy;
 		font-size: 10px;
 	    height: auto;
-	    right: 18px;
-	    top: 18px;
+	    right: 14px;
+    	top: 12px;
 	    position: relative;	
 	};
 
