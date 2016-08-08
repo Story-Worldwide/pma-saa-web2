@@ -1245,7 +1245,8 @@ audio::-webkit-media-controls-enclosure {
     text-align: left;
     width: 100%; }
   .object-details-font-weight-heavy {
-    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important; }
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    padding: 10px 0 10px 0; }
   .object-details-sub-title {
     color: #f74b35;
     display: inline-block;
@@ -1282,7 +1283,7 @@ audio::-webkit-media-controls-enclosure {
     border: 1px solid #ccc;
     display: block;
     height: 72px;
-    margin: 0 0 20px 0;
+    margin: 15px 0 20px 0;
     width: 200px; }
   @media (min-width: 670px) {
     .object-details-title {

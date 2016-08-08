@@ -1770,6 +1770,7 @@ audio::-webkit-media-controls-enclosure{
 
 	&-font-weight-heavy {
 		font-family: $avenirHeavy;
+		padding: 10px 0 10px 0;
 	};
 
 	&-sub-title {
@@ -1816,7 +1817,7 @@ audio::-webkit-media-controls-enclosure{
 		border: 1px solid $greyTwo;
 		display: block;
 	    height: 72px;
-	    margin: 0 0 20px 0;
+	    margin: 15px 0 20px 0;
 	    width: 200px;
 	};
 
