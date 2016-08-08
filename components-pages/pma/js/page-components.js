@@ -44,7 +44,7 @@ $(function(){
         $(idLarge).css('background-image',firstImage);
         console.log('idLarge = ',$(idLarge).css('background-image'));
 
-        // add border to first image
+        // add border to first image thumbnail
         $(id + ' li:first').css({'background-color':'#f74b35','opacity':.7, 'border-bottom': '3px solid #000'});
 
         // thumbnail click switch to that image
