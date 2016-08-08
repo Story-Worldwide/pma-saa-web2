@@ -42,9 +42,16 @@ $(function(){
         $(idLarge).css('background-image',firstImage);
         console.log('idLarge = ',$(idLarge).css('background-image'));
 
+        // add border to first image
+        $(id + ' li:first').css({'background-color':'#f74b35','opacity':.7, 'border-bottom': '3px solid #000'});
+
         // thumbnail click switch to that image
-        $('li').each(function(){
+        $('li').each(function(index){
           $(this).click(function(){
+            // switch background color
+            $('li').css({'opacity': 1, 'border-bottom': 'none'});
+            $(this).css({'background-color':'#f74b35','opacity':.7, 'border-bottom': '3px solid #000'});
+            // switch background image
             $(idLarge).css('background-image',$(this).css('background-image'));
              console.log('idLarge = ',$(idLarge).css('background-image'));
              //console.log("li pressed = ",$(this));

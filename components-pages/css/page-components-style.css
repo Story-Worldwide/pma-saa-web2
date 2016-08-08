@@ -405,7 +405,7 @@ div {
   .tombstone-footer-component-text {
     margin: 0; }
   .tombstone-footer-component-top {
-    /*border-bottom: 1px solid #000;*/
+    border-bottom: 1px solid #ccc;
     display: inline-block;
     height: auto;
     margin: 0 0 30px 0;
@@ -590,7 +590,7 @@ div {
   .object-carousel-component-list {
     display: block;
     float: left;
-    height: auto;
+    height: 59px;
     margin: 0 auto;
     overflow: hidden;
     padding: 0;

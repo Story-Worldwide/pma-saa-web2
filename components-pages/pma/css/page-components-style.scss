@@ -579,7 +579,7 @@ div {
 	};
 
 	&-top {
-		/*border-bottom: 1px solid #000;*/
+		border-bottom: 1px solid $greyTwo;
 		display: inline-block;
 		height: auto;
 		margin: 0 0 30px 0;
@@ -843,7 +843,7 @@ div {
 	&-list {
 		display: block;
 		float: left;
-		height: auto;
+		height: 59px;
 		margin: 0 auto;
 		overflow: hidden;
 		padding: 0;
