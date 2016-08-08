@@ -188,7 +188,7 @@ div {
 .carousel-component {
   overflow: hidden; }
   .carousel-component-sub-title {
-    color: #373a3c;
+    color: #000;
     display: inline-block;
     font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 30px;
@@ -889,22 +889,22 @@ audio::-webkit-media-controls-enclosure {
     display: none !important; }
   .object-audio-component-header {
     color: #000;
-    display: block;
-    float: left;
+    display: inline-block;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 30px;
-    height: auto;
-    margin: 0 0 0 0;
+    line-height: 23px;
+    padding: 2px 0 8px 0;
+    position: relative;
     text-align: left;
     width: 100%; }
   .object-audio-component-header-text {
-    width: 72%; }
+    width: 100%; }
   .object-audio-component-text {
-    color: #000;
+    color: #373a3c;
     display: inline-block;
-    font-size: 16px;
-    line-height: 16px;
-    margin: 0 0 10px 0;
-    padding-right: 5px;
+    font-size: 15px;
+    height: auto;
+    line-height: 19px;
     position: relative;
     width: 100%; }
   .object-audio-component-block {
@@ -961,12 +961,14 @@ audio::-webkit-media-controls-enclosure {
     text-align: left;
     width: 80px; }
   .object-audio-component-inner-header {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    line-height: 16px;
     padding: 7px 0 0 0; }
   .object-audio-component-inner-text {
-    font-size: 12px;
-    padding: 2px 0 0 0; }
+    font-size: 14px;
+    font-family: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif !important;
+    padding: 0; }
   .object-audio-component-play-right {
     background-color: #fff;
     display: block;

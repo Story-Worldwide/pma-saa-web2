@@ -169,7 +169,7 @@ div {
 	};
 
 	&-text {
-		color: #373a3c;
+		color: $grey;
 		font-family: $avenirRoman;
 		font-size: 14px;
 		left: 11px;
@@ -284,7 +284,7 @@ div {
 	overflow: hidden;
 
 	&-sub-title {
-		color: $grey;
+		color: $black;
 		display: inline-block;
 		font-family: $avenirHeavy;
 		font-size: 30px;
@@ -295,7 +295,7 @@ div {
 	};
 
 	&-text {
-		color: #373a3c;
+		color: $grey;
 		display: inline-block;
 		font-size: 15px;
 		height: auto;
@@ -847,7 +847,7 @@ div {
 	};
 
 	&-text {
-		color: #373a3c;
+		color: $grey;
 		display: inline-block;
 		font-size: 13px;
 		height: auto;
@@ -1280,28 +1280,28 @@ audio::-webkit-media-controls-enclosure{
 
 	&-header {
 		color: $black;
-		display: block;
-	    float: left;
+		display: inline-block;
+	    font-family: $avenirHeavy;
 		font-size: 30px;
-		height: auto;
-		margin: 0 0 0 0;
+	    line-height: 23px;
+	    padding: 2px 0 8px 0;
+	    position: relative;
 		text-align: left;
 	    width: 100%;
 	};
 
 	&-header-text {
-		width: 72%;
+		width: 100%;
 	};
 
 	&-text {
-		color: $black;
+		color: $grey;
 		display: inline-block;
-		font-size: 16px;
-		line-height: 16px;
-		margin: 0 0 10px 0;
-		padding-right: 5px;
-		position: relative;
-		width: 100%;
+	    font-size: 15px;
+	    height: auto;
+	    line-height: 19px;
+	    position: relative;
+	    width: 100%;
 	};
 
 	&-block {
@@ -1373,14 +1373,16 @@ audio::-webkit-media-controls-enclosure{
 	};
 
 	&-inner-header {
-		font-size: 13px;
-		font-weight: 600; 
+		font-size: 14px;
+		font-family: $avenirHeavy;
+		line-height: 16px;
 		padding: 7px 0 0 0;  
 	};
 
 	&-inner-text {
-		font-size: 12px;
-		padding: 2px 0 0 0;
+		font-size: 14px;
+		font-family: $avenirRoman;
+		padding: 0;
 	};
 
 	&-play-right {
@@ -1515,7 +1517,7 @@ audio::-webkit-media-controls-enclosure{
 	};
 
 	&-text {
-		color: #373a3c;
+		color: $grey;
 		display: inline-block;
 		font-size: 13px;
 		height: auto;
@@ -1526,7 +1528,7 @@ audio::-webkit-media-controls-enclosure{
 
 	/* for numbers of images*/
 	&-imagenum {
-		color: #373a3c;
+		color: $grey;
 	    display: inline-block;
 	    font-size: 13px;
 	    height: 30px;
@@ -1850,7 +1852,7 @@ audio::-webkit-media-controls-enclosure{
 	};
 
 	&-text {
-		color: #373a3c;
+		color: $grey;
 		display: inline-block;
 		font-size: 20px;
 		font-weight: 600;
@@ -1862,7 +1864,7 @@ audio::-webkit-media-controls-enclosure{
 
 	/* for numbers of images*/
 	&-imagenum {
-		color: #373a3c;
+		color: $grey;
 	    display: inline-block;
 	    font-size: 13px;
 	    height: 30px;
