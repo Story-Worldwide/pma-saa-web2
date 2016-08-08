@@ -1271,49 +1271,41 @@ audio::-webkit-media-controls-enclosure {
 /* ----++++---- Object Related Content Carousel Component ----++++---- */
 .object-related-content-carousel {
   overflow: hidden;
+  /*&-header {
+		color: $redOrange;
+		display: block;
+	    float: left;
+		font-size: 11px;
+		height: 20px;
+		line-height: 17px;
+		margin: 5px 0 0 10px;
+		text-align: left;
+		text-transform: uppercase;
+	    width: 170px;
+	};*/
   /* for numbers of images*/ }
-  .object-related-content-carousel-header {
-    color: #f74b35;
-    display: block;
-    float: left;
-    font-size: 11px;
-    height: 20px;
-    line-height: 17px;
-    margin: 5px 0 0 10px;
-    text-align: left;
-    text-transform: uppercase;
-    width: 170px; }
   .object-related-content-carousel-sub-title {
-    color: #373a3c;
+    color: #000;
     display: inline-block;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 30px;
     line-height: 23px;
     padding: 0;
     position: relative;
-    width: 220px; }
+    width: 100%; }
   .object-related-content-carousel-text {
-    color: #373a3c;
+    color: #000;
     display: inline-block;
-    font-size: 20px;
-    font-weight: 600;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    font-size: 25px;
     height: auto;
-    line-height: 25px;
+    line-height: 29px;
     position: relative;
     width: 100%; }
-  .object-related-content-carousel-imagenum {
-    color: #373a3c;
-    display: inline-block;
-    font-size: 13px;
-    height: 30px;
-    line-height: 17px;
-    position: relative;
-    text-align: center;
-    top: -6px;
-    width: 30px; }
   .object-related-content-carousel-heavy {
     color: #ccc;
     font-size: 13px;
-    font-weight: 600;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     margin: 15px 0 10px 0;
     width: 100%; }
   .object-related-content-carousel-top {
@@ -1359,30 +1351,49 @@ audio::-webkit-media-controls-enclosure {
     border-bottom: 1px solid #000;
     display: block;
     float: left;
-    height: 60px;
-    padding-bottom: 20px;
+    height: 43px;
+    padding-bottom: 0;
     width: 100%; }
-  .object-related-content-carousel-arrow-block {
-    display: inline-block;
+  .object-related-content-carousel-arrow-block-left {
+    display: none;
     height: 24px;
     margin: 20px 0 0 0;
-    width: 45%; }
+    position: absolute;
+    width: auto;
+    z-index: 10; }
+  .object-related-content-carousel-arrow-block-right {
+    display: none;
+    height: 24px;
+    margin: 20px 0 0 0;
+    position: absolute;
+    width: auto;
+    z-index: 10; }
   .object-related-content-carousel-arrow-left {
-    background: url("../pma/img/temp/arrowLeft.png") no-repeat;
+    background: url("../pma/img/temp/arrowLeftFinal.png") no-repeat;
     background-size: cover;
     cursor: pointer;
     display: inline-block;
-    height: 24px;
+    height: 43px;
     margin: 0 0 0 68%;
-    width: 8px; }
+    width: 19px; }
   .object-related-content-carousel-arrow-right {
-    background: url("../pma/img/temp/arrowRight.png") no-repeat;
+    background: url("../pma/img/temp/arrowRightFinal.png") no-repeat;
     background-size: cover;
     cursor: pointer;
     display: inline-block;
-    height: 24px;
+    height: 43px;
     margin: 0 0 0 28%;
-    width: 8px; }
+    width: 19px; }
+  .object-related-content-carousel-imagenum {
+    color: #373a3c;
+    display: none;
+    font-size: 13px;
+    height: 30px;
+    line-height: 17px;
+    position: relative;
+    text-align: center;
+    top: -6px;
+    width: 30px; }
   .object-related-content-carousel-div {
     display: block;
     float: left;
@@ -1402,30 +1413,60 @@ audio::-webkit-media-controls-enclosure {
   .object-related-content-carousel-object-image {
     cursor: pointer; }
   @media (min-width: 670px) {
-    .object-related-content-carousel-list {
-      margin: 0 0 0 30px;
-      width: 91%; }
-    .object-related-content-carousel-arrow-block {
-      width: 47%; }
-    .object-related-content-carousel-arrow-left {
-      margin: 0 0 0 85%; }
-    .object-related-content-carousel-arrow-right {
-      margin: 0 0 0 12%; } }
+    .object-related-content-carousel {
+      /*&-arrow-left {
+			margin: 0 0 0 85%;
+		};
+
+		&-arrow-right {
+			margin: 0 0 0 12%;
+		};*/ }
+      .object-related-content-carousel-list {
+        margin: 0 0 0 30px;
+        width: 91%; }
+      .object-related-content-carousel-arrow-block-left {
+        display: block;
+        left: 0;
+        top: 160px;
+        width: 50px; }
+      .object-related-content-carousel-arrow-block-right {
+        display: block;
+        left: 92%;
+        top: 160px;
+        width: 50px; }
+      .object-related-content-carousel-imagenum {
+        display: none; } }
   @media (min-width: 860px) {
-    .object-related-content-carousel-top {
-      display: block;
-      float: left;
-      max-width: 860px;
-      width: 100%; }
-    .object-related-content-carousel-list {
-      margin: 0 0 0 30px;
-      width: 91%; }
-    .object-related-content-carousel-arrow-block {
-      width: 47%; }
-    .object-related-content-carousel-arrow-left {
-      margin: 0 0 0 85%; }
-    .object-related-content-carousel-arrow-right {
-      margin: 0 0 0 12%; } }
+    .object-related-content-carousel {
+      /*&-arrow-block {
+			width: 47%;
+		};
+
+		&-arrow-left {
+			margin: 0 0 0 85%;
+		};
+
+		&-arrow-right {
+			margin: 0 0 0 12%;
+		};*/ }
+      .object-related-content-carousel-top {
+        display: block;
+        float: left;
+        max-width: 860px;
+        width: 100%; }
+      .object-related-content-carousel-list {
+        margin: 0 0 0 30px;
+        width: 91%; }
+      .object-related-content-carousel-arrow-block-left {
+        display: block;
+        left: 0;
+        top: 160px;
+        width: 50px; }
+      .object-related-content-carousel-arrow-block-right {
+        display: block;
+        left: 798px;
+        top: 160px;
+        width: 50px; } }
 
 /*IMAGE CAPTION STYLE*/
 .absolute {
