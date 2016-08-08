@@ -12,7 +12,7 @@ $redOrange: #f74b35;
 $grey: #373a3c;
 $greyTwo: #e9e9e9;/*rule grey*/
 $greyThree: #ccc;/*history*/
-$lightGrey: #f1f1f1;
+$lightGrey: #f0f0f0;
 $playButtonOrange: #EB3800;
 
 /*FONTS*/
@@ -2109,10 +2109,11 @@ figure:hover figcaption {
 
 .load-more-bttn {
 	background-color: $lightGrey;
-	border-radius: 5px;
-	height: 60px;
+	border-radius: 3px;
+	font-family: $avenirRoman;
+	height: 50px;
 	margin: 30px auto;
-	width: 145px;
+	width: 158px;
 };
 
 .load-more-bttn:hover {
@@ -2122,7 +2123,7 @@ figure:hover figcaption {
 .load-more-bttn-text {
 	color: $grey;
 	font-size: 12px;
-	padding: 25px;
+	padding: 15px;
 	text-align: center;
 	text-transform: uppercase;
 };

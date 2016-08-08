@@ -1468,11 +1468,12 @@ figure:hover figcaption {
   width: 100%; }
 
 .load-more-bttn {
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  height: 60px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  font-family: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif !important;
+  height: 50px;
   margin: 30px auto;
-  width: 145px; }
+  width: 158px; }
 
 .load-more-bttn:hover {
   background-color: #dbdbdb; }
@@ -1480,6 +1481,6 @@ figure:hover figcaption {
 .load-more-bttn-text {
   color: #373a3c;
   font-size: 12px;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   text-transform: uppercase; }
