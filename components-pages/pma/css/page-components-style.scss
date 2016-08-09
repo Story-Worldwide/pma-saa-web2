@@ -700,6 +700,10 @@ a:hover {
 	width: 100%;
 	padding: 0 0 20px 0;
 
+	&-span {
+		padding-right: 5px;
+	};
+
 	&-header {
 		color: $black;
 		display: block;
@@ -1709,6 +1713,10 @@ audio::-webkit-media-controls-enclosure{
 
 	p {
 		line-height: 20px;
+	};
+
+	&-span {
+		padding-right: 5px;
 	};
 
 	&-title {

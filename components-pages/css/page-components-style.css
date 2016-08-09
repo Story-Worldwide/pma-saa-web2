@@ -487,6 +487,8 @@ a:hover {
   overflow: hidden;
   width: 100%;
   padding: 0 0 20px 0; }
+  .object-tombstone-top-span {
+    padding-right: 5px; }
   .object-tombstone-top-header {
     color: #000;
     display: block;
@@ -1209,6 +1211,8 @@ audio::-webkit-media-controls-enclosure {
   width: 100%; }
   .object-details p {
     line-height: 20px; }
+  .object-details-span {
+    padding-right: 5px; }
   .object-details-title {
     color: #000;
     display: block;
