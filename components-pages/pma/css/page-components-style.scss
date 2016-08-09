@@ -93,6 +93,7 @@ a:hover {
 
 	&-block {
 		display: block;
+		padding-top: 1px;
 		width: 100%;
 	};
 
@@ -140,9 +141,10 @@ a:hover {
 		};
 
 		&-overlay {
-			left: 444px;
-			position: absolute;
-			width: 800px;
+			left: 50%;
+		    position: relative;
+		    top: 0;
+		    width: 800px;
 		};
 
   		&-img {
