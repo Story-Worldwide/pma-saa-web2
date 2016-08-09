@@ -940,7 +940,7 @@ audio::-webkit-media-controls-enclosure {
     float: left;
     height: 60px;
     margin: 0;
-    padding: 0 0 0 10px;
+    padding: 0 10px 0 10px;
     text-align: left;
     width: 80px; }
   .object-audio-component-inner-header {
@@ -952,20 +952,19 @@ audio::-webkit-media-controls-enclosure {
     font-size: 14px;
     font-family: "Avenir LT W01_55 Roman1475520", "AvenirLTPro55Roman", "Arial", "Helvetica", sans-serif !important;
     padding: 0; }
-  .object-audio-component-play-right {
-    background-color: #fff;
-    display: block;
-    float: left;
-    height: 60px;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    width: 84%; }
   .object-audio-component-side {
     display: block;
     float: left;
     height: 60px;
-    width: 70%; }
+    width: 55%; }
+  .object-audio-component-pbar-outer {
+    background-color: #ccc;
+    border-radius: 2px;
+    display: block;
+    float: left;
+    height: 5px;
+    overflow: hidden;
+    width: 100%; }
   .object-audio-component-pbar {
     background-color: #EB3800;
     display: block;
@@ -974,49 +973,32 @@ audio::-webkit-media-controls-enclosure {
     width: 0;
     outline: 1px solid #f00; }
   .object-audio-component-timer {
-    background-color: #ccc;
-    border-radius: 2px;
     display: block;
     float: left;
-    height: 5px;
-    margin: 20px 0 0 30px;
+    height: auto;
+    /* margin: 28px 0 0 0; */
     overflow: hidden;
     position: relative;
-    top: 8px;
-    width: 80%; }
+    top: 27px;
+    width: 100%; }
   .object-audio-component-time-text {
     display: block;
     float: right;
     font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 10px;
-    height: auto;
-    right: 14px;
-    top: 12px;
-    position: relative; }
+    margin-top: 5px; }
   @media (min-width: 670px) {
     .object-audio-component-header-text {
       width: 82%; }
-    .object-audio-component-timer {
-      width: 100%; }
     .object-audio-component-side {
-      width: 75%; }
-    .object-audio-component-play-right {
-      width: 90%; }
-    .object-audio-component-time-text {
-      right: -30px; } }
+      width: 74%; } }
   @media (min-width: 840px) {
     .object-audio-component {
       max-width: 840px; }
       .object-audio-component-header-text {
         width: 72%; }
-      .object-audio-component-timer {
-        width: 100%; }
       .object-audio-component-side {
-        width: 80%; }
-      .object-audio-component-play-right {
-        width: 92%; }
-      .object-audio-component-time-text {
-        right: -30px; } }
+        width: 78%; } }
 
 /* ----++++---- Object Overview Carousel Component ----++++---- */
 .object-overview-carousel {

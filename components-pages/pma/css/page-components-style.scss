@@ -1337,7 +1337,7 @@ audio::-webkit-media-controls-enclosure{
 		float: left;
 		height: 60px;
 		margin: 0;
-		padding: 0 0 0 10px;
+		padding: 0 10px 0 10px;
 		text-align: left;
 		width: 80px;
 	};
@@ -1355,22 +1355,21 @@ audio::-webkit-media-controls-enclosure{
 		padding: 0;
 	};
 
-	&-play-right {
-		background-color: $white;
-		display: block;
-		float: left;
-		height: 60px;
-		margin: 0px;
-		padding: 0px;
-		position: relative;
-		width: 84%;	
-	};
-
 	&-side {
 		display: block;
 		float: left;
 		height: 60px;
-		width: 70%;	
+		width: 55%;	
+	};
+
+	&-pbar-outer {
+		background-color: $greyTwo;
+		border-radius: 2px;
+	    display: block;
+	    float: left;
+	    height: 5px;
+	    overflow: hidden;
+	    width: 100%;	
 	};
 
 	&-pbar {
@@ -1383,16 +1382,14 @@ audio::-webkit-media-controls-enclosure{
 	};
 
 	&-timer {
-		background-color: $greyTwo;
-		border-radius: 2px;
 	    display: block;
 	    float: left;
-	    height: 5px;
-	    margin: 20px 0 0 30px;
+	    height: auto;
+	    /* margin: 28px 0 0 0; */
 	    overflow: hidden;
 	    position: relative;
-	    top: 8px;
-	    width: 80%;
+	    top: 27px;
+	    width: 100%;
 	};
 
 	&-time-text {
@@ -1400,10 +1397,7 @@ audio::-webkit-media-controls-enclosure{
 		float: right;
 		font-family: $avenirHeavy;
 		font-size: 10px;
-	    height: auto;
-	    right: 14px;
-    	top: 12px;
-	    position: relative;	
+		margin-top: 5px;
 	};
 
 	@media (min-width: $tablet) {
@@ -1412,20 +1406,8 @@ audio::-webkit-media-controls-enclosure{
 			width: 82%;
 		};
 
-		&-timer {
-			width: 100%;
-		};
-
 		&-side {
-			width: 75%;
-		};
-
-		&-play-right {
-			width: 90%;
-		};
-
-		&-time-text {
-			right: -30px;
+			width: 74%;
 		};
 	};
 
@@ -1437,20 +1419,8 @@ audio::-webkit-media-controls-enclosure{
 			width: 72%;
 		};
 
-		&-timer {
-			width: 100%;
-		};
-
 		&-side {
-			width: 80%;
-		};
-
-		&-play-right {
-			width: 92%;
-		};
-
-		&-time-text {
-			right: -30px;
+			width: 78%;
 		};
 
 	};
