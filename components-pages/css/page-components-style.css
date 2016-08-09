@@ -81,11 +81,11 @@ a:hover {
       width: 100%; }
     .landing-page-small-captions {
       display: block; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .landing-page-top {
       display: block;
       float: left;
-      max-width: 860px;
+      max-width: 840px;
       width: 100%; }
     .landing-page-overlay {
       left: 444px;
@@ -177,11 +177,11 @@ a:hover {
     .wall-component-list ul li {
       height: 200px;
       width: 33.333%; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .wall-component-top {
       display: block;
       float: left;
-      max-width: 860px;
+      max-width: 840px;
       width: 100%; }
     .wall-component-list {
       display: block;
@@ -333,11 +333,11 @@ a:hover {
       display: none; }
     .carousel-component-hide {
       display: block; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .carousel-component-top {
       display: block;
       float: left;
-      max-width: 860px;
+      max-width: 840px;
       width: 100%; }
     .carousel-component-block {
       margin: 0 0 10px 0; }
@@ -454,7 +454,7 @@ a:hover {
       width: 43%; }
     .tombstone-footer-component-left-30 {
       margin-left: 30px; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .tombstone-footer-component-header {
       font-size: 36px;
       line-height: 40px;
@@ -462,7 +462,7 @@ a:hover {
     .tombstone-footer-component-top {
       display: block;
       float: left;
-      max-width: 860px;
+      max-width: 840px;
       width: 100%; }
     .tombstone-footer-component-box {
       display: block;
@@ -573,9 +573,9 @@ a:hover {
       position: relative;
       top: -64px;
       width: 28%; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .object-tombstone-header {
-      max-width: 860px; }
+      max-width: 840px; }
       .object-tombstone-header-title {
         width: 100%; }
       .object-tombstone-header-right {
@@ -595,11 +595,12 @@ a:hover {
     padding: 0;
     width: 100%; }
   .object-carousel-component-block {
-    background-size: cover;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: inline-block;
     height: 350px;
     margin: 0 0 30px 0;
-    padding: 0;
     width: 100%; }
   .object-carousel-component-list {
     display: block;
@@ -608,7 +609,8 @@ a:hover {
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
-    width: 78%; }
+    width: 308px;
+    /*78%*/ }
   .object-carousel-component-list ul {
     left: 0;
     list-style: none;
@@ -630,25 +632,24 @@ a:hover {
     -webkit-box-sizing: border-box; }
   .object-carousel-component-list li:hover {
     opacity: .7; }
-  .object-carousel-component-arrow-container {
-    background-color: #fff;
+  .object-carousel-component-center {
+    display: block;
+    height: 60px;
+    width: 379px;
+    position: relative;
+    margin: 0 auto; }
+  .object-carousel-component-arrow-block {
     display: block;
     float: left;
-    height: 60px;
-    padding-bottom: 20px;
-    width: 11%; }
-  .object-carousel-component-arrow-block {
-    display: inline-block;
     height: 24px;
-    margin: 20px 0 0 0;
-    width: 60%; }
+    margin: 16px 0 0 0;
+    width: 35px; }
   .object-carousel-component-arrow-left {
     background: url("../pma/img/temp/arrowLeft.png") no-repeat;
     background-size: cover;
     cursor: pointer;
     display: inline-block;
     height: 24px;
-    margin: 0 0 0 68%;
     width: 8px; }
   .object-carousel-component-arrow-right {
     background: url("../pma/img/temp/arrowRight.png") no-repeat;
@@ -657,7 +658,6 @@ a:hover {
     display: block;
     float: right;
     height: 24px;
-    /*margin: 0 0 0 28%;*/
     width: 8px; }
   .object-carousel-component-list-object {
     background: url("../pma/img/temp/Ob_2.jpg") no-repeat;
@@ -676,21 +676,19 @@ a:hover {
     border-bottom: 1px solid #ccc;
     display: inline-block;
     height: 50px;
-    margin: 0 0 30px 0;
-    padding: 10px 0 0 0;
+    padding: 0 0 20px 0;
     width: 100%; }
     .object-carousel-component-bttns-block ul {
       display: inline-block;
-      list-style: none;
-      margin: 10px; }
+      list-style: none; }
     .object-carousel-component-bttns-block li {
-      margin: 0 0 0 10px;
+      margin-right: 10px;
       padding-left: 0; }
   .object-carousel-component-bttns-block-inner {
     height: auto;
     margin: 0 auto;
     padding: 0;
-    width: 50%; }
+    width: 155px; }
   .object-carousel-component-bttns-one {
     background: url("../pma/img/temp/anchor-image.png") no-repeat;
     background-size: cover;
@@ -710,43 +708,29 @@ a:hover {
     height: 17px;
     width: 21px; }
   @media (min-width: 670px) {
-    .object-carousel-component-block {
-      height: 550px; }
-    .object-carousel-component-list {
-      width: 308px; }
-    .object-carousel-component-arrow-container {
-      width: 28%; }
-    .object-carousel-component-arrow-block {
-      width: 14%; }
-    .object-carousel-component-arrow-left {
-      position: relative;
-      left: 152px; }
-    .object-carousel-component-bttns-block-inner {
-      width: 30%; } }
-  @media (min-width: 860px) {
+    .object-carousel-component {
+      /*
+	    &-bttns-block-inner {
+	    	width: 30%;
+	    };*/ }
+      .object-carousel-component-block {
+        height: 550px; }
+      .object-carousel-component-list {
+        width: 308px; } }
+  @media (min-width: 840px) {
     .object-carousel-component-top {
       display: block;
       float: left;
-      max-width: 860px;
+      max-width: 840px;
       width: 100%; }
     .object-carousel-component-block {
       height: 760px; }
-    .object-carousel-component-list {
-      width: 308px; }
-    .object-carousel-component-arrow-container {
-      width: 32%; }
-    .object-carousel-component-arrow-block {
-      width: 14%; }
-    .object-carousel-component-arrow-left {
-      position: relative;
-      left: 205px; }
     .object-carousel-component-bttns-block {
-      height: 0; }
+      padding: 0; }
     .object-carousel-component-bttns-block-inner {
-      bottom: -172px;
-      left: 712px;
-      position: absolute;
-      width: auto; } }
+      bottom: 60px;
+      position: relative;
+      right: -339px; } }
 
 /* ----++++---- Object Cultural Context ----++++---- */
 .object-cultural-context {
@@ -777,9 +761,9 @@ a:hover {
     display: inline-block;
     height: auto;
     width: 100%; }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .object-cultural-context {
-      max-width: 860px; } }
+      max-width: 840px; } }
 
 /* ----++++---- Object Video Component ----++++---- */
 .object-video-component {
@@ -849,9 +833,9 @@ a:hover {
       display: block;
       float: left;
       width: 50%; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .object-video-component {
-      max-width: 860px; }
+      max-width: 840px; }
       .object-video-component-header-text {
         width: 72%; }
       .object-video-component-right {
@@ -1010,9 +994,9 @@ audio::-webkit-media-controls-enclosure {
       width: 90%; }
     .object-audio-component-time-text {
       right: -30px; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .object-audio-component {
-      max-width: 860px; }
+      max-width: 840px; }
       .object-audio-component-header-text {
         width: 72%; }
       .object-audio-component-timer {
@@ -1193,7 +1177,7 @@ audio::-webkit-media-controls-enclosure {
         width: 50px; }
       .object-overview-carousel-imagenum {
         display: none; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .object-overview-carousel {
       /*&-arrow-block {
 			width: 47%;
@@ -1209,7 +1193,7 @@ audio::-webkit-media-controls-enclosure {
       .object-overview-carousel-top {
         display: block;
         float: left;
-        max-width: 860px;
+        max-width: 840px;
         width: 100%; }
       .object-overview-carousel-list {
         margin: 0 0 0 30px;
@@ -1299,9 +1283,9 @@ audio::-webkit-media-controls-enclosure {
   @media (min-width: 670px) {
     .object-details-title {
       width: 100%; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .object-details {
-      max-width: 860px; }
+      max-width: 840px; }
       .object-details-title {
         width: 100%; } }
 
@@ -1473,7 +1457,7 @@ audio::-webkit-media-controls-enclosure {
         width: 50px; }
       .object-related-content-carousel-imagenum {
         display: none; } }
-  @media (min-width: 860px) {
+  @media (min-width: 840px) {
     .object-related-content-carousel {
       /*&-arrow-block {
 			width: 47%;
@@ -1489,7 +1473,7 @@ audio::-webkit-media-controls-enclosure {
       .object-related-content-carousel-top {
         display: block;
         float: left;
-        max-width: 860px;
+        max-width: 840px;
         width: 100%; }
       .object-related-content-carousel-list {
         margin: 0 0 0 30px;
