@@ -71,8 +71,7 @@ a:hover {
 	};
 
 	&-img {
-		background: url('../pma/img/temp/cars-6.jpg') no-repeat;
-		background-position: 0 -150px;
+		background: url('../pma/img/temp/its-personal-banner-image.jpg') no-repeat;
 		background-size: cover;
 		height: 200px;
 		overflow: hidden;
@@ -119,10 +118,6 @@ a:hover {
 	};
 
 	@media (min-width: $tablet) {
-		&-img {
-			background-position: 0 -450px;
-		};
-
 		&-header {
 			width: 100%;
 		};
@@ -145,10 +140,6 @@ a:hover {
 		    position: relative;
 		    top: 0;
 		    width: 800px;
-		};
-
-  		&-img {
-			background-position: 0 -450px;
 		};
   	};
 

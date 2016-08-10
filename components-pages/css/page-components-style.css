@@ -39,8 +39,7 @@ a:hover {
     padding: 0;
     width: 100%; }
   .landing-page-img {
-    background: url("../pma/img/temp/cars-6.jpg") no-repeat;
-    background-position: 0 -150px;
+    background: url("../pma/img/temp/its-personal-banner-image.jpg") no-repeat;
     background-size: cover;
     height: 200px;
     overflow: hidden;
@@ -76,8 +75,6 @@ a:hover {
     position: relative;
     width: 230px; }
   @media (min-width: 670px) {
-    .landing-page-img {
-      background-position: 0 -450px; }
     .landing-page-header {
       width: 100%; }
     .landing-page-small-captions {
@@ -92,9 +89,7 @@ a:hover {
       left: 50%;
       position: relative;
       top: 0;
-      width: 800px; }
-    .landing-page-img {
-      background-position: 0 -450px; } }
+      width: 800px; } }
 
 /* ----++++---- Wall Image Component ----++++---- */
 .wall-component {
