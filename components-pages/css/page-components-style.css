@@ -1520,7 +1520,6 @@ audio::-webkit-media-controls-enclosure {
     margin: 0;
     padding: 0; }
   .deities-wall-component-list ul li {
-    cursor: pointer;
     display: inline-block;
     padding: 10px;
     border: 2px solid #fff;
