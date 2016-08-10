@@ -1487,7 +1487,7 @@ audio::-webkit-media-controls-enclosure {
 
 /*IMAGE CAPTION STYLE*/
 .absolute {
-  bottom: -50px !important; }
+  bottom: -36px !important; }
 
 figure {
   margin: 0 0 0 -17px;
@@ -1510,7 +1510,7 @@ figcaption {
   transition: bottom .5s; }
 
 figure:hover figcaption {
-  bottom: -50px; }
+  bottom: -36px; }
 
 /*IMAGE CAPTION STYLE END*/
 @media (min-width: 670px) {
