@@ -1485,7 +1485,8 @@ audio::-webkit-media-controls-enclosure {
         top: 160px;
         width: 50px; } }
 
-/* ----++++---- Wall Image Component ----++++---- */
+/* ----++++---- DEITIES ----++++---- */
+/* ----++++---- Deities  Wall Image Component ----++++---- */
 .deities-wall-component {
   overflow: hidden; }
   .deities-wall-component-header {
@@ -1562,6 +1563,61 @@ audio::-webkit-media-controls-enclosure {
     .deities-wall-component-list ul li {
       height: 200px;
       width: 33.333%; } }
+
+/* ----++++---- Deities Tombstone Top Component ----++++---- */
+.deities-tombstone {
+  overflow: hidden;
+  font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important; }
+  .deities-tombstone-top {
+    height: auto;
+    margin-top: 48px 0 0 0;
+    padding: 0;
+    width: 100%; }
+  .deities-tombstone-img {
+    background: url("../pma/img/temp/deity-banner-image.jpg") no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 200px;
+    overflow: hidden;
+    width: 100%; }
+  .deities-tombstone-overlay {
+    background-color: #fff;
+    background: url("../pma/img/temp/transparent-70.png") no-repeat;
+    background-size: cover;
+    height: 200px;
+    left: 50%;
+    position: absolute;
+    top: 8px;
+    width: 50%; }
+  .deities-tombstone-block {
+    display: block;
+    padding-top: 1px;
+    width: 100%; }
+  .deities-tombstone-header {
+    color: #000;
+    display: block;
+    font-size: 30px;
+    font-family: "Avenir LT W01_35 Light1475496", "AvenirLTPro35Light" !important;
+    line-height: 35px;
+    position: relative;
+    margin: 145px 30px 10px 30px;
+    width: 100%; }
+  @media (min-width: 670px) {
+    .deities-tombstone-header {
+      width: 100%; }
+    .deities-tombstone-small-captions {
+      display: block; } }
+  @media (min-width: 840px) {
+    .deities-tombstone-top {
+      display: block;
+      float: left;
+      max-width: 840px;
+      width: 100%; }
+    .deities-tombstone-overlay {
+      left: 50%;
+      position: relative;
+      top: 0;
+      width: 800px; } }
 
 /*IMAGE CAPTION STYLE*/
 .absolute {

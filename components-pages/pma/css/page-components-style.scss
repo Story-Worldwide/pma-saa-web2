@@ -2086,8 +2086,8 @@ audio::-webkit-media-controls-enclosure{
 };
 
 
-
-/* ----++++---- Wall Image Component ----++++---- */
+/* ----++++---- DEITIES ----++++---- */
+/* ----++++---- Deities  Wall Image Component ----++++---- */
 .deities-wall-component{
 
 	overflow: hidden;
@@ -2198,6 +2198,86 @@ audio::-webkit-media-controls-enclosure{
 
 };
 
+
+
+/* ----++++---- Deities Tombstone Top Component ----++++---- */
+.deities-tombstone {
+
+	overflow: hidden;
+	font-family: $avenirMedium;
+
+	&-top {
+		height: auto;
+		margin-top: 48px 0 0 0;
+		padding: 0;
+		width: 100%;
+	};
+
+	&-img {
+		background: url('../pma/img/temp/deity-banner-image.jpg') no-repeat;
+		background-position: 0 0;
+		background-size: cover;
+		height: 200px;
+		overflow: hidden;
+		width: 100%;
+	};
+
+	&-overlay {
+		background-color: $white;
+		background: url('../pma/img/temp/transparent-70.png') no-repeat;
+		background-size: cover;
+		height: 200px;
+		left: 50%;
+
+		position: absolute;
+		top: 8px;
+		width: 50%;
+	};
+
+	&-block {
+		display: block;
+		padding-top: 1px;
+		width: 100%;
+	};
+
+	&-header {
+		color: $black;
+		display: block;
+		font-size: 30px;
+		font-family: $avenirLight;
+		line-height: 35px;
+		position: relative;
+		margin: 145px 30px 10px 30px;
+		width: 100%;
+	};
+
+	@media (min-width: $tablet) {
+		&-header {
+			width: 100%;
+		};
+
+		&-small-captions {
+			display: block;
+		};
+  	};
+
+  	@media (min-width: $desktop) {
+  		&-top {
+  			display: block;
+  			float: left;
+			max-width: $desktop;
+			width: 100%
+		};
+
+		&-overlay {
+			left: 50%;
+		    position: relative;
+		    top: 0;
+		    width: 800px;
+		};
+  	};
+
+};
 
 
 
