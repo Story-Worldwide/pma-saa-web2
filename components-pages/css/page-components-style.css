@@ -1485,6 +1485,84 @@ audio::-webkit-media-controls-enclosure {
         top: 160px;
         width: 50px; } }
 
+/* ----++++---- Wall Image Component ----++++---- */
+.deities-wall-component {
+  overflow: hidden; }
+  .deities-wall-component-header {
+    color: #000;
+    display: block;
+    float: left;
+    font-family: "Avenir LT W01_35 Light1475496", "AvenirLTPro35Light" !important;
+    font-size: 30px;
+    height: 20px;
+    line-height: 17px;
+    margin: 20px 0 0 20px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 170px; }
+  .deities-wall-component-top {
+    display: inline-block;
+    height: auto;
+    margin-top: 48px 0 0 0;
+    padding: 0px;
+    width: 100%; }
+  .deities-wall-component-list {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto; }
+  .deities-wall-component-list ul {
+    list-style: none;
+    font-size: 0px;
+    margin: 0;
+    padding: 0; }
+  .deities-wall-component-list ul li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #fff;
+    height: 200px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 50%;
+    /**/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  .deities-wall-component-list-deity {
+    background: url("../pma/img/temp/A1_2.jpg") no-repeat;
+    background-size: cover; }
+  .deities-wall-component-list-deity-two {
+    background: url("../pma/img/temp/A2_1.jpg") no-repeat;
+    background-size: cover; }
+  .deities-wall-component-list-deity-three {
+    background: url("../pma/img/temp/A1_3.jpg") no-repeat;
+    background-size: cover; }
+  .deities-wall-component-list-deity-four {
+    background: url("../pma/img/temp/A2_2.jpg") no-repeat;
+    background-size: cover; }
+  @media (min-width: 670px) {
+    .deities-wall-component-list ul li {
+      height: 200px;
+      width: 33.333%; } }
+  @media (min-width: 840px) {
+    .deities-wall-component-top {
+      display: block;
+      float: left;
+      max-width: 840px;
+      width: 100%; }
+    .deities-wall-component-list {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 100%; }
+    .deities-wall-component-list ul li {
+      height: 200px;
+      width: 33.333%; } }
+
 /*IMAGE CAPTION STYLE*/
 .absolute {
   bottom: -36px !important; }
