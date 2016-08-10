@@ -2271,6 +2271,69 @@ audio::-webkit-media-controls-enclosure{
 
 
 
+/* ----++++---- Feature-Item-Nav ----++++---- */
+.feature-item-nav {
+
+	overflow: hidden;
+	width: 100%;
+	padding: 0 0 20px 0;
+
+	&-header {
+		border-bottom: 4px solid $black;
+		color: $black;
+		display: inline-block;
+	    font-family: $avenirHeavy;
+		font-size: 37px;
+		height: 51px;
+		line-height: 38px;
+		margin: 0;
+		text-align: left;
+	    width: 274px;
+	};
+
+	&-text {
+		color: $black;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 19px;
+		margin: 0;
+		padding-right: 5px;
+		position: relative;
+		width: 100%;
+	};
+
+	&-arrow-container {
+		cursor: pointer;
+		display: inline-block;
+		height: 44px;
+		position: relative;
+		top: -10px;
+		width: 45px;
+	};
+
+	&-arrow {
+		background: url('../pma/img/temp/feature-item-arrow.png') no-repeat;
+		display: inline-block;
+		height: 8px;
+		margin-top: 10px;
+		width: 11px;
+	};
+
+	&-block {
+		background-color: $white;
+		display: inline-block;
+		height: auto;
+		width: 100%;
+	};
+
+	@media (min-width: $desktop) {
+		max-width: $desktop;
+	};
+
+};
+
+
+
 /*IMAGE CAPTION STYLE*/
 .absolute {
 	bottom: -36px !important;

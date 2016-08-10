@@ -1613,6 +1613,53 @@ audio::-webkit-media-controls-enclosure {
       top: 0;
       width: 800px; } }
 
+/* ----++++---- Feature-Item-Nav ----++++---- */
+.feature-item-nav {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 20px 0; }
+  .feature-item-nav-header {
+    border-bottom: 4px solid #000;
+    color: #000;
+    display: inline-block;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    font-size: 37px;
+    height: 51px;
+    line-height: 38px;
+    margin: 0;
+    text-align: left;
+    width: 274px; }
+  .feature-item-nav-text {
+    color: #000;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 19px;
+    margin: 0;
+    padding-right: 5px;
+    position: relative;
+    width: 100%; }
+  .feature-item-nav-arrow-container {
+    cursor: pointer;
+    display: inline-block;
+    height: 44px;
+    position: relative;
+    top: -10px;
+    width: 45px; }
+  .feature-item-nav-arrow {
+    background: url("../pma/img/temp/feature-item-arrow.png") no-repeat;
+    display: inline-block;
+    height: 8px;
+    margin-top: 10px;
+    width: 11px; }
+  .feature-item-nav-block {
+    background-color: #fff;
+    display: inline-block;
+    height: auto;
+    width: 100%; }
+  @media (min-width: 840px) {
+    .feature-item-nav {
+      max-width: 840px; } }
+
 /*IMAGE CAPTION STYLE*/
 .absolute {
   bottom: -36px !important; }
