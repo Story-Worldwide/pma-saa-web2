@@ -64,6 +64,11 @@ $(function(){
           });
         });
     }else{
+      thumbnailClickOn = false;
+      // keep click function off
+      $('li').each(function(index){
+        $(this).unbind('click');
+      });
       console.log('thumbnailClickOn = ',thumbnailClickOn);
     };
 
@@ -150,6 +155,16 @@ $(function(){
   carousel('#object-slides', '#prev', '#next', false, 1, true);
   // run carousel for object-related-content-carousel
   carousel('#object-related-content-slides', '#prev', '#next', false, 1, true);
+
+
+
+  //SWIPE/TOUCH-SLIDER 
+  function touchSwiper(id){
+      $(id).touchscroll();
+      console.log( 'slider id = ',id);
+  };
+  //touchSwiper('#object-slide-one');
+
 
 
   ///// LOAD MORE BUTTON FOR CURATED-VIEWS *** (if desktop size)

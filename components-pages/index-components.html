@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+	
+<head>
+	<meta charset="UTF-8">
+	<title>PMA Components</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/4da552db-388a-464d-9d3c-5e79aa1b6900.css"/>
+	<link rel="stylesheet" type="text/css" href="css/page-components-style.css">
+</head>
+
+
+<body>
+
+	<!--Obect-Related-Content-Carousel-->
+	<div class="includeHtmlFile" data-include="object-related-content-carousel"></div>
+	<!--Obect-Related-Content-Carousel END-->
+
+
+	<!--javascript-->
+	<script src="pma/js/jquery-1.9.0.js"></script>
+	<script type="text/javascript">
+		////////INCLUDES for component html files
+		function includeHtml(html){
+		    var includes = $('.includeHtmlFile');
+		    jQuery.each(includes, function(){
+		      var file =  $(this).data('include') + '.html';
+		      $(this).load(file);
+		      console.log('HTML LOADED = ',file);
+		    });
+		};
+		includeHtml();
+	</script>
+</body>
+
+
+</html>
