@@ -31,7 +31,7 @@ body {
 };
 
 div {
-  /*outline: 1px solid #f00;*/
+	/*outline: 1px solid #f00;*/
 };
 
 a {
@@ -56,7 +56,7 @@ a:hover {
 
 /*Touch slide class*/
 .animate {
-	transition: transform 0.3s ease-out; 
+	transition: transform 0.3s ease-out;
 };
 
 /*.slider {
@@ -66,20 +66,20 @@ a:hover {
 }*/
 
 .ms-touch.slider {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  
-  -ms-overflow-style: none;
-  /* Hides the scrollbar. */
-  
-  -ms-scroll-chaining: none;
-  /* Prevents Metro from swiping to the next tab or app. */
-  
-  -ms-scroll-snap-type: mandatory;
-  /* Forces a snap scroll behavior on your images. */
-  
-  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
-  /* Defines the y and x intervals to snap to when scrolling. */
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+	-ms-overflow-style: none;
+	/* Hides the scrollbar. */
+
+	-ms-scroll-chaining: none;
+	/* Prevents Metro from swiping to the next tab or app. */
+
+	-ms-scroll-snap-type: mandatory;
+	/* Forces a snap scroll behavior on your images. */
+
+	-ms-scroll-snap-points-x: snapInterval(0%, 100%);
+	/* Defines the y and x intervals to snap to when scrolling. */
 };
 /*Touch slide class end*/
 
@@ -98,6 +98,7 @@ a:hover {
 		margin-top: 48px 0 0 0;
 		padding: 0;
 		width: 100%;
+		position: relative;
 	};
 
 	&-img {
@@ -144,7 +145,7 @@ a:hover {
 		font-family: $avenirRoman;
 		margin: 0 30px 0 30px;
 		position: relative;
-    	width: 230px;
+		width: 230px;
 	};
 
 	@media (min-width: $tablet) {
@@ -155,23 +156,23 @@ a:hover {
 		&-small-captions {
 			display: block;
 		};
-  	};
+	};
 
-  	@media (min-width: $desktop) {
-  		&-top {
-  			display: block;
-  			float: left;
+	@media (min-width: $desktop) {
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
 
 		&-overlay {
 			left: 50%;
-		    position: relative;
-		    top: 0;
-		    width: 800px;
+			position: relative;
+			top: 0;
+			width: 800px;
 		};
-  	};
+	};
 
 };
 
@@ -184,15 +185,15 @@ a:hover {
 	&-header {
 		color: $redOrange;
 		display: block;
-	    float: left;
-	    font-family: $avenirMedium;
-	    font-size: 11px;
+		float: left;
+		font-family: $avenirMedium;
+		font-size: 11px;
 		height: 20px;
 		line-height: 17px;
 		margin: 10px 0 0 15px;
 		text-align: left;
 		text-transform: uppercase;
-	    width: 170px;
+		width: 170px;
 	};
 
 	&-sub-title {
@@ -213,7 +214,7 @@ a:hover {
 		position: absolute;
 		top: 4px;
 		width: 260px;
-		
+
 	};
 
 	&-info-box {
@@ -284,15 +285,15 @@ a:hover {
 		&-list ul li {
 			height: 200px;
 			width: 33.333%;
-	  	};
+		};
 
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		&-top {
-  			display: block;
-  			float: left;
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
@@ -300,16 +301,16 @@ a:hover {
 		&-list {
 			display: block;
 			float: right;
-  			margin: 0 auto;
+			margin: 0 auto;
 			position: relative;
 			width: 100%;
 		};
 
-  		&-list ul li {
+		&-list ul li {
 			height: 200px;
 			width: 33.333%;
-	  	};
-  	};
+		};
+	};
 
 };
 
@@ -337,7 +338,7 @@ a:hover {
 		height: auto;
 		line-height: 19px;
 		position: relative;
-		width: 100%;		
+		width: 100%;
 	};
 
 	&-top {
@@ -346,6 +347,7 @@ a:hover {
 		margin: 0;
 		padding: 0;
 		width: 100%;
+		position: relative;
 	};
 
 	&-block {
@@ -370,7 +372,7 @@ a:hover {
 		left: 0;
 		list-style: none;
 		margin: 0;
-		padding: 0;	
+		padding: 0;
 		position:relative;
 		top: 0;
 		width: 9999px;
@@ -380,7 +382,7 @@ a:hover {
 		display: block;
 		float:left;
 		height:250px;
-		margin: 0 10px 0 0;	
+		margin: 0 10px 0 0;
 		width:250px;
 
 		vertical-align: top;
@@ -463,7 +465,7 @@ a:hover {
 		&-list {
 			display: block;
 			float: right;
-  			margin: 0 auto;
+			margin: 0 auto;
 			position: relative;
 			width: 100%;
 		};
@@ -479,7 +481,7 @@ a:hover {
 			width: 100%;
 		};
 
-  		&-list ul li {
+		&-list ul li {
 			cursor: pointer;
 			display: inline-block;
 			padding: 10px;
@@ -493,22 +495,22 @@ a:hover {
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;
-	  	};
+		};
 
-	  	&-arrow-container {
-	  		display: none;
-	  	};
+		&-arrow-container {
+			display: none;
+		};
 
-	  	&-hide {
+		&-hide {
 			display: block
 		};
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		&-top {
-  			display: block;
-  			float: left;
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
@@ -525,7 +527,7 @@ a:hover {
 		&-list {
 			display: block;
 			float: right;
-  			margin: 0 auto;
+			margin: 0 auto;
 			position: relative;
 			width: 100%;
 		};
@@ -541,7 +543,7 @@ a:hover {
 			width: 100%;
 		};
 
-  		&-list ul li {
+		&-list ul li {
 			cursor: pointer;
 			display: inline-block;
 			padding: 10px;
@@ -555,17 +557,17 @@ a:hover {
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;
-	  	};
+		};
 
-	  	&-arrow-container {
-	  		display: none;
-	  	};
+		&-arrow-container {
+			display: none;
+		};
 
-	  	&-hide {
+		&-hide {
 			display: block;
 		};
 
-  	};
+	};
 
 };
 
@@ -584,7 +586,7 @@ a:hover {
 		line-height: 35px;
 		margin: 0;
 		text-align: left;
-	    width: auto;
+		width: auto;
 	};
 
 	&-sub-title {
@@ -606,12 +608,12 @@ a:hover {
 		height: auto;
 		line-height: 17px;
 		margin: 20px 0 0 20px;
-	    position: absolute;
-	    width: 66%;		
+		position: absolute;
+		width: 66%;
 	};
 
 	&-text {
-		margin: 0;		
+		margin: 0;
 	};
 
 	&-top {
@@ -621,6 +623,7 @@ a:hover {
 		margin: 0 0 30px 0;
 		padding: 0;
 		width: 100%;
+		position: relative;
 	};
 
 	&-block {
@@ -673,7 +676,7 @@ a:hover {
 	@media (min-width: $tablet) {
 		&-box {
 			display: block;
-  			float: left;
+			float: left;
 			width: 43%;
 		};
 
@@ -682,24 +685,24 @@ a:hover {
 		};
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		&-header {
+		&-header {
 			font-size: 36px;
 			line-height: 40px;
-		    width: auto;
+			width: auto;
 		};
 
-  		&-top {
-  			display: block;
-  			float: left;
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
 
 		&-box {
 			display: block;
-  			float: left;
+			float: left;
 			width: 43%;
 		};
 
@@ -707,7 +710,7 @@ a:hover {
 			margin-left: 30px;
 		};
 
-  	};
+	};
 
 };
 
@@ -720,22 +723,19 @@ a:hover {
 	overflow: hidden;
 	width: 100%;
 	padding: 0 0 20px 0;
-
-	&-span {
-		padding-right: 5px;
-	};
+	position: relative;
 
 	&-header {
 		color: $black;
 		display: block;
-	    float: left;
-	    font-family: $avenirRoman;
+		float: left;
+		font-family: $avenirRoman;
 		font-size: 16px;
 		height: auto;
 		line-height: 35px;
 		margin: 0;
 		text-align: left;
-	    width: auto;
+		width: auto;
 	};
 
 	&-sub-title {
@@ -768,6 +768,7 @@ a:hover {
 	overflow: hidden;
 	padding: 0 0 20px 0;
 	width: 100%;
+	position: relative;
 
 	p {
 		line-height: 8px;
@@ -776,8 +777,8 @@ a:hover {
 	&-title {
 		color: $black;
 		display: block;
-	    float: left;
-	    font-family: $avenirHeavy;
+		float: left;
+		font-family: $avenirHeavy;
 		font-size: 30px;
 		height: auto;
 		line-height: 35px;
@@ -785,17 +786,17 @@ a:hover {
 		padding: 3px 0 30px 0;
 		text-align: left;
 		font-weight: 900;
-	    width: 78%;
+		width: 78%;
 	};
 
 	&-sub-header {
 		color: $black;
 		display: block;
-	    float: left;
+		float: left;
 		height: auto;
 		margin: 0;
 		text-align: left;
-	    width: 50%;
+		width: 50%;
 	};
 
 	&-sub-title {
@@ -821,13 +822,13 @@ a:hover {
 		color: $white;
 		display: inline-block;
 		font-size: 12px;
-	    font-weight: 200;
-	    height: 16px;
-	    margin: 0 0 0 24px; 
-	    padding: 0 10px 0 10px;
-	    text-align: center;
-	    text-transform: uppercase;
-	    width: 42px;
+		font-weight: 200;
+		height: 16px;
+		margin: 0 0 0 24px;
+		padding: 0 10px 0 10px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 42px;
 	};
 
 	&-tag:hover {
@@ -847,16 +848,16 @@ a:hover {
 			display: inline-block;
 			float: right;
 			position: relative;
-		    top: -64px;
-		    width: 28%;
+			top: -64px;
+			width: 28%;
 		};
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		max-width: $desktop;
+		max-width: $desktop;
 
-  		&-title {
+		&-title {
 			width: 100%;
 		};
 
@@ -864,12 +865,12 @@ a:hover {
 			display: inline-block;
 			float: right;
 			position: relative;
-		    top: -64px;
-		    width: 22%;
+			top: -64px;
+			width: 22%;
 		};
-  		
 
-  	};
+
+	};
 
 };
 
@@ -886,15 +887,17 @@ a:hover {
 		margin: 0;
 		padding: 0;
 		width: 100%;
+		position: relative;
 	};
 
 	&-block {
 		background-size: contain;
-	    background-position: center center;
-	    background-repeat: no-repeat;
+		background-position: center center;
+		background-repeat: no-repeat;
 		display: inline-block;
 		height: 350px;
 		margin: 0 0 30px 0;
+		padding: 0;
 		width: 100%;
 	};
 
@@ -912,7 +915,7 @@ a:hover {
 		left: 0;
 		list-style: none;
 		margin: 0;
-		padding: 0;	
+		padding: 0;
 		position:relative;
 		top: 0;
 		width: 9999px;
@@ -923,8 +926,8 @@ a:hover {
 		display: block;
 		float:left;
 		height: 55px;
-	    margin: 0 3px 0 0;
-	    width: 58px;
+		margin: 0 3px 0 0;
+		width: 58px;
 
 		vertical-align: top;
 		box-sizing: border-box;
@@ -942,7 +945,7 @@ a:hover {
 		height: 60px;
 		width: 379px;
 
-		position: relative; 
+		position: relative;
 		margin: 0 auto;
 	};
 
@@ -968,7 +971,7 @@ a:hover {
 		background-size: cover;
 		cursor: pointer;
 		display: block;
-    	float: right;	
+		float: right;
 		height: 24px;
 		width: 8px;
 	};
@@ -1056,17 +1059,17 @@ a:hover {
 		};
 
 		/*
-	    &-bttns-block-inner {
-	    	width: 30%;
-	    };*/
+            &-bttns-block-inner {
+                width: 30%;
+            };*/
 
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		&-top {
-  			display: block;
-  			float: left;
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
@@ -1081,11 +1084,11 @@ a:hover {
 
 		&-bttns-block-inner {
 			bottom: 60px;
-		    position: relative;
-		    right: -339px;
-	    };
+			position: relative;
+			right: -339px;
+		};
 
-  	};
+	};
 
 };
 
@@ -1096,17 +1099,18 @@ a:hover {
 	overflow: hidden;
 	width: 100%;
 	padding: 0 0 20px 0;
+	position: relative;
 
 	&-header {
 		color: $black;
 		display: block;
-	    font-family: $avenirHeavy;
+		font-family: $avenirHeavy;
 		font-size: 30px;
 		height: auto;
 		line-height: 32px;
 		margin: 0 0 0 0;
 		text-align: left;
-	    width: 100%;
+		width: 100%;
 	};
 
 	&-text {
@@ -1140,19 +1144,20 @@ a:hover {
 	overflow: hidden;
 	width: 100%;
 	padding: 0 0 20px 0;
+	position: relative;
 
 	&-header {
 		color: $black;
 		display: block;
-	    float: left;
-	    font-family: $avenirHeavy;
+		float: left;
+		font-family: $avenirHeavy;
 		font-size: 30px;
 		height: auto;
 		line-height: 32px;
 		margin: 0;
 		padding-top: 3px;
 		text-align: left;
-	    width: 100%;
+		width: 100%;
 	};
 
 	&-header-text {
@@ -1179,36 +1184,36 @@ a:hover {
 
 	/* Resize videos proportionally */
 	&-vid {
-	  height: 0;
-	  padding-top: 25px;
-	  padding-bottom: 67.5%;
-	  margin-bottom: 10px;
-	  position: relative;
-	  overflow: hidden;
+		height: 0;
+		padding-top: 25px;
+		padding-bottom: 67.5%;
+		margin-bottom: 10px;
+		position: relative;
+		overflow: hidden;
 	};
 
 	&vid.widescreen {
-	  padding-bottom: 56.34%;
+		padding-bottom: 56.34%;
 	};
 
 	&-vid.vimeo {
-	  padding-top: 0;
+		padding-top: 0;
 	};
 
 	&-vid embed, &-vid iframe, &-vid object, &-vid video {
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
 	};
 
 	/* Resize videos proportionally End*/
 
 	/*iframe {
-		height: 272;
-		width: 100%;
-	};*/
+          height: 272;
+          width: 100%;
+      };*/
 
 	@media (min-width: $tablet) {
 
@@ -1257,7 +1262,7 @@ a:hover {
 
 
 /* ----++++---- Object Audio Component ----++++---- */
-/*Hides native controls in Regular and fullScreen mode - 
+/*Hides native controls in Regular and fullScreen mode -
 https://css-tricks.com/custom-controls-in-html5-video-full-screen/ */
 audio::-webkit-media-controls-enclosure{
 	display: none !important;
@@ -1268,6 +1273,7 @@ audio::-webkit-media-controls-enclosure{
 	overflow: hidden;
 	width: 100%;
 	padding: 0 0 20px 0;
+	position: relative;
 
 	&-hide {
 		display: none !important;
@@ -1276,13 +1282,13 @@ audio::-webkit-media-controls-enclosure{
 	&-header {
 		color: $black;
 		display: inline-block;
-	    font-family: $avenirHeavy;
+		font-family: $avenirHeavy;
 		font-size: 30px;
-	    line-height: 23px;
-	    padding: 2px 0 8px 0;
-	    position: relative;
+		line-height: 23px;
+		padding: 2px 0 8px 0;
+		position: relative;
 		text-align: left;
-	    width: 100%;
+		width: 100%;
 	};
 
 	&-header-text {
@@ -1292,11 +1298,11 @@ audio::-webkit-media-controls-enclosure{
 	&-text {
 		color: $grey;
 		display: inline-block;
-	    font-size: 15px;
-	    height: auto;
-	    line-height: 19px;
-	    position: relative;
-	    width: 100%;
+		font-size: 15px;
+		height: auto;
+		line-height: 19px;
+		position: relative;
+		width: 100%;
 	};
 
 	&-block {
@@ -1323,7 +1329,7 @@ audio::-webkit-media-controls-enclosure{
 		margin: 0px;
 		padding: 0px;
 		position: relative;
-		width: 60px;	
+		width: 60px;
 	};
 
 	&-play {
@@ -1331,11 +1337,11 @@ audio::-webkit-media-controls-enclosure{
 		border-bottom: 10px solid transparent;
 		border-left: 16px solid $white;
 		display: block;
-    	float: left;
+		float: left;
 		height: 0;
 		margin: 20px 0 0 22px;
 		width: 0;
-		//display: none; 
+		//display: none;
 	};
 
 	&-pause-left {
@@ -1344,7 +1350,7 @@ audio::-webkit-media-controls-enclosure{
 		float: left;
 		height: 20px;
 		margin: 20px 0 0 22px;
-		width: 5px; 
+		width: 5px;
 	};
 
 	&-pause-right {
@@ -1353,7 +1359,7 @@ audio::-webkit-media-controls-enclosure{
 		float: left;
 		height: 20px;
 		margin: 20px 0 0 4px;
-		width: 5px; 
+		width: 5px;
 	};
 
 	&-text-box {
@@ -1371,7 +1377,7 @@ audio::-webkit-media-controls-enclosure{
 		font-size: 14px;
 		font-family: $avenirHeavy;
 		line-height: 16px;
-		padding: 7px 0 0 0;  
+		padding: 7px 0 0 0;
 	};
 
 	&-inner-text {
@@ -1384,17 +1390,17 @@ audio::-webkit-media-controls-enclosure{
 		display: block;
 		float: left;
 		height: 60px;
-		width: 55%;	
+		width: 55%;
 	};
 
 	&-pbar-outer {
 		background-color: $greyTwo;
 		border-radius: 2px;
-	    display: block;
-	    float: left;
-	    height: 5px;
-	    overflow: hidden;
-	    width: 100%;	
+		display: block;
+		float: left;
+		height: 5px;
+		overflow: hidden;
+		width: 100%;
 	};
 
 	&-pbar {
@@ -1403,18 +1409,18 @@ audio::-webkit-media-controls-enclosure{
 		float: left;
 		height: 5px;
 		width: 0;
-		outline: 1px solid #f00;	
+		outline: 1px solid #f00;
 	};
 
 	&-timer {
-	    display: block;
-	    float: left;
-	    height: auto;
-	    /* margin: 28px 0 0 0; */
-	    overflow: hidden;
-	    position: relative;
-	    top: 27px;
-	    width: 100%;
+		display: block;
+		float: left;
+		height: auto;
+		/* margin: 28px 0 0 0; */
+		overflow: hidden;
+		position: relative;
+		top: 27px;
+		width: 100%;
 	};
 
 	&-time-text {
@@ -1460,17 +1466,17 @@ audio::-webkit-media-controls-enclosure{
 	overflow: hidden;
 
 	/*&-header {
-		color: $redOrange;
-		display: block;
-	    float: left;
-		font-size: 11px;
-		height: 20px;
-		line-height: 17px;
-		margin: 5px 0 0 10px;
-		text-align: left;
-		text-transform: uppercase;
-	    width: 170px;
-	};*/
+          color: $redOrange;
+          display: block;
+          float: left;
+          font-size: 11px;
+          height: 20px;
+          line-height: 17px;
+          margin: 5px 0 0 10px;
+          text-align: left;
+          text-transform: uppercase;
+          width: 170px;
+      };*/
 
 	&-sub-title {
 		color: $black;
@@ -1490,7 +1496,7 @@ audio::-webkit-media-controls-enclosure{
 		height: auto;
 		line-height: 19px;
 		position: relative;
-		width: 100%;		
+		width: 100%;
 	};
 
 	&-heavy {
@@ -1505,6 +1511,7 @@ audio::-webkit-media-controls-enclosure{
 		margin: 0;
 		padding: 0;
 		width: 100%;
+		position: relative;
 	};
 
 	&-block {
@@ -1529,7 +1536,7 @@ audio::-webkit-media-controls-enclosure{
 		left: 0;
 		list-style: none;
 		margin: 0;
-		padding: 0;	
+		padding: 0;
 		position:relative;
 		top: 0;
 		width: 9999px;
@@ -1539,7 +1546,7 @@ audio::-webkit-media-controls-enclosure{
 		display: block;
 		float:left;
 		height:250px;
-		margin: 0 10px 0 0;	
+		margin: 0 10px 0 0;
 		width:250px;
 
 		vertical-align: top;
@@ -1599,14 +1606,14 @@ audio::-webkit-media-controls-enclosure{
 	/* for numbers of images*/
 	&-imagenum {
 		color: $grey;
-	    display: none;
-	    font-size: 13px;
-	    height: 30px;
-	    line-height: 17px;
-	    position: relative;
-	    text-align: center;
-	    top: -6px;
-	    width: 30px;		
+		display: none;
+		font-size: 13px;
+		height: 30px;
+		line-height: 17px;
+		position: relative;
+		text-align: center;
+		top: -6px;
+		width: 30px;
 	};
 
 	&-div {
@@ -1642,19 +1649,19 @@ audio::-webkit-media-controls-enclosure{
 	@media (min-width: $tablet) {
 		&-list {
 			margin: 0 0 0 30px;
-		    width: 91%;
+			width: 91%;
 		};
 
-	  	&-arrow-block-left {
-	  		display: block;
-	  		left: 0;
-	  		top: 320px;
+		&-arrow-block-left {
+			display: block;
+			left: 0;
+			top: 320px;
 			width: 50px;
 		};
 
 		&-arrow-block-right {
-	  		display: block;
-	  		left: 92%;
+			display: block;
+			left: 92%;
 			top: 320px;
 			width: 50px;
 		};
@@ -1663,61 +1670,61 @@ audio::-webkit-media-controls-enclosure{
 			display: none;
 		};
 
-	  	/*&-arrow-block {
-			width: 47%;
-		};
+		/*&-arrow-block {
+              width: 47%;
+          };
 
-		&-arrow-left {
-			margin: 0 0 0 85%;
-		};
+          &-arrow-left {
+              margin: 0 0 0 85%;
+          };
 
-		&-arrow-right {
-			margin: 0 0 0 12%;
-		};*/
+          &-arrow-right {
+              margin: 0 0 0 12%;
+          };*/
 
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		&-top {
-  			display: block;
-  			float: left;
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
 
 		&-list {
 			margin: 0 0 0 30px;
-		    width: 91%;
+			width: 91%;
 		};
 
 		&-arrow-block-left {
-	  		display: block;
-	  		left: 0;
-	  		top: 320px;
-			width: 50px;
-		};
-
-		&-arrow-block-right {
-	  		display: block;
-	  		left: 798px;
+			display: block;
+			left: 0;
 			top: 320px;
 			width: 50px;
 		};
 
-	  	/*&-arrow-block {
-			width: 47%;
+		&-arrow-block-right {
+			display: block;
+			left: 798px;
+			top: 320px;
+			width: 50px;
 		};
 
-		&-arrow-left {
-			margin: 0 0 0 85%;
-		};
+		/*&-arrow-block {
+              width: 47%;
+          };
 
-		&-arrow-right {
-			margin: 0 0 0 12%;
-		};*/
+          &-arrow-left {
+              margin: 0 0 0 85%;
+          };
 
-  	};
+          &-arrow-right {
+              margin: 0 0 0 12%;
+          };*/
+
+	};
 
 };
 
@@ -1731,6 +1738,7 @@ audio::-webkit-media-controls-enclosure{
 	overflow: hidden;
 	padding: 0 0 20px 0;
 	width: 100%;
+	position: relative;
 
 	p {
 		line-height: 20px;
@@ -1743,27 +1751,27 @@ audio::-webkit-media-controls-enclosure{
 	&-title {
 		color: $black;
 		display: block;
-	    float: left;
-	    font-family: $avenirHeavy;
+		float: left;
+		font-family: $avenirHeavy;
 		font-size: 30px;
 		height: auto;
 		margin: 0;
 		padding: 3px 0 10px 0;
 		text-align: left;
 		font-weight: 900;
-	    width: 78%;
+		width: 78%;
 	};
 
 	&-sub-header {
 		color: $black;
 		display: block;
-	    float: left;
+		float: left;
 		font-size: 16px;
 		font-weight: 600;
 		height: auto;
 		margin: 0;
 		text-align: left;
-	    width: 100%;
+		width: 100%;
 	};
 
 	&-font-weight-heavy {
@@ -1796,12 +1804,12 @@ audio::-webkit-media-controls-enclosure{
 		color: $white;
 		display: inline-block;
 		font-size: 12px;
-	    height: 16px;
-	    margin: 0 0 0 24px; 
-	    padding: 2px 10px 0 10px;
-	    text-align: center;
-	    text-transform: uppercase;
-	    width: 42px;
+		height: 16px;
+		margin: 0 0 0 24px;
+		padding: 2px 10px 0 10px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 42px;
 	};
 
 	&-grey {
@@ -1814,9 +1822,9 @@ audio::-webkit-media-controls-enclosure{
 		background-size: cover;
 		border: 1px solid $greyTwo;
 		display: block;
-	    height: 72px;
-	    margin: 15px 0 20px 0;
-	    width: 200px;
+		height: 72px;
+		margin: 15px 0 20px 0;
+		width: 200px;
 	};
 
 	@media (min-width: $tablet) {
@@ -1826,15 +1834,15 @@ audio::-webkit-media-controls-enclosure{
 
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		max-width: $desktop;
+		max-width: $desktop;
 
-  		&-title {
+		&-title {
 			width: 100%;
-		};	
+		};
 
-  	};
+	};
 
 };
 
@@ -1846,17 +1854,17 @@ audio::-webkit-media-controls-enclosure{
 	overflow: hidden;
 
 	/*&-header {
-		color: $redOrange;
-		display: block;
-	    float: left;
-		font-size: 11px;
-		height: 20px;
-		line-height: 17px;
-		margin: 5px 0 0 10px;
-		text-align: left;
-		text-transform: uppercase;
-	    width: 170px;
-	};*/
+          color: $redOrange;
+          display: block;
+          float: left;
+          font-size: 11px;
+          height: 20px;
+          line-height: 17px;
+          margin: 5px 0 0 10px;
+          text-align: left;
+          text-transform: uppercase;
+          width: 170px;
+      };*/
 
 	&-sub-title {
 		color: $black;
@@ -1877,7 +1885,7 @@ audio::-webkit-media-controls-enclosure{
 		height: auto;
 		line-height: 29px;
 		position: relative;
-		width: 100%;		
+		width: 100%;
 	};
 
 	&-heavy {
@@ -1894,6 +1902,7 @@ audio::-webkit-media-controls-enclosure{
 		margin: 0;
 		padding: 0;
 		width: 100%;
+		position: relative;
 	};
 
 	&-block {
@@ -1918,7 +1927,7 @@ audio::-webkit-media-controls-enclosure{
 		left: 0;
 		list-style: none;
 		margin: 0;
-		padding: 0;	
+		padding: 0;
 		position:relative;
 		top: 0;
 		width: 9999px;
@@ -1928,7 +1937,7 @@ audio::-webkit-media-controls-enclosure{
 		display: block;
 		float:left;
 		height:250px;
-		margin: 0 10px 0 0;	
+		margin: 0 10px 0 0;
 		width:250px;
 
 		vertical-align: top;
@@ -1988,14 +1997,14 @@ audio::-webkit-media-controls-enclosure{
 	/* for numbers of images*/
 	&-imagenum {
 		color: $grey;
-	    display: none;
-	    font-size: 13px;
-	    height: 30px;
-	    line-height: 17px;
-	    position: relative;
-	    text-align: center;
-	    top: -6px;
-	    width: 30px;		
+		display: none;
+		font-size: 13px;
+		height: 30px;
+		line-height: 17px;
+		position: relative;
+		text-align: center;
+		top: -6px;
+		width: 30px;
 	};
 
 	&-div {
@@ -2031,30 +2040,30 @@ audio::-webkit-media-controls-enclosure{
 	@media (min-width: $tablet) {
 		&-list {
 			margin: 0 0 0 30px;
-		    width: 91.4%;
+			width: 91.4%;
 		};
 
-	  	&-arrow-block-left {
-	  		display: block;
-	  		left: 0;
-	  		top: 160px;
+		&-arrow-block-left {
+			display: block;
+			left: 0;
+			top: 160px;
 			width: 50px;
 		};
 
 		&-arrow-block-right {
-	  		display: block;
-	  		left: 92%;
+			display: block;
+			left: 92%;
 			top: 160px;
 			width: 50px;
 		};
 
 		/*&-arrow-left {
-			margin: 0 0 0 85%;
-		};
+                margin: 0 0 0 85%;
+            };
 
-		&-arrow-right {
-			margin: 0 0 0 12%;
-		};*/
+            &-arrow-right {
+                margin: 0 0 0 12%;
+            };*/
 
 		&-imagenum {
 			display: none;
@@ -2062,47 +2071,47 @@ audio::-webkit-media-controls-enclosure{
 
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		&-top {
-  			display: block;
-  			float: left;
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
 
 		&-list {
 			margin: 0 0 0 30px;
-		    width: 91%;
+			width: 91%;
 		};
 
 		&-arrow-block-left {
-	  		display: block;
-	  		left: 0;
-	  		top: 160px;
-			width: 50px;
-		};
-
-		&-arrow-block-right {
-	  		display: block;
-	  		left: 798px;
+			display: block;
+			left: 0;
 			top: 160px;
 			width: 50px;
 		};
 
-	  	/*&-arrow-block {
-			width: 47%;
+		&-arrow-block-right {
+			display: block;
+			left: 798px;
+			top: 160px;
+			width: 50px;
 		};
 
-		&-arrow-left {
-			margin: 0 0 0 85%;
-		};
+		/*&-arrow-block {
+              width: 47%;
+          };
 
-		&-arrow-right {
-			margin: 0 0 0 12%;
-		};*/
+          &-arrow-left {
+              margin: 0 0 0 85%;
+          };
 
-  	};
+          &-arrow-right {
+              margin: 0 0 0 12%;
+          };*/
+
+	};
 
 };
 
@@ -2116,15 +2125,15 @@ audio::-webkit-media-controls-enclosure{
 	&-header {
 		color: $black;
 		display: block;
-	    float: left;
-	    font-family: $avenirLight;
-	    font-size: 30px;
+		float: left;
+		font-family: $avenirLight;
+		font-size: 30px;
 		height: 20px;
 		line-height: 17px;
 		margin: 20px 0 0 20px;
 		text-align: left;
 		text-transform: uppercase;
-	    width: 170px;
+		width: 170px;
 	};
 
 	&-top {
@@ -2189,15 +2198,15 @@ audio::-webkit-media-controls-enclosure{
 		&-list ul li {
 			height: 200px;
 			width: 33.333%;
-	  	};
+		};
 
 	};
 
-  	@media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-  		&-top {
-  			display: block;
-  			float: left;
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
@@ -2205,16 +2214,16 @@ audio::-webkit-media-controls-enclosure{
 		&-list {
 			display: block;
 			float: right;
-  			margin: 0 auto;
+			margin: 0 auto;
 			position: relative;
 			width: 100%;
 		};
 
-  		&-list ul li {
+		&-list ul li {
 			height: 200px;
 			width: 33.333%;
-	  	};
-  	};
+		};
+	};
 
 };
 
@@ -2279,23 +2288,23 @@ audio::-webkit-media-controls-enclosure{
 		&-small-captions {
 			display: block;
 		};
-  	};
+	};
 
-  	@media (min-width: $desktop) {
-  		&-top {
-  			display: block;
-  			float: left;
+	@media (min-width: $desktop) {
+		&-top {
+			display: block;
+			float: left;
 			max-width: $desktop;
 			width: 100%
 		};
 
 		&-overlay {
 			left: 50%;
-		    position: relative;
-		    top: 0;
-		    width: 800px;
+			position: relative;
+			top: 0;
+			width: 800px;
 		};
-  	};
+	};
 
 };
 
@@ -2312,13 +2321,13 @@ audio::-webkit-media-controls-enclosure{
 		border-bottom: 4px solid $black;
 		color: $black;
 		display: inline-block;
-	    font-family: $avenirHeavy;
+		font-family: $avenirHeavy;
 		font-size: 37px;
 		height: 51px;
 		line-height: 38px;
 		margin: 0;
 		text-align: left;
-	    width: 274px;
+		width: 274px;
 	};
 
 	&-text {
@@ -2371,15 +2380,15 @@ audio::-webkit-media-controls-enclosure{
 
 figure {
 	margin: 0 0 0 -17px;
-    width: 500px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
 };
 
 figcaption {
 	display: block;
-	position: absolute;	
+	position: absolute;
 	width: 100%;
 	height: 150px;
 	left: 0;
@@ -2404,7 +2413,7 @@ figure:hover figcaption {
 };
 
 @media (min-width: $desktop) {
-	
+
 };
 
 
@@ -2440,3 +2449,9 @@ figure:hover figcaption {
 	text-align: center;
 	text-transform: uppercase;
 };
+
+.component-preview > .row-fluid > h1 {
+	padding: 5px 15px;
+	background-color: #e83a17;
+	color: white;
+}
