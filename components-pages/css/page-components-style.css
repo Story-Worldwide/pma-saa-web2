@@ -1636,11 +1636,16 @@ audio::-webkit-media-controls-enclosure {
       float: left;
       max-width: 840px;
       width: 100%; }
+    .deities-tombstone-img {
+      height: 296px; }
     .deities-tombstone-overlay {
+      height: 300px;
       left: 50%;
       position: relative;
       top: 0;
-      width: 800px; } }
+      width: 800px; }
+    .deities-tombstone-block {
+      padding-top: 86px; } }
 
 /* ----++++---- Feature-Item-Nav ----++++---- */
 .feature-item-nav {
