@@ -52,6 +52,13 @@ a:hover {
   /* Defines the y and x intervals to snap to when scrolling. */ }
 
 /*Touch slide class end*/
+.background-img-contain-center {
+  background-size: contain;
+  background-position: center; }
+
+.background-img-cover {
+  background-size: cover; }
+
 /*MAIN STYLES END*/
 /* ----++++---- Landing Page Top Image Component ----++++---- */
 .landing-page {
@@ -196,8 +203,8 @@ a:hover {
     background-size: cover; }
   @media (min-width: 670px) {
     .wall-component-list ul li {
-      height: 200px;
-      width: 33.333%; } }
+      height: 204px;
+      width: 204px; } }
   @media (min-width: 840px) {
     .wall-component-top {
       display: block;
@@ -209,10 +216,12 @@ a:hover {
       float: right;
       margin: 0 auto;
       position: relative;
-      width: 100%; }
+      width: 612px;
+      /*100%;*/ }
     .wall-component-list ul li {
-      height: 200px;
-      width: 33.333%; } }
+      height: 204px;
+      width: 204px;
+      /*33.33%*/ } }
 
 /* ----++++---- Curated Veiw / Carousel Component ----++++---- */
 .carousel-component {
