@@ -52,6 +52,14 @@ a:hover {
   /* Defines the y and x intervals to snap to when scrolling. */ }
 
 /*Touch slide class end*/
+/*Background-image-styles*/
+.background-img-contain-center {
+  background-size: contain;
+  background-position: center; }
+
+.background-img-cover {
+  background-size: cover; }
+
 /*MAIN STYLES END*/
 /* ----++++---- Landing Page Top Image Component ----++++---- */
 .landing-page {
