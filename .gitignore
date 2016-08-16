@@ -49,3 +49,4 @@ _ignore
 IGNORE
 ignore
 node_modules
+.idea/

@@ -83,16 +83,6 @@ a:hover {
 };
 /*Touch slide class end*/
 
-.background-img-contain-center {
-	background-size: contain;
-    background-position: center;
-};
-
-.background-img-cover {
-	background-size: cover;
-};
-
-
 /*MAIN STYLES END*/
 
 
@@ -292,8 +282,8 @@ a:hover {
 
 	@media (min-width: $tablet) {
 		&-list ul li {
-			height: 204px;
-			width: 204px;
+			height: 200px;
+			width: 33.333%;
 	  	};
 
 	};
@@ -312,12 +302,12 @@ a:hover {
 			float: right;
   			margin: 0 auto;
 			position: relative;
-			width: 612px;/*100%;*/
+			width: 100%;
 		};
 
   		&-list ul li {
-			height: 204px;
-			width: 204px;/*33.33%*/
+			height: 200px;
+			width: 33.333%;
 	  	};
   	};
 
