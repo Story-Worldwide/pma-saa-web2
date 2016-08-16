@@ -165,11 +165,20 @@ a:hover {
 			width: 100%
 		};
 
+		&-img {
+			height: 296px;
+		};
+
 		&-overlay {
+			height: 300px;
 			left: 50%;
 		    position: relative;
 		    top: 0;
 		    width: 800px;
+		};
+
+		&-block {
+		    padding-top: 86px;
 		};
   	};
 
