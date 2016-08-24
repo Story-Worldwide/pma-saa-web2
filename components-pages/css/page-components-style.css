@@ -1945,6 +1945,12 @@ figure:hover figcaption {
   /*mobile 17*/ }
 
 /*IMAGE CAPTION STYLE END*/
+/*Touch Slider - enable Flickity by default */
+.carousel:after {
+  content: 'flickity';
+  display: none;
+  /* hide :after */ }
+
 /*MEDIA QUIRES*/
 @media (min-width: 670px) {
   .absolute {
@@ -1966,7 +1972,10 @@ figure:hover figcaption {
   figure {
     width: 300px; }
   figure:hover figcaption {
-    bottom: -86px; } }
+    bottom: -86px; }
+  /*Touch Slider - disable Flickity for large devices */
+  .carousel:after {
+    content: ''; } }
 
 /*LOAD MORE BUTTON*/
 .load-more-container {

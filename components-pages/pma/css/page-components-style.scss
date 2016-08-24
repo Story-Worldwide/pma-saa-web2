@@ -2755,6 +2755,12 @@ figure:hover figcaption {
 /*IMAGE CAPTION STYLE END*/
 
 
+/*Touch Slider - enable Flickity by default */
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+};
+
 
 /*MEDIA QUIRES*/
 @media (min-width: $tablet) {
@@ -2795,6 +2801,11 @@ figure:hover figcaption {
     figure:hover figcaption {
       bottom: -86px;
     };
+
+    /*Touch Slider - disable Flickity for large devices */
+	.carousel:after {
+	  content: '';
+	};
 };
 
 
@@ -2835,4 +2846,4 @@ figure:hover figcaption {
   padding: 5px 15px;
   background-color: #e83a17;
   color: white;
-}
+};

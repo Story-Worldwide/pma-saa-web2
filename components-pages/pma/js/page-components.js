@@ -15,6 +15,7 @@ $(function(){
         currentSlide,
         imgArr = [];
 
+
     ////////INCLUDES for component html files
     function include(html){
         var includes = $('.include');
@@ -25,6 +26,30 @@ $(function(){
         });
     };
     include();
+
+
+    ///////LOAD JAVASCRIPT FILE
+    //http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
+    function loadjscssfile(filename, filetype){
+        if (filetype == 'js'){ //if filename is a external JavaScript file
+            var fileref = document.createElement('script')
+            fileref.setAttribute('type','text/javascript')
+            fileref.setAttribute('src', filename)
+        }
+        else if (filetype == 'css'){ //if filename is an external CSS file
+            var fileref = document.createElement('link')
+            fileref.setAttribute('rel', 'stylesheet')
+            fileref.setAttribute('type', 'text/css')
+            fileref.setAttribute('href', filename)
+        }
+        if (typeof fileref != 'undefined')
+            document.getElementsByTagName('head')[0].appendChild(fileref)
+
+        console.log( 'File Loaded ',filename);
+    };
+    //dynamically load and add this .js file
+    //loadjscssfile('pma/js/touch/hammer.js', 'js') 
+
 
 
     /*///////CAROUSEL SCRIPT
@@ -253,7 +278,6 @@ $(function(){
                 };
             };
 
-            console.log('SLIDE LEFT ');
             // cancel link behavior
             return false;
 
@@ -283,11 +307,38 @@ $(function(){
                 };
             };
 
-            console.log('SLIDE RIGHT ');
             // cancel link behavior
             return false;
 
         });
+
+        //Touch Slider
+        function touchSlier(){
+            var hammertime = new Hammer($('.touch-slider')); 
+            slideSpeed = 50;  
+            hammertime.on("swipeleft", function() {
+                var left_indent = parseInt($(' ul').css('left')) + (item_width * numSlides);
+                // slide the item
+                slideContainer.find('ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+                    // move first item and place as last item
+                    slideContainer.find('li:last').after(slideContainer.find('li:first'));
+                    // set default item to correct position
+                    slideContainer.find('ul').css({'left': left_value});
+                });  
+            });
+
+            hammertime.on("swiperight", function() {
+                var left_indent = parseInt($(' ul').css('left')) - (item_width * numSlides);
+                // slide the item
+                slideContainer.find('ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
+                    // move first item and place as last item
+                    slideContainer.find('li:last').after(slideContainer.find('li:first'));
+                    // set default item to correct position
+                    slideContainer.find('ul').css({'left': left_value});
+                }); 
+            });
+        };
+        touchSlier();      
 
     };
 
