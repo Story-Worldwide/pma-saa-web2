@@ -27,7 +27,7 @@ $(function(){
     include();
 
 
-    ///////CAROUSEL SCRIPT
+    /*///////CAROUSEL SCRIPT
     function carousel(id, prevButton, nextButton, thumbnailClickOn, numSlides, imageNum, idLarge){
 
         // grab width and calculate left value
@@ -68,11 +68,11 @@ $(function(){
             });
             console.log('thumbnailClickOn = ',thumbnailClickOn);
         }else if( thumbnailClickOn == false ){
-            /*// keep click function off
-             $('li').each(function(index){
-             $(this).unbind('click');
-             });*/
-            console.log('thumbnailClickOn = ',thumbnailClickOn);
+            /// keep click function off
+             //$('li').each(function(index){
+             //$(this).unbind('click');
+            // });
+           // console.log('thumbnailClickOn = ',thumbnailClickOn);
         };
 
 
@@ -155,13 +155,13 @@ $(function(){
     };
     ///// RUN CAROUSELS
     // run carousel for carousel-component landing page
-    // carousel('#slides', '.carousel-component-top #prev', '.carousel-component-top #next', false, 1);
+    //carousel('#slides', '.carousel-component-top #prev', '.carousel-component-top #next', false, 1);
     // run carousel for carousel-component object page
     //carousel('#slides-obj', '.object-carousel-component-top .prevObj', '.object-carousel-component-top .nextObj', true, 5, false, '#large-image');
     // run carousel for object-overview-carousel
-    //carousel('#object-slides', '.object-overview-carousel-top .prev', '.object-overview-carousel-top .carousel-next', false, 1, true);
+    //carousel('#object-slides', '.object-overview-carousel-top .carousel-button-prev', '.object-overview-carousel-top .carousel-button-next', false, 1, true);
     // run carousel for object-related-content-carousel
-    //carousel('#object-related-content-slides', '.object-related-content-carousel-top .prev', '.object-related-content-carousel-top .carousel-next', false, 1, true);
+    //carousel('#object-related-content-slides', '.object-related-content-carousel-top .carousel-button-prev', '.object-related-content-carousel-top .carousel-button-next', false, 1, true);*/
 
     function smartCarousel(containerEl, isThumbLoader, numSlides, showImageNums) {
         var slideContainer = $('.carousel-slide-container', containerEl),
@@ -207,10 +207,7 @@ $(function(){
             });
 
         }else {
-            /*// keep click function off
-             $('li').each(function(index){
-             $(this).unbind('click');
-             });*/
+     
 
         };
         console.log('thumbnailClickOn = ',isThumbLoader);
@@ -237,7 +234,7 @@ $(function(){
             console.log('::carousel previous::');
             evt.preventDefault();
             // get right position
-            var left_indent = parseInt($(id + ' ul').css('left')) + (item_width * numSlides);
+            var left_indent = parseInt($('ul').css('left')) + (item_width * numSlides);
             // slide the item
             slideContainer.find('ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
                 // move last item and place as first item
@@ -268,7 +265,7 @@ $(function(){
             console.log('::carousel next::');
             evt.preventDefault();
             // get right position
-            var left_indent = parseInt($(id + ' ul').css('left')) - (item_width * numSlides);
+            var left_indent = parseInt($(' ul').css('left')) - (item_width * numSlides);
             // slide the item
             slideContainer.find('ul').animate({'left': left_indent}, slideSpeed, 'swing', function(){
                 // move first item and place as last item
@@ -294,17 +291,18 @@ $(function(){
 
     };
 
-    $('.carousel.carousel-artobject-main').each(function(index) {
+    /*$('.carousel.carousel-artobject-main').each(function(index) {
         smartCarousel( $(this), true, 5, false);
-    });
+    });*/
 
     $('.carousel.carousel-related-content').each(function(index) {
         smartCarousel( $(this), false, 1, true)
     });
 
-    $('.carousel.carousel-secondary').each(function(index) {
+    /*$('.carousel.carousel-secondary').each(function(index) {
         smartCarousel( $(this), false, 1, true)
-    });
+    });*/
+
 
     ///// LOAD MORE BUTTON FOR CURATED-VIEWS *** (if desktop size)
     $('#load-curated').click(function(e){
