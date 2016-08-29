@@ -54,6 +54,14 @@ a:hover {
   color: $playButtonOrange;
 };
 
+.display-none {
+  display: none !important;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+};
+
 /*Touch slide class*/
 .animate {
   transition: transform 0.3s ease-out;
@@ -1047,8 +1055,7 @@ a:hover {
   &-center {
     display: block;
     height: 60px;
-    width: 379px;
-
+    width: 317px;/*82%;//379px;*/
     position: relative;
     margin: 0 auto;
   };
@@ -1195,6 +1202,10 @@ a:hover {
       margin: 0 auto;
       position: relative;
       right: -290px;
+    };
+
+    &-center {
+      width: 379px;
     };
 
   };
@@ -1654,7 +1665,7 @@ audio::-webkit-media-controls-enclosure{
     float: left;
     height: 250px;
     margin: 0 10px 0 0;
-    padding-left: 45px;
+    padding-left: 0;
     width: 195px;
 
     vertical-align: top;
@@ -1790,9 +1801,8 @@ audio::-webkit-media-controls-enclosure{
       display: block;
       float: left;
       height: auto;
-      /* margin: 0 10px 0 0; */
-      width: 201px;
       padding: 0;
+      width: 201px;
     };
 
     &-text-box {
@@ -2046,7 +2056,7 @@ audio::-webkit-media-controls-enclosure{
     float: left;
     height: auto;
     margin: 0 10px 0 0;
-    width: 320px;
+    width: 336px;/*320px;*/
 
     vertical-align: top;
     box-sizing: border-box;
@@ -2153,6 +2163,10 @@ audio::-webkit-media-controls-enclosure{
 
     &-title {
       width: 100%;
+    };
+
+    &-list li {
+      width: 361px;
     };
 
     &-img {
@@ -2666,31 +2680,57 @@ audio::-webkit-media-controls-enclosure{
   width: 100%;
   padding: 0 0 20px 0;
 
+  &-block {
+    background-color: $white;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  };
+
   &-header {
     border-bottom: 4px solid $black;
     color: $black;
     display: inline-block;
     font-family: $avenirHeavy;
-    font-size: 37px;
+    font-size: 30px;
     height: 51px;
     line-height: 38px;
-    margin: 0;
+    margin: 0 0 20px 0;
     text-align: left;
-    width: 274px;
+    width: 237px;
+  };
+
+  &-fig-header {
+    color: $black;
+    display: block;
+    float: left;
+    font-family: $avenirLight;
+    font-size: 13px;
+    height: 20px;
+    line-height: 17px;
+    margin: 2px 0 0 20px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 170px;
+  };
+
+  &-fig-color:hover {
+    color: $redOrange;
   };
 
   &-text {
+    border-bottom: 1px solid $greyThree;
     color: $black;
     display: inline-block;
     font-size: 15px;
     line-height: 19px;
-    margin: 0;
-    padding-right: 5px;
+    margin: 0 0 30px 0;
+    padding: 0 5px 20px 0;
     position: relative;
     width: 100%;
   };
 
-  &-arrow-container {
+  &-arrow-top-container {
     cursor: pointer;
     display: inline-block;
     height: 44px;
@@ -2699,13 +2739,344 @@ audio::-webkit-media-controls-enclosure{
     width: 45px;
   };
 
-  &-arrow {
-    background: url('../pma/img/temp/feature-item-arrow.png') no-repeat;
+  &-arrow-top {
+    background: url('../pma/img/temp/feature-item-arrow-two.png') no-repeat;
     display: inline-block;
     height: 8px;
     margin-top: 10px;
     width: 11px;
   };
+
+  &-arrow-top:hover {
+    background-position: -11px 0;
+  };
+
+  &-imagenum-top {
+    color: $grey;
+    display: block;
+    float: right;
+    font-size: 13px;
+    height: 30px;
+    line-height: 17px;
+    padding-top: 6px;
+    position: relative;
+    text-align: left;
+    width: 30px;
+  };
+
+  &-block-carousel {
+    background-color: $white;
+    display: block;
+    float: left;
+    height: 73px;
+    width: 99%;
+  };
+
+  &-header-carousel {
+    color: $black;
+    display: inline-block;
+    font-family: $avenirHeavy;
+    font-size: 20px;
+    height: auto;
+    line-height: 20px;
+    margin: 25px 0 20px 4px;
+    text-align: left;
+    width: auto;
+  };
+
+  &-close-button {
+  	background: url('../pma/img/temp/close-X.png') no-repeat;
+  	background-size: contain;
+    color: $grey;
+    cursor: pointer;
+    display: block;
+    font-family: $avenirLight;
+    float: right;
+    font-size: 25px;
+    height: 20px;
+    line-height: 33px;
+    margin: 17px 0 0 0;
+    padding-top: 0;
+    text-align: center;
+    width: 20px;
+  };
+
+  /*Hidden Carousel Slider*/
+  &-top {
+    border: 1px solid $greyThree;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px;
+    width: 98%;
+  };
+
+  &-list {
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  };
+
+  &-list ul {
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 9999px;
+  };
+
+  &-list li {
+    display: block;
+    float: left;
+    height: 450px; /*!important*/
+    margin: 0 10px 0 0;
+    padding-left: 0;
+    width:403px;/*330px;*/
+    height: auto;
+
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  };
+
+  &-absolute {
+    bottom: 0 !important;
+  };
+
+  &-list-inner {
+    border: none;
+    display: inline-block;
+    height: 440px;
+    margin: 0 0 0 6px;
+    width: 100%;
+  };
+
+  &-list-inner div {
+    border: none;/*1px solid $white;*/
+    display: inline-block;
+    height: 98px;
+    overflow: hidden;
+    width: 98px;/*32%;*/
+  };
+
+  &-arrow-container {
+    background-color: $white;
+    display: block;
+    float: left;
+    height: 46px;
+    width: 100%;
+  };
+
+  &-arrow-block {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 72px;
+  };
+
+  &-arrow-left {
+    background: url('../pma/img/temp/arrowLeftFinal.png') no-repeat;
+    background-size: contain;
+    //cursor: pointer;
+    display: block;
+    float: left;
+    height: 28px;
+    margin: 0;
+    width: 20px;
+  };
+
+  &-arrow-right {
+    background: url('../pma/img/temp/arrowRightFinal.png') no-repeat;
+    background-size: contain;
+    //cursor: pointer;
+    display: block;
+    float: left;
+    height: 28px;
+    margin: 0;
+    width: 20px;
+  };
+
+  /* for numbers of images*/
+  &-imagenum {
+    color: $grey;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 30px;
+    line-height: 17px;
+    padding-top: 6px;
+    position: relative;
+    text-align: left;
+    width: 30px;
+  };
+
+  &-hidden-mobile {
+    display: none;
+  };
+
+  &-list-deity {
+    background: url('../pma/img/temp/A1_2.jpg') no-repeat;
+    background-size: cover;
+  };
+
+  &-list-deity-two {
+    background: url('../pma/img/temp/A2_1.jpg') no-repeat;
+    background-size: cover;
+  };
+
+  &-list-deity-three {
+    background: url('../pma/img/temp/A1_3.jpg') no-repeat;
+    background-size: cover;
+  };
+
+  &-list-deity-four {
+    background: url('../pma/img/temp/A2_2.jpg') no-repeat;
+    background-size: cover;
+  };
+
+  @media (min-width: $tablet) {
+
+    &-list li {
+      height: 800px;
+      margin: 0 10px 0 0;
+      width: 580px;
+    };
+
+    &-list-inner {
+      border: none;
+      display: inline-block;
+      height: 740px;
+      margin: 0 0 0 6px;
+      width: 100%;
+    };
+
+    &-list-inner div {
+      height: 190px;
+      width: 190px;
+    };
+
+    &-fig-header {
+      font-size: 30px;
+      line-height: 17px;
+      margin: 20px 0 0 20px;
+      width: 170px;
+    };
+
+    &-absolute {
+      bottom: -96px !important;
+    };
+
+  };
+
+  @media (min-width: $desktop) {
+
+    max-width: $desktop;
+
+    &-header {
+      width: 274px;
+    };
+
+    &-header-carousel {
+      font-size: 30px;
+      height: 51px;
+      line-height: 38px;
+      margin: 20px 0 20px 20px;
+      width: 274px;
+    };
+
+    &-close-button {
+      font-size: 25px;
+      height: 20px;
+      line-height: 33px;
+      margin: 20px;
+      padding-top: 6px;
+      position: relative;
+      text-align: left;
+      width: 20px;
+    };
+
+    &-fig-header {
+      font-size: 30px;
+      line-height: 17px;
+      margin: 20px 0 0 20px;
+      width: 170px;
+    };
+
+    &-absolute {
+      bottom: -96px !important;
+    };
+
+    &-top {
+      border: 1px solid $greyThree;
+      display: block;
+      float: left;
+      max-width: $desktop;
+      width: 99%;
+    };
+
+    &-list {
+      height: 850px;
+      width: 100%;
+    };
+
+    &-list ul {
+      left: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position:relative;
+      top: 0;
+      width: 9999px;
+    };
+
+    &-list li {
+      display: block;
+      float: left;
+      height: 450px;
+      margin: 0 10px 0 0;
+      padding-left: 0;
+      width: 666px;
+      height: auto;
+
+      vertical-align: top;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    };
+
+    &-list-inner {
+      height: auto;
+      width: 100%;
+    };
+
+    &-list-inner div {
+      border: none;/*2px solid $white;*/
+      display: inline-block;
+      height: 200px;
+      overflow: hidden;
+      width: 32.333%;
+    };
+
+  };
+
+};
+
+
+
+/* ----++++---- Explore and Filter Dorpdown ----++++---- */
+.explore-filter-dropdown {
+
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 20px 0;
 
   &-block {
     background-color: $white;
@@ -2714,8 +3085,211 @@ audio::-webkit-media-controls-enclosure{
     width: 100%;
   };
 
+  &-header {
+    border-bottom: 4px solid $black;
+    color: $black;
+    display: inline-block;
+    font-family: $avenirHeavy;
+    font-size: 20px;
+    height: 51px;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+    text-align: left;
+    width: 237px;
+  };
+
+  &-text {
+    color: $black;
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 15px;
+  };
+
+  &-arrow-top-container {
+    cursor: pointer;
+    display: inline-block;
+    height: 44px;
+    position: relative;
+    top: -10px;
+    width: 45px;
+  };
+
+  &-arrow-top {
+    background: url('../pma/img/temp/feature-item-arrow-two.png') no-repeat;
+    display: inline-block;
+    height: 8px;
+    margin-top: 10px;
+    width: 11px;
+  };
+
+  &-arrow-top:hover {
+    background-position: -11px 0;
+  };
+
+  &-block-close {
+    background-color: $white;
+    display: block;
+    float: left;
+    height: auto;
+    width: 274px;
+  };
+
+  &-header-drop {
+    color: $black;
+    display: block;
+    float: left;
+    font-family: $avenirHeavy;
+    font-size: 20px;
+    margin: 25px 56px 28px 4px;
+    text-align: left;
+    width: 174px;
+  };
+
+  &-close-button {
+  	background: url('../pma/img/temp/close-X.png') no-repeat;
+  	background-size: contain;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 25px 0 0 0;
+    padding-top: 0;
+    width: 20px;
+  };
+
+  /*Hidden nav */
+  &-top {
+    border: 1px solid $greyThree;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px;
+    width: 274px;;
+  };
+
+  &-subheader {
+  	color: $greyTwo;
+    display: block;
+    float: left;
+    font-family: $avenirHeavy;
+    font-size: 12px;
+    margin: 16px 0 0 5px;
+    padding-left: 0;
+    text-transform: uppercase;
+    width: 46%;
+  };
+
+  &-container {
+  	display: block;
+  	border-top: 1px solid $greyThree;
+    float: left;
+  	height: 50px;
+  	margin: 0;
+  	position: relative;
+  	width: 100%;
+  	z-index: 10;
+  };
+
+  &-box {
+  	background-color: $redOrange;
+  	display: block;
+    float: left;
+  	height: 15px;
+  	margin: 17px 10px 10px 20px;
+  	width: 15px;
+  };
+
+  &-main-text {
+  	display: block;
+    float: left;
+    font-size: 15px;
+    margin: 16px 0 0 20px;
+    padding: 0;
+  };
+
+  &-main-text.colorText {
+  	color: $redOrange;
+  };
+
+  &-list {
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  };
+
+  &-list ul {
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+  };
+
+  &-list li {
+  	border-top: 1px solid $greyThree;
+    display: block;
+    cursor: pointer;
+    float: left;
+    height: 50px; 
+    margin: 0;
+    padding-left: 0;
+    width: 274px;
+
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  };
+
+  &-list li:hover {
+  	background-color: $redOrange;
+  	color: $white;
+  };
+
+  /*Dropdown*/
+  &-holder {
+  	display: block;
+  	float: left;
+  	height: auto;
+  	margin: 0;
+  	width: 100%;
+  };
+
+  &-arrow-drop {
+    background: url('../pma/img/temp/feature-item-arrow-two.png') no-repeat;
+    display: block;
+    float: left;
+    height: 8px;
+    margin: 20px 0 0 120px;
+    width: 11px;
+  };
+
+  @media (min-width: $tablet) {
+
+  };
+
   @media (min-width: $desktop) {
+
     max-width: $desktop;
+
+    &-close-button {
+      font-size: 25px;
+      height: 20px;
+      line-height: 33px;
+      margin: 20px;
+      padding-top: 6px;
+      position: relative;
+      text-align: left;
+      width: 20px;
+    };
+
   };
 
 };
@@ -2754,12 +3328,6 @@ figure:hover figcaption {
 };
 /*IMAGE CAPTION STYLE END*/
 
-
-/*Touch Slider - enable Flickity by default */
-.carousel:after {
-  content: 'flickity';
-  display: none; /* hide :after */
-};
 
 
 /*MEDIA QUIRES*/
@@ -2801,11 +3369,6 @@ figure:hover figcaption {
     figure:hover figcaption {
       bottom: -86px;
     };
-
-    /*Touch Slider - disable Flickity for large devices */
-	.carousel:after {
-	  content: '';
-	};
 };
 
 
@@ -2846,4 +3409,4 @@ figure:hover figcaption {
   padding: 5px 15px;
   background-color: #e83a17;
   color: white;
-};
+}

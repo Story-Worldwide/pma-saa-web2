@@ -28,6 +28,12 @@ a:hover {
 .playButtonOrange {
   color: #EB3800; }
 
+.display-none {
+  display: none !important; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
 /*Touch slide class*/
 .animate {
   transition: -webkit-transform 0.3s ease-out;
@@ -746,7 +752,8 @@ a:hover {
   .object-carousel-component-center {
     display: block;
     height: 60px;
-    width: 379px;
+    width: 317px;
+    /*82%;//379px;*/
     position: relative;
     margin: 0 auto; }
   .object-carousel-component-arrow-block {
@@ -842,7 +849,9 @@ a:hover {
       bottom: 60px;
       margin: 0 auto;
       position: relative;
-      right: -290px; } }
+      right: -290px; }
+    .object-carousel-component-center {
+      width: 379px; } }
 
 /* ----++++---- Object Cultural Context ----++++---- */
 .object-cultural-context {
@@ -1173,7 +1182,7 @@ audio::-webkit-media-controls-enclosure {
     float: left;
     height: 250px;
     margin: 0 10px 0 0;
-    padding-left: 45px;
+    padding-left: 0;
     width: 195px;
     vertical-align: top;
     box-sizing: border-box;
@@ -1267,9 +1276,8 @@ audio::-webkit-media-controls-enclosure {
       display: block;
       float: left;
       height: auto;
-      /* margin: 0 10px 0 0; */
-      width: 201px;
-      padding: 0; }
+      padding: 0;
+      width: 201px; }
     .object-overview-carousel-text-box {
       color: #373a3c;
       display: inline-block;
@@ -1450,7 +1458,8 @@ audio::-webkit-media-controls-enclosure {
     float: left;
     height: auto;
     margin: 0 10px 0 0;
-    width: 320px;
+    width: 336px;
+    /*320px;*/
     vertical-align: top;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1523,6 +1532,8 @@ audio::-webkit-media-controls-enclosure {
       max-width: 840px; }
       .explore-the-details-title {
         width: 100%; }
+      .explore-the-details-list li {
+        width: 361px; }
       .explore-the-details-img {
         display: block;
         float: left;
@@ -1873,48 +1884,467 @@ audio::-webkit-media-controls-enclosure {
 .feature-item-nav {
   overflow: hidden;
   width: 100%;
-  padding: 0 0 20px 0; }
+  padding: 0 0 20px 0;
+  /*Hidden Carousel Slider*/
+  /* for numbers of images*/ }
+  .feature-item-nav-block {
+    background-color: #fff;
+    display: inline-block;
+    height: auto;
+    width: 100%; }
   .feature-item-nav-header {
     border-bottom: 4px solid #000;
     color: #000;
     display: inline-block;
     font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
-    font-size: 37px;
+    font-size: 30px;
     height: 51px;
     line-height: 38px;
-    margin: 0;
+    margin: 0 0 20px 0;
     text-align: left;
-    width: 274px; }
+    width: 237px; }
+  .feature-item-nav-fig-header {
+    color: #000;
+    display: block;
+    float: left;
+    font-family: "Avenir LT W01_35 Light1475496", "AvenirLTPro35Light" !important;
+    font-size: 13px;
+    height: 20px;
+    line-height: 17px;
+    margin: 2px 0 0 20px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 170px; }
+  .feature-item-nav-fig-color:hover {
+    color: #f74b35; }
   .feature-item-nav-text {
+    border-bottom: 1px solid #ccc;
     color: #000;
     display: inline-block;
     font-size: 15px;
     line-height: 19px;
-    margin: 0;
-    padding-right: 5px;
+    margin: 0 0 30px 0;
+    padding: 0 5px 20px 0;
     position: relative;
     width: 100%; }
-  .feature-item-nav-arrow-container {
+  .feature-item-nav-arrow-top-container {
     cursor: pointer;
     display: inline-block;
     height: 44px;
     position: relative;
     top: -10px;
     width: 45px; }
-  .feature-item-nav-arrow {
-    background: url("../pma/img/temp/feature-item-arrow.png") no-repeat;
+  .feature-item-nav-arrow-top {
+    background: url("../pma/img/temp/feature-item-arrow-two.png") no-repeat;
     display: inline-block;
     height: 8px;
     margin-top: 10px;
     width: 11px; }
-  .feature-item-nav-block {
+  .feature-item-nav-arrow-top:hover {
+    background-position: -11px 0; }
+  .feature-item-nav-imagenum-top {
+    color: #373a3c;
+    display: block;
+    float: right;
+    font-size: 13px;
+    height: 30px;
+    line-height: 17px;
+    padding-top: 6px;
+    position: relative;
+    text-align: left;
+    width: 30px; }
+  .feature-item-nav-block-carousel {
+    background-color: #fff;
+    display: block;
+    float: left;
+    height: 73px;
+    width: 99%; }
+  .feature-item-nav-header-carousel {
+    color: #000;
+    display: inline-block;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    font-size: 20px;
+    height: auto;
+    line-height: 20px;
+    margin: 25px 0 20px 4px;
+    text-align: left;
+    width: auto; }
+  .feature-item-nav-close-button {
+    background: url("../pma/img/temp/close-X.png") no-repeat;
+    background-size: contain;
+    color: #373a3c;
+    cursor: pointer;
+    display: block;
+    font-family: "Avenir LT W01_35 Light1475496", "AvenirLTPro35Light" !important;
+    float: right;
+    font-size: 25px;
+    height: 20px;
+    line-height: 33px;
+    margin: 17px 0 0 0;
+    padding-top: 0;
+    text-align: center;
+    width: 20px; }
+  .feature-item-nav-top {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px;
+    width: 98%; }
+  .feature-item-nav-list {
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%; }
+  .feature-item-nav-list ul {
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 9999px; }
+  .feature-item-nav-list li {
+    display: block;
+    float: left;
+    height: 450px;
+    /*!important*/
+    margin: 0 10px 0 0;
+    padding-left: 0;
+    width: 403px;
+    /*330px;*/
+    height: auto;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  .feature-item-nav-absolute {
+    bottom: 0 !important; }
+  .feature-item-nav-list-inner {
+    border: none;
+    display: inline-block;
+    height: 440px;
+    margin: 0 0 0 6px;
+    width: 100%; }
+  .feature-item-nav-list-inner div {
+    border: none;
+    /*1px solid $white;*/
+    display: inline-block;
+    height: 98px;
+    overflow: hidden;
+    width: 98px;
+    /*32%;*/ }
+  .feature-item-nav-arrow-container {
+    background-color: #fff;
+    display: block;
+    float: left;
+    height: 46px;
+    width: 100%; }
+  .feature-item-nav-arrow-block {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 72px; }
+  .feature-item-nav-arrow-left {
+    background: url("../pma/img/temp/arrowLeftFinal.png") no-repeat;
+    background-size: contain;
+    display: block;
+    float: left;
+    height: 28px;
+    margin: 0;
+    width: 20px; }
+  .feature-item-nav-arrow-right {
+    background: url("../pma/img/temp/arrowRightFinal.png") no-repeat;
+    background-size: contain;
+    display: block;
+    float: left;
+    height: 28px;
+    margin: 0;
+    width: 20px; }
+  .feature-item-nav-imagenum {
+    color: #373a3c;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 30px;
+    line-height: 17px;
+    padding-top: 6px;
+    position: relative;
+    text-align: left;
+    width: 30px; }
+  .feature-item-nav-hidden-mobile {
+    display: none; }
+  .feature-item-nav-list-deity {
+    background: url("../pma/img/temp/A1_2.jpg") no-repeat;
+    background-size: cover; }
+  .feature-item-nav-list-deity-two {
+    background: url("../pma/img/temp/A2_1.jpg") no-repeat;
+    background-size: cover; }
+  .feature-item-nav-list-deity-three {
+    background: url("../pma/img/temp/A1_3.jpg") no-repeat;
+    background-size: cover; }
+  .feature-item-nav-list-deity-four {
+    background: url("../pma/img/temp/A2_2.jpg") no-repeat;
+    background-size: cover; }
+  @media (min-width: 670px) {
+    .feature-item-nav-list li {
+      height: 800px;
+      margin: 0 10px 0 0;
+      width: 580px; }
+    .feature-item-nav-list-inner {
+      border: none;
+      display: inline-block;
+      height: 740px;
+      margin: 0 0 0 6px;
+      width: 100%; }
+    .feature-item-nav-list-inner div {
+      height: 190px;
+      width: 190px; }
+    .feature-item-nav-fig-header {
+      font-size: 30px;
+      line-height: 17px;
+      margin: 20px 0 0 20px;
+      width: 170px; }
+    .feature-item-nav-absolute {
+      bottom: -96px !important; } }
+  @media (min-width: 840px) {
+    .feature-item-nav {
+      max-width: 840px; }
+      .feature-item-nav-header {
+        width: 274px; }
+      .feature-item-nav-header-carousel {
+        font-size: 30px;
+        height: 51px;
+        line-height: 38px;
+        margin: 20px 0 20px 20px;
+        width: 274px; }
+      .feature-item-nav-close-button {
+        font-size: 25px;
+        height: 20px;
+        line-height: 33px;
+        margin: 20px;
+        padding-top: 6px;
+        position: relative;
+        text-align: left;
+        width: 20px; }
+      .feature-item-nav-fig-header {
+        font-size: 30px;
+        line-height: 17px;
+        margin: 20px 0 0 20px;
+        width: 170px; }
+      .feature-item-nav-absolute {
+        bottom: -96px !important; }
+      .feature-item-nav-top {
+        border: 1px solid #ccc;
+        display: block;
+        float: left;
+        max-width: 840px;
+        width: 99%; }
+      .feature-item-nav-list {
+        height: 850px;
+        width: 100%; }
+      .feature-item-nav-list ul {
+        left: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        width: 9999px; }
+      .feature-item-nav-list li {
+        display: block;
+        float: left;
+        height: 450px;
+        margin: 0 10px 0 0;
+        padding-left: 0;
+        width: 666px;
+        height: auto;
+        vertical-align: top;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box; }
+      .feature-item-nav-list-inner {
+        height: auto;
+        width: 100%; }
+      .feature-item-nav-list-inner div {
+        border: none;
+        /*2px solid $white;*/
+        display: inline-block;
+        height: 200px;
+        overflow: hidden;
+        width: 32.333%; } }
+
+/* ----++++---- Explore and Filter Dorpdown ----++++---- */
+.explore-filter-dropdown {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 20px 0;
+  /*Hidden nav */
+  /*Dropdown*/ }
+  .explore-filter-dropdown-block {
     background-color: #fff;
     display: inline-block;
     height: auto;
     width: 100%; }
+  .explore-filter-dropdown-header {
+    border-bottom: 4px solid #000;
+    color: #000;
+    display: inline-block;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    font-size: 20px;
+    height: 51px;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+    text-align: left;
+    width: 237px; }
+  .explore-filter-dropdown-text {
+    color: #000;
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 15px; }
+  .explore-filter-dropdown-arrow-top-container {
+    cursor: pointer;
+    display: inline-block;
+    height: 44px;
+    position: relative;
+    top: -10px;
+    width: 45px; }
+  .explore-filter-dropdown-arrow-top {
+    background: url("../pma/img/temp/feature-item-arrow-two.png") no-repeat;
+    display: inline-block;
+    height: 8px;
+    margin-top: 10px;
+    width: 11px; }
+  .explore-filter-dropdown-arrow-top:hover {
+    background-position: -11px 0; }
+  .explore-filter-dropdown-block-close {
+    background-color: #fff;
+    display: block;
+    float: left;
+    height: auto;
+    width: 274px; }
+  .explore-filter-dropdown-header-drop {
+    color: #000;
+    display: block;
+    float: left;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    font-size: 20px;
+    margin: 25px 56px 28px 4px;
+    text-align: left;
+    width: 174px; }
+  .explore-filter-dropdown-close-button {
+    background: url("../pma/img/temp/close-X.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 25px 0 0 0;
+    padding-top: 0;
+    width: 20px; }
+  .explore-filter-dropdown-top {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px;
+    width: 274px; }
+  .explore-filter-dropdown-subheader {
+    color: #ccc;
+    display: block;
+    float: left;
+    font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
+    font-size: 12px;
+    margin: 16px 0 0 5px;
+    padding-left: 0;
+    text-transform: uppercase;
+    width: 46%; }
+  .explore-filter-dropdown-container {
+    display: block;
+    border-top: 1px solid #ccc;
+    float: left;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 10; }
+  .explore-filter-dropdown-box {
+    background-color: #f74b35;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 17px 10px 10px 20px;
+    width: 15px; }
+  .explore-filter-dropdown-main-text {
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin: 16px 0 0 20px;
+    padding: 0; }
+  .explore-filter-dropdown-main-text.colorText {
+    color: #f74b35; }
+  .explore-filter-dropdown-list {
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%; }
+  .explore-filter-dropdown-list ul {
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%; }
+  .explore-filter-dropdown-list li {
+    border-top: 1px solid #ccc;
+    display: block;
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    margin: 0;
+    padding-left: 0;
+    width: 274px;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  .explore-filter-dropdown-list li:hover {
+    background-color: #f74b35;
+    color: #fff; }
+  .explore-filter-dropdown-holder {
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    width: 100%; }
+  .explore-filter-dropdown-arrow-drop {
+    background: url("../pma/img/temp/feature-item-arrow-two.png") no-repeat;
+    display: block;
+    float: left;
+    height: 8px;
+    margin: 20px 0 0 120px;
+    width: 11px; }
   @media (min-width: 840px) {
-    .feature-item-nav {
-      max-width: 840px; } }
+    .explore-filter-dropdown {
+      max-width: 840px; }
+      .explore-filter-dropdown-close-button {
+        font-size: 25px;
+        height: 20px;
+        line-height: 33px;
+        margin: 20px;
+        padding-top: 6px;
+        position: relative;
+        text-align: left;
+        width: 20px; } }
 
 /*IMAGE CAPTION STYLE*/
 .absolute {
@@ -1945,12 +2375,6 @@ figure:hover figcaption {
   /*mobile 17*/ }
 
 /*IMAGE CAPTION STYLE END*/
-/*Touch Slider - enable Flickity by default */
-.carousel:after {
-  content: 'flickity';
-  display: none;
-  /* hide :after */ }
-
 /*MEDIA QUIRES*/
 @media (min-width: 670px) {
   .absolute {
@@ -1972,10 +2396,7 @@ figure:hover figcaption {
   figure {
     width: 300px; }
   figure:hover figcaption {
-    bottom: -86px; }
-  /*Touch Slider - disable Flickity for large devices */
-  .carousel:after {
-    content: ''; } }
+    bottom: -86px; } }
 
 /*LOAD MORE BUTTON*/
 .load-more-container {
