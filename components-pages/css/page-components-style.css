@@ -14,7 +14,7 @@ div {
   /*outline: 1px solid #f00;*/ }
 
 a {
-  color: #373a3c #f74b35; }
+  color: #f74b35; }
 
 a:hover {
   color: #373a3c; }
@@ -26,7 +26,7 @@ a:hover {
   clear: both; }
 
 .playButtonOrange {
-  color: #EB3800; }
+  color: #f74b35; }
 
 .display-none {
   display: none !important; }
@@ -1017,7 +1017,7 @@ audio::-webkit-media-controls-enclosure {
     padding: 0;
     width: 99%; }
   .object-audio-component-play-button {
-    background-color: #EB3800;
+    background-color: #f74b35;
     cursor: pointer;
     display: block;
     float: left;
@@ -1081,7 +1081,7 @@ audio::-webkit-media-controls-enclosure {
     overflow: hidden;
     width: 100%; }
   .object-audio-component-pbar {
-    background-color: #EB3800;
+    background-color: #f74b35;
     display: block;
     float: left;
     height: 5px;
@@ -2184,7 +2184,18 @@ audio::-webkit-media-controls-enclosure {
   width: 100%;
   padding: 0 0 20px 0;
   /*Hidden nav */
-  /*Dropdown*/ }
+  /*Dropdown*/
+  /*@media (min-width: $tablet) {
+
+	  };
+
+	  @media (min-width: $desktop) {
+
+	    max-width: $desktop;
+
+	  };*/ }
+  .explore-filter-dropdown a {
+    color: #000; }
   .explore-filter-dropdown-block {
     background-color: #fff;
     display: inline-block;
@@ -2233,19 +2244,19 @@ audio::-webkit-media-controls-enclosure {
     float: left;
     font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 20px;
-    margin: 25px 56px 28px 4px;
+    margin: 25px 56px 28px 18px;
     text-align: left;
-    width: 174px; }
+    width: auto; }
   .explore-filter-dropdown-close-button {
     background: url("../pma/img/temp/close-X.png") no-repeat;
     background-size: contain;
     cursor: pointer;
     display: block;
     float: left;
-    height: 20px;
-    margin: 25px 0 0 0;
+    height: 14px;
+    margin: 28px 0 0 0;
     padding-top: 0;
-    width: 20px; }
+    width: 14px; }
   .explore-filter-dropdown-top {
     border: 1px solid #ccc;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
@@ -2261,10 +2272,10 @@ audio::-webkit-media-controls-enclosure {
     float: left;
     font-family: "Avenir LT W01_85 Heavy1475544", "AvenirLTPro85Heavy", "Arial", "Helvetica", sans-serif !important;
     font-size: 12px;
-    margin: 16px 0 0 5px;
+    margin: 16px 0 0 19px;
     padding-left: 0;
     text-transform: uppercase;
-    width: 46%; }
+    width: 115px; }
   .explore-filter-dropdown-container {
     display: block;
     border-top: 1px solid #ccc;
@@ -2279,16 +2290,35 @@ audio::-webkit-media-controls-enclosure {
     display: block;
     float: left;
     height: 15px;
-    margin: 17px 10px 10px 20px;
+    margin: 17px 14px 0 20px;
     width: 15px; }
   .explore-filter-dropdown-main-text {
+    /*color: $black;*/
     display: block;
     float: left;
     font-size: 15px;
-    margin: 16px 0 0 20px;
+    margin: 16px 0 0 40px;
     padding: 0; }
   .explore-filter-dropdown-main-text.colorText {
     color: #f74b35; }
+  .explore-filter-dropdown-end-text {
+    display: block;
+    float: left;
+    font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
+    font-size: 13px;
+    margin: 16px 0 0 18px;
+    padding: 0;
+    text-transform: uppercase;
+    width: 67px; }
+  .explore-filter-dropdown-end-text-right {
+    display: block;
+    float: right;
+    font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
+    font-size: 13px;
+    margin: 16px 8px 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 57px; }
   .explore-filter-dropdown-list {
     display: block;
     float: left;
@@ -2307,7 +2337,7 @@ audio::-webkit-media-controls-enclosure {
   .explore-filter-dropdown-list li {
     border-top: 1px solid #ccc;
     display: block;
-    cursor: pointer;
+    /*cursor: pointer;*/
     float: left;
     height: 50px;
     margin: 0;
@@ -2317,7 +2347,7 @@ audio::-webkit-media-controls-enclosure {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; }
-  .explore-filter-dropdown-list li:hover {
+  .explore-filter-dropdown-list li:hover, .explore-filter-dropdown-list.colorText li:hover {
     background-color: #f74b35;
     color: #fff; }
   .explore-filter-dropdown-holder {
@@ -2331,20 +2361,8 @@ audio::-webkit-media-controls-enclosure {
     display: block;
     float: left;
     height: 8px;
-    margin: 20px 0 0 120px;
+    margin: 20px 0 0 107px;
     width: 11px; }
-  @media (min-width: 840px) {
-    .explore-filter-dropdown {
-      max-width: 840px; }
-      .explore-filter-dropdown-close-button {
-        font-size: 25px;
-        height: 20px;
-        line-height: 33px;
-        margin: 20px;
-        padding-top: 6px;
-        position: relative;
-        text-align: left;
-        width: 20px; } }
 
 /*IMAGE CAPTION STYLE*/
 .absolute {

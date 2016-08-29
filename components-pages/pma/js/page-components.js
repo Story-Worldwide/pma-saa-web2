@@ -380,7 +380,7 @@ $(function(){
 
 
 
-  ///// FEATURE ITEM NAV
+  ///// FEATURE ITEM NAV COMPONENT
   // open slider
   $('.open-feature').click(function(){
       $('.feature-item-nav-block').addClass('display-none');
@@ -394,62 +394,66 @@ $(function(){
 
 
 
-  ///// EXPLORE FILTER DROP-DOWN COMPONENT
-  // Hover
-  $('.explore-filter-dropdown-JS').hover(
+    ///// EXPLORE FILTER DROP-DOWN COMPONENT
+    // open dropdown
+    $('.open-explore').click(function(){
+      $('.explore-filter-dropdown-block').addClass('display-none');
+      $('.explore-filter-dropdown-top').removeClass('display-none');
+    });
+    // close dropdown
+    $('.explore-close-bttn').click(function(){
+      $('.explore-filter-dropdown-block').removeClass('display-none');
+      $('.explore-filter-dropdown-top').addClass('display-none');
+    });
+    // Hover elements
+    $('.explore-filter-dropdown-arrow-top-container').hover(
+    function () {
+        $('.explore-filter-dropdown-arrow-top', this).css('background-position', '-11 0');
+      },
+      function () {
+       $('.explore-filter-dropdown-arrow-top', this).css('background-position', '');
+      }
+    );
+    $('.explore-filter-dropdown-JS').hover(
     function () {
         $('.explore-filter-dropdown-arrow-drop', this).css('background-position', '-11 0');
       },
       function () {
        $('.explore-filter-dropdown-arrow-drop', this).css('background-position', '');
       }
-  );
-  // Dropdown
-  /*$('.explore-filter-dropdown-JS').click(function(event){
+    );
+    // Dropdown
+    $('.explore-filter-dropdown-holder').click(function(event){
         event.stopPropagation();
         if ( openNav == true ){
-            $('.explore-filter-dropdown-holder ul').removeClass('display-none');
+            $('ul', this).removeClass('display-none');
             openNav = false;
             console.log('OPEN ',openNav);
         }else {
-            $('.explore-filter-dropdown-holder ul').addClass('display-none');
+            $('ul', this).addClass('display-none');
             openNav = true;
             console.log('CLOSED',openNav);
         }
-  });*/ 
-  $('.explore-filter-dropdown-JS').each(function(index){
-        $(this).click(function(event){
-            event.stopPropagation();
-            if ( openNav == true ){
-                $('.explore-filter-dropdown-holder ul', index).removeClass('display-none');
-                openNav = false;
-                console.log('OPEN ',index,'  ',openNav);
-            }else {
-                $('.explore-filter-dropdown-holder ul', index).addClass('display-none');
-                openNav = true;
-                console.log('CLOSED ',index,'  ',openNav);
-            }
-      });
-  });
+    }); 
 
-  ///DATE RANGE SLIDER
-  $( "#slider-range" ).slider({
+
+    ///DATE RANGE SLIDER
+    $( "#slider-range" ).slider({
       range: true,
-      min: 1200,
-      max: 1900,
+      min: 0,
+      max: 500,
       values: [ 75, 300 ],
       slide: function( event, ui ) {
-        $( "#amount" ).val( "years" + ui.values[ 0 ] + " - years" + ui.values[ 1 ] );
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
-  });
-  //
-  $( "#amount" ).val( "years" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - years" + $( "#slider-range" ).slider( "values", 1 ) );
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
 
 
-  ///// AUDIO
-  var audio1 = new Audio('../pma/audio/Classical Indian Music.mp3'),
+    ///// AUDIO
+    var audio1 = new Audio('../pma/audio/Classical Indian Music.mp3'),
     trackVar,
     id,
     currTimeText,
@@ -457,7 +461,7 @@ $(function(){
     pBar;
 
 
-  function audioPlayer(trackVar, id, currTimeText, proGressTime, pBar) {
+    function audioPlayer(trackVar, id, currTimeText, proGressTime, pBar) {
 
     var duration = trackVar.duration;
 
@@ -507,17 +511,17 @@ $(function(){
       console.log('currTimeText ',(curmins+":"+cursecs), ' proGressTime ', (durmins+":"+dursecs));
 
     }
-  };
-  // Run Audio
-  audioPlayer(audio1, '#playButton', '#currTime_box','#progress_box','#progressBar');
+    };
+    // Run Audio
+    audioPlayer(audio1, '#playButton', '#currTime_box','#progress_box','#progressBar');
 
 
-  ///// RESIZE FUNCTION
-  $(window).resize(function(){
+    ///// RESIZE FUNCTION
+    $(window).resize(function(){
     if( $(window).width() <= 400 ){
     };
 
-  });
+    });
 
 
 });

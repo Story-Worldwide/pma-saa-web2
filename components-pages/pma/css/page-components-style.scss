@@ -13,7 +13,7 @@ $grey: #373a3c;
 $greyTwo: #ccc;/*rule grey*/
 $greyThree: #ccc;/*history*/
 $lightGrey: #f0f0f0;
-$playButtonOrange: #EB3800;
+$playButtonOrange: #f74b35;
 
 /*FONTS*/
 $avenirLight: 'Avenir LT W01_35 Light1475496','AvenirLTPro35Light' !important;
@@ -35,7 +35,7 @@ div {
 };
 
 a {
-  color: $grey $redOrange;
+  color: $redOrange;
 };
 
 a:hover {
@@ -3074,223 +3074,239 @@ audio::-webkit-media-controls-enclosure{
 /* ----++++---- Explore and Filter Dorpdown ----++++---- */
 .explore-filter-dropdown {
 
-  overflow: hidden;
-  width: 100%;
-  padding: 0 0 20px 0;
+	overflow: hidden;
+	width: 100%;
+	padding: 0 0 20px 0;
 
-  &-block {
-    background-color: $white;
-    display: inline-block;
-    height: auto;
-    width: 100%;
-  };
+	a {
+		color: $black;
+	};
 
-  &-header {
-    border-bottom: 4px solid $black;
-    color: $black;
-    display: inline-block;
-    font-family: $avenirHeavy;
-    font-size: 20px;
-    height: 51px;
-    line-height: 30px;
-    margin: 0 0 20px 0;
-    text-align: left;
-    width: 237px;
-  };
+	  &-block {
+	    background-color: $white;
+	    display: inline-block;
+	    height: auto;
+	    width: 100%;
+	  };
 
-  &-text {
-    color: $black;
-    display: inline-block;
-    font-size: 17px;
-    margin-top: 15px;
-  };
+	  &-header {
+	    border-bottom: 4px solid $black;
+	    color: $black;
+	    display: inline-block;
+	    font-family: $avenirHeavy;
+	    font-size: 20px;
+	    height: 51px;
+	    line-height: 30px;
+	    margin: 0 0 20px 0;
+	    text-align: left;
+	    width: 237px;
+	  };
 
-  &-arrow-top-container {
-    cursor: pointer;
-    display: inline-block;
-    height: 44px;
-    position: relative;
-    top: -10px;
-    width: 45px;
-  };
+	  &-text {
+	    color: $black;
+	    display: inline-block;
+	    font-size: 17px;
+	    margin-top: 15px;
+	  };
 
-  &-arrow-top {
-    background: url('../pma/img/temp/feature-item-arrow-two.png') no-repeat;
-    display: inline-block;
-    height: 8px;
-    margin-top: 10px;
-    width: 11px;
-  };
+	  &-arrow-top-container {
+	    cursor: pointer;
+	    display: inline-block;
+	    height: 44px;
+	    position: relative;
+	    top: -10px;
+	    width: 45px;
+	  };
 
-  &-arrow-top:hover {
-    background-position: -11px 0;
-  };
+	  &-arrow-top {
+	    background: url('../pma/img/temp/feature-item-arrow-two.png') no-repeat;
+	    display: inline-block;
+	    height: 8px;
+	    margin-top: 10px;
+	    width: 11px;
+	  };
 
-  &-block-close {
-    background-color: $white;
-    display: block;
-    float: left;
-    height: auto;
-    width: 274px;
-  };
+	  &-arrow-top:hover {
+	    background-position: -11px 0;
+	  };
 
-  &-header-drop {
-    color: $black;
-    display: block;
-    float: left;
-    font-family: $avenirHeavy;
-    font-size: 20px;
-    margin: 25px 56px 28px 4px;
-    text-align: left;
-    width: 174px;
-  };
+	  &-block-close {
+	    background-color: $white;
+	    display: block;
+	    float: left;
+	    height: auto;
+	    width: 274px;
+	  };
 
-  &-close-button {
-  	background: url('../pma/img/temp/close-X.png') no-repeat;
-  	background-size: contain;
-    cursor: pointer;
-    display: block;
-    float: left;
-    height: 20px;
-    margin: 25px 0 0 0;
-    padding-top: 0;
-    width: 20px;
-  };
+	  &-header-drop {
+	    color: $black;
+	    display: block;
+	    float: left;
+	    font-family: $avenirHeavy;
+	    font-size: 20px;
+	    margin: 25px 56px 28px 18px;
+	    text-align: left;
+	    width: auto;
+	  };
 
-  /*Hidden nav */
-  &-top {
-    border: 1px solid $greyThree;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-    display: inline-block;
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0px;
-    width: 274px;;
-  };
+	  &-close-button {
+	  	background: url('../pma/img/temp/close-X.png') no-repeat;
+	  	background-size: contain;
+	    cursor: pointer;
+	    display: block;
+	    float: left;
+	    height: 14px;
+	    margin: 28px 0 0 0;
+	    padding-top: 0;
+	    width: 14px;
+	  };
 
-  &-subheader {
-  	color: $greyTwo;
-    display: block;
-    float: left;
-    font-family: $avenirHeavy;
-    font-size: 12px;
-    margin: 16px 0 0 5px;
-    padding-left: 0;
-    text-transform: uppercase;
-    width: 46%;
-  };
+	  /*Hidden nav */
+	  &-top {
+	    border: 1px solid $greyThree;
+	    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+	    display: inline-block;
+	    height: auto;
+	    margin: 0;
+	    overflow: hidden;
+	    padding: 0px;
+	    width: 274px;;
+	  };
 
-  &-container {
-  	display: block;
-  	border-top: 1px solid $greyThree;
-    float: left;
-  	height: 50px;
-  	margin: 0;
-  	position: relative;
-  	width: 100%;
-  	z-index: 10;
-  };
+	  &-subheader {
+	  	color: $greyTwo;
+	    display: block;
+	    float: left;
+	    font-family: $avenirHeavy;
+	    font-size: 12px;
+	    margin: 16px 0 0 19px;
+	    padding-left: 0;
+	    text-transform: uppercase;
+	    width: 115px;
+	  };
 
-  &-box {
-  	background-color: $redOrange;
-  	display: block;
-    float: left;
-  	height: 15px;
-  	margin: 17px 10px 10px 20px;
-  	width: 15px;
-  };
+	  &-container {
+	  	display: block;
+	  	border-top: 1px solid $greyThree;
+	    float: left;
+	  	height: 50px;
+	  	margin: 0;
+	  	position: relative;
+	  	width: 100%;
+	  	z-index: 10;
+	  };
 
-  &-main-text {
-  	display: block;
-    float: left;
-    font-size: 15px;
-    margin: 16px 0 0 20px;
-    padding: 0;
-  };
+	  &-box {
+	  	background-color: $redOrange;
+	  	display: block;
+	    float: left;
+	  	height: 15px;
+	  	margin: 17px 14px 0 20px;
+	  	width: 15px;
+	  };
 
-  &-main-text.colorText {
-  	color: $redOrange;
-  };
+	  &-main-text {
+	  	/*color: $black;*/
+	  	display: block;
+	    float: left;
+	    font-size: 15px;
+	    margin: 16px 0 0 40px;
+	    padding: 0;
+	  };
 
-  &-list {
-    display: block;
-    float: left;
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-  };
+	  &-main-text.colorText {
+	  	color: $redOrange;
+	  };
 
-  &-list ul {
-    left: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    width: 100%;
-  };
+	  &-end-text {
+	  	display: block;
+	    float: left;
+	    font-family: $avenirMedium;
+	    font-size: 13px;
+	    margin: 16px 0 0 18px;
+	    padding: 0;
+	    text-transform: uppercase;
+	    width: 67px;
+	  };
 
-  &-list li {
-  	border-top: 1px solid $greyThree;
-    display: block;
-    cursor: pointer;
-    float: left;
-    height: 50px; 
-    margin: 0;
-    padding-left: 0;
-    width: 274px;
+	  &-end-text-right {
+	  	display: block;
+	    float: right;
+	    font-family: $avenirMedium;
+	    font-size: 13px;
+	    margin: 16px 8px 0 0;
+	    padding: 0;
+	    text-transform: uppercase;
+	    width: 57px;
+	  };
 
-    vertical-align: top;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  };
+	  &-list {
+	    display: block;
+	    float: left;
+	    height: auto;
+	    margin: 0;
+	    overflow: hidden;
+	    padding: 0;
+	    width: 100%;
+	  };
 
-  &-list li:hover {
-  	background-color: $redOrange;
-  	color: $white;
-  };
+	  &-list ul {
+	    left: 0;
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    top: 0;
+	    width: 100%;
+	  };
 
-  /*Dropdown*/
-  &-holder {
-  	display: block;
-  	float: left;
-  	height: auto;
-  	margin: 0;
-  	width: 100%;
-  };
+	  &-list li {
+	  	border-top: 1px solid $greyThree;
+	    display: block;
+	    /*cursor: pointer;*/
+	    float: left;
+	    height: 50px; 
+	    margin: 0;
+	    padding-left: 0;
+	    width: 274px;
 
-  &-arrow-drop {
-    background: url('../pma/img/temp/feature-item-arrow-two.png') no-repeat;
-    display: block;
-    float: left;
-    height: 8px;
-    margin: 20px 0 0 120px;
-    width: 11px;
-  };
+	    vertical-align: top;
+	    box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	  };
 
-  @media (min-width: $tablet) {
+	  &-list li:hover, &-list.colorText li:hover {
+	  	background-color: $redOrange;
+	  	color: $white;
+	  };
 
-  };
+	  /*Dropdown*/
+	  &-holder {
+	  	display: block;
+	  	float: left;
+	  	height: auto;
+	  	margin: 0;
+	  	width: 100%;
+	  };
 
-  @media (min-width: $desktop) {
+	  &-arrow-drop {
+	    background: url('../pma/img/temp/feature-item-arrow-two.png') no-repeat;
+	    display: block;
+	    float: left;
+	    height: 8px;
+	    margin: 20px 0 0 107px;
+	    width: 11px;
+	  };
 
-    max-width: $desktop;
+	  /*@media (min-width: $tablet) {
 
-    &-close-button {
-      font-size: 25px;
-      height: 20px;
-      line-height: 33px;
-      margin: 20px;
-      padding-top: 6px;
-      position: relative;
-      text-align: left;
-      width: 20px;
-    };
+	  };
 
-  };
+	  @media (min-width: $desktop) {
+
+	    max-width: $desktop;
+
+	  };*/
 
 };
 
