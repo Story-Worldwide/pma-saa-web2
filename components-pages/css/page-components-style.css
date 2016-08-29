@@ -2187,13 +2187,13 @@ audio::-webkit-media-controls-enclosure {
   /*Dropdown*/
   /*@media (min-width: $tablet) {
 
-	  };
+	};
 
-	  @media (min-width: $desktop) {
+	@media (min-width: $desktop) {
 
-	    max-width: $desktop;
+	max-width: $desktop;
 
-	  };*/ }
+	};*/ }
   .explore-filter-dropdown a {
     color: #000; }
   .explore-filter-dropdown-block {
@@ -2293,7 +2293,6 @@ audio::-webkit-media-controls-enclosure {
     margin: 17px 14px 0 20px;
     width: 15px; }
   .explore-filter-dropdown-main-text {
-    /*color: $black;*/
     display: block;
     float: left;
     font-size: 15px;
@@ -2310,6 +2309,8 @@ audio::-webkit-media-controls-enclosure {
     padding: 0;
     text-transform: uppercase;
     width: 67px; }
+  .explore-filter-dropdown-end-text:hover {
+    color: #f74b35; }
   .explore-filter-dropdown-end-text-right {
     display: block;
     float: right;
@@ -2319,6 +2320,8 @@ audio::-webkit-media-controls-enclosure {
     padding: 0;
     text-transform: uppercase;
     width: 57px; }
+  .explore-filter-dropdown-end-text-right:hover {
+    color: #f74b35; }
   .explore-filter-dropdown-list {
     display: block;
     float: left;
@@ -2337,7 +2340,6 @@ audio::-webkit-media-controls-enclosure {
   .explore-filter-dropdown-list li {
     border-top: 1px solid #ccc;
     display: block;
-    /*cursor: pointer;*/
     float: left;
     height: 50px;
     margin: 0;
@@ -2355,7 +2357,54 @@ audio::-webkit-media-controls-enclosure {
     float: left;
     height: auto;
     margin: 0;
-    width: 100%; }
+    width: 100%;
+    /*ui slider*/
+    /*ui slider end*/ }
+    .explore-filter-dropdown-holder input[type=checkbox] {
+      visibility: hidden; }
+    .explore-filter-dropdown-holder .ui-slider-handle {
+      border: 3px solid #000;
+      border-radius: 10px;
+      background-color: #fff;
+      cursor: pointer;
+      height: 5px;
+      margin-top: -2px;
+      padding: 3px;
+      width: 5px; }
+    .explore-filter-dropdown-holder .ui-slider-horizontal .ui-slider-range {
+      border: 2px solid #000;
+      background-color: #000;
+      height: 0;
+      padding: 0;
+      width: 90%; }
+    .explore-filter-dropdown-holder .ui-widget.ui-widget-content {
+      background-color: #ccc;
+      border: none;
+      height: 5px;
+      width: 220px;
+      margin: 52px 0 0 19px; }
+    .explore-filter-dropdown-holder .left-year {
+      color: #ccc;
+      display: block;
+      float: left;
+      font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
+      font-size: 12px;
+      height: 20px;
+      margin: 16px 0 10px 18px;
+      padding: 0;
+      text-transform: uppercase;
+      width: 67px; }
+    .explore-filter-dropdown-holder .right-year {
+      color: #ccc;
+      display: block;
+      float: right;
+      font-family: "Avenir LT W01_65 Medium1475532", "AvenirLTPro65Medium", "Arial", "Helvetica", sans-serif !important;
+      font-size: 12px;
+      height: 20px;
+      margin: 16px 8px 10px 0;
+      padding: 0;
+      text-transform: uppercase;
+      width: 57px; }
   .explore-filter-dropdown-arrow-drop {
     background: url("../pma/img/temp/feature-item-arrow-two.png") no-repeat;
     display: block;
