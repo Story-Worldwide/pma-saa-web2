@@ -3196,6 +3196,15 @@ audio::-webkit-media-controls-enclosure{
 		z-index: 10;
 	};
 
+	&-container.colorText {
+		color: $redOrange;
+	};
+
+	&-container.colorText:hover {
+		background-color: $redOrange;
+		color: $white;
+	};
+
 	&-box {
 		background-color: $redOrange;
 		display: block;
@@ -3211,10 +3220,6 @@ audio::-webkit-media-controls-enclosure{
 		font-size: 15px;
 		margin: 16px 0 0 40px;
 		padding: 0;
-	};
-
-	&-main-text.colorText {
-		color: $redOrange;
 	};
 
 	&-end-text {
@@ -3281,7 +3286,7 @@ audio::-webkit-media-controls-enclosure{
 		-webkit-box-sizing: border-box;
 	};
 
-	&-list li:hover, &-list.colorText li:hover {
+	&-list li:hover, &-main-text.colorText li:hover {
 		background-color: $redOrange;
 		color: $white;
 	};

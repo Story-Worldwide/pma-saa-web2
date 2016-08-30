@@ -414,7 +414,7 @@ $(function(){
        $('.explore-filter-dropdown-arrow-top', this).css('background-position', '');
       }
     );
-    //expnadable content
+    //expandable content hover
     $('.explore-filter-dropdown-JS').hover(
     function () {
         $('.explore-filter-dropdown-arrow-drop', this).css('background-position', '-11 0');
@@ -445,10 +445,12 @@ $(function(){
       max: 1700,
       values: [ 75, 300 ],
       slide: function( event, ui ) {
-        $( "#year-start" ).text(  ui.values[ 0 ]  + ui.values[ 1 ] );
+        $( "#year-start" ).text(  ui.values[ 0 ] );
+        $( "#year-end" ).text(  ui.values[ 1 ] );
       }
     });
-    $( "#year-start" ).text( $( "#slider-range" ).slider( "values", 0 ) + $( "#slider-range" ).slider( "values", 1 ) );
+    $( "#year-start" ).text( $( "#slider-range" ).slider( "values", 0 ) );
+    $( "#year-end" ).text( $( "#slider-range" ).slider( "values", 1 ) );
 
 
 

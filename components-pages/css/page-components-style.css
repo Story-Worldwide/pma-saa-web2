@@ -2285,6 +2285,11 @@ audio::-webkit-media-controls-enclosure {
     position: relative;
     width: 100%;
     z-index: 10; }
+  .explore-filter-dropdown-container.colorText {
+    color: #f74b35; }
+  .explore-filter-dropdown-container.colorText:hover {
+    background-color: #f74b35;
+    color: #fff; }
   .explore-filter-dropdown-box {
     background-color: #f74b35;
     display: block;
@@ -2298,8 +2303,6 @@ audio::-webkit-media-controls-enclosure {
     font-size: 15px;
     margin: 16px 0 0 40px;
     padding: 0; }
-  .explore-filter-dropdown-main-text.colorText {
-    color: #f74b35; }
   .explore-filter-dropdown-end-text {
     display: block;
     float: left;
@@ -2349,7 +2352,7 @@ audio::-webkit-media-controls-enclosure {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; }
-  .explore-filter-dropdown-list li:hover, .explore-filter-dropdown-list.colorText li:hover {
+  .explore-filter-dropdown-list li:hover, .explore-filter-dropdown-main-text.colorText li:hover {
     background-color: #f74b35;
     color: #fff; }
   .explore-filter-dropdown-holder {
